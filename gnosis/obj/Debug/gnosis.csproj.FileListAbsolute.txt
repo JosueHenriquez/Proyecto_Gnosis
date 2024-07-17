@@ -1,0 +1,84 @@
+C:\Users\Josue A. Henríquez\Documents\Visual Studio 2022\Projects\gnosis\gnosis\bin\Debug\gnosis.exe.config
+C:\Users\Josue A. Henríquez\Documents\Visual Studio 2022\Projects\gnosis\gnosis\bin\Debug\gnosis.exe
+C:\Users\Josue A. Henríquez\Documents\Visual Studio 2022\Projects\gnosis\gnosis\bin\Debug\gnosis.pdb
+C:\Users\Josue A. Henríquez\Documents\Visual Studio 2022\Projects\gnosis\gnosis\obj\Debug\gnosis.csproj.AssemblyReference.cache
+C:\Users\Josue A. Henríquez\Documents\Visual Studio 2022\Projects\gnosis\gnosis\obj\Debug\gnosis.Properties.Resources.resources
+C:\Users\Josue A. Henríquez\Documents\Visual Studio 2022\Projects\gnosis\gnosis\obj\Debug\gnosis.Views.Dashboard.ViewDashboard.resources
+C:\Users\Josue A. Henríquez\Documents\Visual Studio 2022\Projects\gnosis\gnosis\obj\Debug\gnosis.csproj.GenerateResource.cache
+C:\Users\Josue A. Henríquez\Documents\Visual Studio 2022\Projects\gnosis\gnosis\obj\Debug\gnosis.csproj.CoreCompileInputs.cache
+C:\Users\Josue A. Henríquez\Documents\Visual Studio 2022\Projects\gnosis\gnosis\obj\Debug\gnosis.exe
+C:\Users\Josue A. Henríquez\Documents\Visual Studio 2022\Projects\gnosis\gnosis\obj\Debug\gnosis.pdb
+C:\Users\Josue A. Henríquez\Documents\Visual Studio 2022\Projects\gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewLogin.resources
+C:\Users\Docente\OneDrive - INSTITUTO TÉCNICO RICALDONE\Ricaldone\Documentos de Desarrollo de Software\Primer Año de Bachillerato\2024\Proyecto Gnósis\gnosis\gnosis\bin\Debug\gnosis.exe.config
+C:\Users\Docente\OneDrive - INSTITUTO TÉCNICO RICALDONE\Ricaldone\Documentos de Desarrollo de Software\Primer Año de Bachillerato\2024\Proyecto Gnósis\gnosis\gnosis\bin\Debug\gnosis.exe
+C:\Users\Docente\OneDrive - INSTITUTO TÉCNICO RICALDONE\Ricaldone\Documentos de Desarrollo de Software\Primer Año de Bachillerato\2024\Proyecto Gnósis\gnosis\gnosis\bin\Debug\gnosis.pdb
+C:\Users\Docente\OneDrive - INSTITUTO TÉCNICO RICALDONE\Ricaldone\Documentos de Desarrollo de Software\Primer Año de Bachillerato\2024\Proyecto Gnósis\gnosis\gnosis\obj\Debug\gnosis.csproj.AssemblyReference.cache
+C:\Users\Docente\OneDrive - INSTITUTO TÉCNICO RICALDONE\Ricaldone\Documentos de Desarrollo de Software\Primer Año de Bachillerato\2024\Proyecto Gnósis\gnosis\gnosis\obj\Debug\gnosis.Properties.Resources.resources
+C:\Users\Docente\OneDrive - INSTITUTO TÉCNICO RICALDONE\Ricaldone\Documentos de Desarrollo de Software\Primer Año de Bachillerato\2024\Proyecto Gnósis\gnosis\gnosis\obj\Debug\gnosis.Views.Dashboard.ViewDashboard.resources
+C:\Users\Docente\OneDrive - INSTITUTO TÉCNICO RICALDONE\Ricaldone\Documentos de Desarrollo de Software\Primer Año de Bachillerato\2024\Proyecto Gnósis\gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewLogin.resources
+C:\Users\Docente\OneDrive - INSTITUTO TÉCNICO RICALDONE\Ricaldone\Documentos de Desarrollo de Software\Primer Año de Bachillerato\2024\Proyecto Gnósis\gnosis\gnosis\obj\Debug\gnosis.csproj.GenerateResource.cache
+C:\Users\Docente\OneDrive - INSTITUTO TÉCNICO RICALDONE\Ricaldone\Documentos de Desarrollo de Software\Primer Año de Bachillerato\2024\Proyecto Gnósis\gnosis\gnosis\obj\Debug\gnosis.csproj.CoreCompileInputs.cache
+C:\Users\Docente\OneDrive - INSTITUTO TÉCNICO RICALDONE\Ricaldone\Documentos de Desarrollo de Software\Primer Año de Bachillerato\2024\Proyecto Gnósis\gnosis\gnosis\obj\Debug\gnosis.exe
+C:\Users\Docente\OneDrive - INSTITUTO TÉCNICO RICALDONE\Ricaldone\Documentos de Desarrollo de Software\Primer Año de Bachillerato\2024\Proyecto Gnósis\gnosis\gnosis\obj\Debug\gnosis.pdb
+C:\Users\Docente\OneDrive - INSTITUTO TÉCNICO RICALDONE\Ricaldone\Documentos de Desarrollo de Software\Primer Año de Bachillerato\2024\Proyecto Gnósis\gnosis\gnosis\obj\Debug\gnosis.Views.Administrador_de_usuarios.ViewAdministradorUsuarios.resources
+C:\Users\Docente\OneDrive - INSTITUTO TÉCNICO RICALDONE\Ricaldone\Documentos de Desarrollo de Software\Primer Año de Bachillerato\2024\Proyecto Gnósis\gnosis\gnosis\obj\Debug\gnosis.Views.Administrador_de_usuarios.ViewAddUser.resources
+C:\Users\Josue A. Henríquez\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.csproj.AssemblyReference.cache
+C:\Users\Josue A. Henríquez\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.Properties.Resources.resources
+C:\Users\Josue A. Henríquez\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.Views.Administrador_de_usuarios.ViewAddUser.resources
+C:\Users\Josue A. Henríquez\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.Views.Administrador_de_usuarios.ViewAdministradorUsuarios.resources
+C:\Users\Josue A. Henríquez\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.Views.Dashboard.ViewDashboard.resources
+C:\Users\Josue A. Henríquez\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewLogin.resources
+C:\Users\Josue A. Henríquez\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.csproj.GenerateResource.cache
+C:\Users\Josue A. Henríquez\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.csproj.CoreCompileInputs.cache
+C:\Users\Josue A. Henríquez\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.exe
+C:\Users\Josue A. Henríquez\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.pdb
+C:\Users\Josue A. Henríquez\Documents\GitHub\gnosis\gnosis\bin\Debug\gnosis.exe.config
+C:\Users\Josue A. Henríquez\Documents\GitHub\gnosis\gnosis\bin\Debug\gnosis.exe
+C:\Users\Josue A. Henríquez\Documents\GitHub\gnosis\gnosis\bin\Debug\gnosis.pdb
+C:\Users\Josue A. Henríquez\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.Views.Dashboard.ViewStatistics.resources
+C:\Users\Docente\Downloads\gnosis 18062024\gnosis\gnosis\bin\Debug\gnosis.exe.config
+C:\Users\Docente\Downloads\gnosis 18062024\gnosis\gnosis\bin\Debug\gnosis.exe
+C:\Users\Docente\Downloads\gnosis 18062024\gnosis\gnosis\bin\Debug\gnosis.pdb
+C:\Users\Docente\Downloads\gnosis 18062024\gnosis\gnosis\obj\Debug\gnosis.csproj.AssemblyReference.cache
+C:\Users\Docente\Downloads\gnosis 18062024\gnosis\gnosis\obj\Debug\gnosis.Properties.Resources.resources
+C:\Users\Docente\Downloads\gnosis 18062024\gnosis\gnosis\obj\Debug\gnosis.Views.Administrador_de_usuarios.ViewAddUser.resources
+C:\Users\Docente\Downloads\gnosis 18062024\gnosis\gnosis\obj\Debug\gnosis.Views.Administrador_de_usuarios.ViewAdministradorUsuarios.resources
+C:\Users\Docente\Downloads\gnosis 18062024\gnosis\gnosis\obj\Debug\gnosis.Views.Dashboard.ViewDashboard.resources
+C:\Users\Docente\Downloads\gnosis 18062024\gnosis\gnosis\obj\Debug\gnosis.Views.Dashboard.ViewStatistics.resources
+C:\Users\Docente\Downloads\gnosis 18062024\gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewLogin.resources
+C:\Users\Docente\Downloads\gnosis 18062024\gnosis\gnosis\obj\Debug\gnosis.csproj.GenerateResource.cache
+C:\Users\Docente\Downloads\gnosis 18062024\gnosis\gnosis\obj\Debug\gnosis.csproj.CoreCompileInputs.cache
+C:\Users\Docente\Downloads\gnosis 18062024\gnosis\gnosis\obj\Debug\gnosis.exe
+C:\Users\Docente\Downloads\gnosis 18062024\gnosis\gnosis\obj\Debug\gnosis.pdb
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\bin\Debug\gnosis.exe.config
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\bin\Debug\gnosis.exe
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\bin\Debug\gnosis.pdb
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.csproj.AssemblyReference.cache
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.Properties.Resources.resources
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.Views.Administrador_de_usuarios.ViewAddUser.resources
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.Views.Administrador_de_usuarios.ViewAdministradorUsuarios.resources
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.Views.Dashboard.ViewDashboard.resources
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.Views.Dashboard.ViewStatistics.resources
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewLogin.resources
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.csproj.GenerateResource.cache
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.csproj.CoreCompileInputs.cache
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.exe
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.pdb
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\gnosis\bin\Debug\gnosis.exe.config
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\gnosis\bin\Debug\gnosis.exe
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\gnosis\bin\Debug\gnosis.pdb
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\gnosis\obj\Debug\gnosis.csproj.AssemblyReference.cache
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\gnosis\obj\Debug\gnosis.Properties.Resources.resources
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\gnosis\obj\Debug\gnosis.Views.Administrador_de_usuarios.ViewAddUser.resources
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\gnosis\obj\Debug\gnosis.Views.Administrador_de_usuarios.ViewAdministradorUsuarios.resources
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\gnosis\obj\Debug\gnosis.Views.Dashboard.ViewDashboard.resources
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\gnosis\obj\Debug\gnosis.Views.Dashboard.ViewStatistics.resources
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewLogin.resources
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\gnosis\obj\Debug\gnosis.csproj.GenerateResource.cache
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\gnosis\obj\Debug\gnosis.csproj.CoreCompileInputs.cache
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\gnosis\obj\Debug\gnosis.exe
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\gnosis\obj\Debug\gnosis.pdb
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\gnosis\obj\Debug\gnosis.Views.Login.CambiarClave.resources
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.Views.Login.CambiarClave.resources
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Docente\Documents\GitHub\gnosis\gnosis\obj\Debug\gnosis.csproj.Up2Date
