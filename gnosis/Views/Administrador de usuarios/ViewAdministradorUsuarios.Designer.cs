@@ -65,16 +65,16 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(16, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 16);
+            this.label1.Size = new System.Drawing.Size(100, 16);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Buscar registro";
+            this.label1.Text = "Buscar registro:";
             // 
             // txtSearch
             // 
-            this.txtSearch.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtSearch.BackColor = System.Drawing.SystemColors.Control;
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtSearch.Location = new System.Drawing.Point(134, 23);
+            this.txtSearch.Location = new System.Drawing.Point(120, 23);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(15, 6, 6, 6);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(494, 23);

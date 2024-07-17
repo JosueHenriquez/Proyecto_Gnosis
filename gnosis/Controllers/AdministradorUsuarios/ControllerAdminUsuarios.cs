@@ -45,6 +45,8 @@ namespace gnosis.Controllers.AdministradorUsuarios
             DataSet ds = objAdmin.ObtenerPersonas();
             //Llenar DataGridView
             ObjAdminUser.dgvPersonas.DataSource = ds.Tables["viewPerson"];
+            ObjAdminUser.dgvPersonas.Columns[0].Visible = false;
+            ObjAdminUser.dgvPersonas.Columns[3].Visible = false;
         }
 
         #region Código para generar columnas de editar y eliminar
@@ -135,7 +137,6 @@ namespace gnosis.Controllers.AdministradorUsuarios
             phone = ObjAdminUser.dgvPersonas[7, pos].Value.ToString();
             username = ObjAdminUser.dgvPersonas[8, pos].Value.ToString();
             role = ObjAdminUser.dgvPersonas[9, pos].Value.ToString();
-            //nameImage = ObjAdminUser.dgvPersonas[10, pos].Value.ToString();
 
             ViewAddUser openForm = new ViewAddUser(3, id, firstName, lastName, birthday, dni, address, email, phone, username, role);
             openForm.ShowDialog();
