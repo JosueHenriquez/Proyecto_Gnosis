@@ -57,7 +57,6 @@
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.desarrolladoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cerrarFormularioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblUsername = new System.Windows.Forms.ToolStripStatusLabel();
@@ -66,23 +65,38 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnAdminUser = new System.Windows.Forms.Button();
+            this.btnLoan = new System.Windows.Forms.Button();
+            this.btnBook = new System.Windows.Forms.Button();
+            this.btnAccess = new System.Windows.Forms.Button();
+            this.btnReports = new System.Windows.Forms.Button();
+            this.panelTop = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.PanelContenedor = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cerrarFormularioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.PanelMenu.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panelTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -140,8 +154,8 @@
             // menuVerMenu
             // 
             this.menuVerMenu.Name = "menuVerMenu";
-            this.menuVerMenu.Size = new System.Drawing.Size(154, 22);
-            this.menuVerMenu.Text = "Ocultar menu";
+            this.menuVerMenu.Size = new System.Drawing.Size(180, 22);
+            this.menuVerMenu.Text = "Contraer menu";
             // 
             // menuAdministradorUsuarios
             // 
@@ -304,14 +318,6 @@
             this.desarrolladoresToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.desarrolladoresToolStripMenuItem.Text = "Creado por";
             // 
-            // cerrarFormularioToolStripMenuItem
-            // 
-            this.cerrarFormularioToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cerrarFormularioToolStripMenuItem.Image = global::gnosis.Properties.Resources.Close;
-            this.cerrarFormularioToolStripMenuItem.Name = "cerrarFormularioToolStripMenuItem";
-            this.cerrarFormularioToolStripMenuItem.Size = new System.Drawing.Size(138, 21);
-            this.cerrarFormularioToolStripMenuItem.Text = "Cerrar formulario";
-            // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -341,7 +347,7 @@
             this.PanelMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.PanelMenu.Controls.Add(this.flowLayoutPanel2);
             this.PanelMenu.Controls.Add(this.flowLayoutPanel1);
-            this.PanelMenu.Controls.Add(this.panel2);
+            this.PanelMenu.Controls.Add(this.panelTop);
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 25);
             this.PanelMenu.Margin = new System.Windows.Forms.Padding(4);
@@ -351,8 +357,10 @@
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(130)))), ((int)(((byte)(129)))));
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox7);
             this.flowLayoutPanel2.Controls.Add(this.button6);
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox8);
             this.flowLayoutPanel2.Controls.Add(this.button7);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 525);
@@ -365,12 +373,12 @@
             this.button6.BackColor = System.Drawing.SystemColors.Control;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(3, 3);
+            this.button6.Location = new System.Drawing.Point(44, 3);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(191, 45);
+            this.button6.Size = new System.Drawing.Size(150, 35);
             this.button6.TabIndex = 5;
             this.button6.Text = "Configurar servidor";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = false;
             // 
             // button7
@@ -378,109 +386,109 @@
             this.button7.BackColor = System.Drawing.SystemColors.Control;
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(3, 54);
+            this.button7.Location = new System.Drawing.Point(44, 44);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(191, 45);
+            this.button7.Size = new System.Drawing.Size(150, 35);
             this.button7.TabIndex = 6;
             this.button7.Text = "Cerrar sesión";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = false;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(130)))), ((int)(((byte)(129)))));
-            this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Controls.Add(this.button3);
-            this.flowLayoutPanel1.Controls.Add(this.button4);
-            this.flowLayoutPanel1.Controls.Add(this.button5);
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox2);
+            this.flowLayoutPanel1.Controls.Add(this.btnAdminUser);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox3);
+            this.flowLayoutPanel1.Controls.Add(this.btnLoan);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox4);
+            this.flowLayoutPanel1.Controls.Add(this.btnBook);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox5);
+            this.flowLayoutPanel1.Controls.Add(this.btnAccess);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox6);
+            this.flowLayoutPanel1.Controls.Add(this.btnReports);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 161);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 479);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
-            // button1
+            // btnAdminUser
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(191, 45);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Administrador de usuarios";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAdminUser.BackColor = System.Drawing.SystemColors.Control;
+            this.btnAdminUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnAdminUser.Location = new System.Drawing.Point(44, 3);
+            this.btnAdminUser.Name = "btnAdminUser";
+            this.btnAdminUser.Size = new System.Drawing.Size(150, 35);
+            this.btnAdminUser.TabIndex = 0;
+            this.btnAdminUser.Text = "Admin. Usuarios";
+            this.btnAdminUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdminUser.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnLoan
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(3, 54);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(191, 45);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Prestamos";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnLoan.BackColor = System.Drawing.SystemColors.Control;
+            this.btnLoan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnLoan.Location = new System.Drawing.Point(44, 44);
+            this.btnLoan.Name = "btnLoan";
+            this.btnLoan.Size = new System.Drawing.Size(150, 35);
+            this.btnLoan.TabIndex = 1;
+            this.btnLoan.Text = "Prestamos";
+            this.btnLoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLoan.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnBook
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Control;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(3, 105);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(191, 45);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Libros";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnBook.BackColor = System.Drawing.SystemColors.Control;
+            this.btnBook.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnBook.Location = new System.Drawing.Point(44, 85);
+            this.btnBook.Name = "btnBook";
+            this.btnBook.Size = new System.Drawing.Size(150, 35);
+            this.btnBook.TabIndex = 2;
+            this.btnBook.Text = "Libros";
+            this.btnBook.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBook.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnAccess
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.Control;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(3, 156);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(191, 45);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Gestión de accesos";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnAccess.BackColor = System.Drawing.SystemColors.Control;
+            this.btnAccess.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnAccess.Location = new System.Drawing.Point(44, 126);
+            this.btnAccess.Name = "btnAccess";
+            this.btnAccess.Size = new System.Drawing.Size(150, 35);
+            this.btnAccess.TabIndex = 3;
+            this.btnAccess.Text = "Gestión de accesos";
+            this.btnAccess.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAccess.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnReports
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.Control;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(3, 207);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(191, 45);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Reportes";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnReports.BackColor = System.Drawing.SystemColors.Control;
+            this.btnReports.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnReports.Location = new System.Drawing.Point(44, 167);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Size = new System.Drawing.Size(150, 35);
+            this.btnReports.TabIndex = 4;
+            this.btnReports.Text = "Reportes";
+            this.btnReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReports.UseVisualStyleBackColor = false;
             // 
-            // panel2
+            // panelTop
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(130)))), ((int)(((byte)(129)))));
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 161);
-            this.panel2.TabIndex = 0;
+            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelTop.Controls.Add(this.label2);
+            this.panelTop.Controls.Add(this.label1);
+            this.panelTop.Controls.Add(this.pictureBox1);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(200, 161);
+            this.panelTop.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(12, 132);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 16);
@@ -491,26 +499,16 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(12, 116);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Usuario";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::gnosis.Properties.Resources.Male_User;
-            this.pictureBox1.Location = new System.Drawing.Point(39, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(117, 110);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(130)))), ((int)(((byte)(129)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(200, 25);
             this.panel1.Name = "panel1";
@@ -524,6 +522,94 @@
             this.PanelContenedor.Name = "PanelContenedor";
             this.PanelContenedor.Size = new System.Drawing.Size(1148, 637);
             this.PanelContenedor.TabIndex = 4;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::gnosis.Properties.Resources.Server;
+            this.pictureBox7.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 10;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::gnosis.Properties.Resources.Logout2;
+            this.pictureBox8.Location = new System.Drawing.Point(3, 44);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 11;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::gnosis.Properties.Resources.User1;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::gnosis.Properties.Resources.Bookmark;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 44);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 6;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::gnosis.Properties.Resources.Book;
+            this.pictureBox4.Location = new System.Drawing.Point(3, 85);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 7;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::gnosis.Properties.Resources.Access;
+            this.pictureBox5.Location = new System.Drawing.Point(3, 126);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 8;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::gnosis.Properties.Resources.Business_Report;
+            this.pictureBox6.Location = new System.Drawing.Point(3, 167);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 9;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::gnosis.Properties.Resources.Male_User;
+            this.pictureBox1.Location = new System.Drawing.Point(77, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(117, 110);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // cerrarFormularioToolStripMenuItem
+            // 
+            this.cerrarFormularioToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cerrarFormularioToolStripMenuItem.Image = global::gnosis.Properties.Resources.Close;
+            this.cerrarFormularioToolStripMenuItem.Name = "cerrarFormularioToolStripMenuItem";
+            this.cerrarFormularioToolStripMenuItem.Size = new System.Drawing.Size(138, 21);
+            this.cerrarFormularioToolStripMenuItem.Text = "Cerrar formulario";
             // 
             // ViewDashboard
             // 
@@ -551,8 +637,15 @@
             this.PanelMenu.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panelTop.ResumeLayout(false);
+            this.panelTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -597,17 +690,24 @@
         public System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         public System.Windows.Forms.ToolStripStatusLabel lblUsername;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.ToolStripMenuItem verToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem menuVerMenu;
-        public System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Panel panelTop;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        public System.Windows.Forms.Button btnAdminUser;
+        public System.Windows.Forms.Button btnLoan;
+        public System.Windows.Forms.Button btnBook;
+        public System.Windows.Forms.Button btnAccess;
+        public System.Windows.Forms.Button btnReports;
     }
 }

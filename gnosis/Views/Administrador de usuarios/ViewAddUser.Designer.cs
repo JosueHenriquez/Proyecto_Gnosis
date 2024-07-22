@@ -99,9 +99,9 @@
             // 
             // btnReporteFicha
             // 
-            this.btnReporteFicha.Location = new System.Drawing.Point(397, 23);
+            this.btnReporteFicha.Location = new System.Drawing.Point(379, 23);
             this.btnReporteFicha.Name = "btnReporteFicha";
-            this.btnReporteFicha.Size = new System.Drawing.Size(103, 29);
+            this.btnReporteFicha.Size = new System.Drawing.Size(121, 36);
             this.btnReporteFicha.TabIndex = 14;
             this.btnReporteFicha.Text = "Imprimir ficha";
             this.btnReporteFicha.UseVisualStyleBackColor = true;
@@ -369,11 +369,11 @@
             // LblApellidos
             // 
             this.LblApellidos.AutoSize = true;
-            this.LblApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblApellidos.Location = new System.Drawing.Point(38, 48);
             this.LblApellidos.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.LblApellidos.Name = "LblApellidos";
-            this.LblApellidos.Size = new System.Drawing.Size(91, 25);
+            this.LblApellidos.Size = new System.Drawing.Size(73, 20);
             this.LblApellidos.TabIndex = 0;
             this.LblApellidos.Text = "Nombres";
             // 
