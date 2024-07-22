@@ -3,6 +3,7 @@ using gnosis.Views.Administrador_de_usuarios;
 using System;
 using System.Linq;
 using System.Windows.Forms;
+using gnosis.Views.Server;
 
 namespace gnosis.Controllers.Dashboard
 {
@@ -17,17 +18,21 @@ namespace gnosis.Controllers.Dashboard
             ObjDashboard = View;
             View.Load += new EventHandler(CargarFormPred);
             ObjDashboard.lblUsername.Text = username;
+            ObjDashboard.lblPersona.Text = "Josue A. Guinea Henríquez";
             ObjDashboard.menuAdministradorUsuarios.Click += new EventHandler(AbrirFormularioAdminUsuarios);
+            ObjDashboard.btnAdminUser.Click += new EventHandler(AbrirFormularioAdminUsuarios);
+            ObjDashboard.picAdminuser.Click += new EventHandler(AbrirFormularioAdminUsuarios);
             ObjDashboard.cerrarFormularioToolStripMenuItem.Click += new EventHandler(CerrarForm);
             ObjDashboard.FormClosing += new FormClosingEventHandler(cerrarPrograma);
             ObjDashboard.menuVerMenu.Click += new EventHandler(menu);
+            ObjDashboard.btnServer.Click += new EventHandler(ConfServer);
         }
 
         public void menu(object sender, EventArgs e)
         {
             if (ObjDashboard.menuVerMenu.Text.Equals("Contraer menu"))
             {
-                ObjDashboard.PanelMenu.Width = 37;
+                ObjDashboard.PanelMenu.Width = 40;
                 ObjDashboard.menuVerMenu.Text = "Extender menu";
                 ocultarComponetes();
             }else
@@ -37,17 +42,17 @@ namespace gnosis.Controllers.Dashboard
                 ObjDashboard.PanelMenu.Width = 200;
             }
         }
-
         public void ocultarComponetes()
         {
-            ObjDashboard.panelTop.Visible = false;
+            //ObjDashboard.panelTop.Visible = false;
             ObjDashboard.btnAdminUser.Visible = false;
             ObjDashboard.btnLoan.Visible = false;
             ObjDashboard.btnBook.Visible = false;
             ObjDashboard.btnAccess.Visible = false;
             ObjDashboard.btnReports.Visible = false;
+            ObjDashboard.btnServer.Visible = false;
+            ObjDashboard.btnLogout.Visible = false;
         }
-
         public void mostrarComponentes()
         {
             ObjDashboard.panelTop.Visible = true;
@@ -56,8 +61,14 @@ namespace gnosis.Controllers.Dashboard
             ObjDashboard.btnBook.Visible = true;
             ObjDashboard.btnAccess.Visible = true;
             ObjDashboard.btnReports.Visible = true;
+            ObjDashboard.btnServer.Visible = true;
+            ObjDashboard.btnLogout.Visible = true;
         }
-
+        public void ConfServer(object sender, EventArgs e)
+        {
+            ViewConfirmPassword objview = new ViewConfirmPassword(ObjDashboard.lblUsername.Text);
+            objview.ShowDialog();
+        }
 
         private void AbrirFormularioAdminUsuarios(object sender, EventArgs e)
         {
@@ -122,7 +133,6 @@ namespace gnosis.Controllers.Dashboard
             //Se eliminan del panel contenedor todos los controles del formulario que se cerrará
             ObjDashboard.PanelContenedor.Controls.Remove(currentForm);
         }
-
         private void cerrarPrograma(Object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Existe una sesión activa, desea cerrar la sesión", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)

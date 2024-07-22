@@ -98,3 +98,5 @@ C:\Users\Docente\Documents\Visual Studio 2022\Projects\Proyecto Gnosis\gnosis\Pr
 C:\Users\Docente\Documents\Visual Studio 2022\Projects\Proyecto Gnosis\gnosis\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.csproj.Up2Date
 C:\Users\Docente\Documents\Visual Studio 2022\Projects\Proyecto Gnosis\gnosis\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.exe
 C:\Users\Docente\Documents\Visual Studio 2022\Projects\Proyecto Gnosis\gnosis\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.pdb
+C:\Users\Docente\Documents\Visual Studio 2022\Projects\Proyecto Gnosis\gnosis\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Server.ViewAdminConnection.resources
+C:\Users\Docente\Documents\Visual Studio 2022\Projects\Proyecto Gnosis\gnosis\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Server.ViewConfirmPassword.resources

@@ -57,6 +57,8 @@
     <Compile Include="Controllers\Dashboard\ControllerDashboard.cs" />
     <Compile Include="Controllers\Helper\CommonClasses.cs" />
     <Compile Include="Controllers\Login\ControllerLogin.cs" />
+    <Compile Include="Controllers\Server\ControllerAdminConnection.cs" />
+    <Compile Include="Controllers\Server\ControllerConfirmPassword.cs" />
     <Compile Include="Models\DAO\DAOAdminUsers.cs" />
     <Compile Include="Models\DAO\DAOLogin.cs" />
     <Compile Include="Models\dbContext.cs" />
@@ -107,6 +109,18 @@
     <Compile Include="Views\Primer_Uso\ViewFirstUse.Designer.cs">
       <DependentUpon>ViewFirstUse.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Server\ViewAdminConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Server\ViewAdminConnection.Designer.cs">
+      <DependentUpon>ViewAdminConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Server\ViewConfirmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Server\ViewConfirmPassword.Designer.cs">
+      <DependentUpon>ViewConfirmPassword.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -134,6 +148,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Login\ViewLogin.resx">
       <DependentUpon>ViewLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Server\ViewAdminConnection.resx">
+      <DependentUpon>ViewAdminConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Server\ViewConfirmPassword.resx">
+      <DependentUpon>ViewConfirmPassword.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -192,6 +212,7 @@
     <None Include="Resources\Ejemplo-de-diagrama-lineal-1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\wp9283568.jpg" />
     <None Include="Resources\User1.png" />
     <None Include="Resources\User.png" />
     <None Include="Resources\Male User.png" />

@@ -62,8 +62,8 @@
             this.lblUsername = new System.Windows.Forms.ToolStripStatusLabel();
             this.PanelMenu = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnServer = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAdminUser = new System.Windows.Forms.Button();
             this.btnLoan = new System.Windows.Forms.Button();
@@ -71,19 +71,19 @@
             this.btnAccess = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
             this.panelTop = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.PanelContenedor = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picAdminuser = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cerrarFormularioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblPersona = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.PanelMenu.SuspendLayout();
@@ -92,7 +92,7 @@
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdminuser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -322,7 +322,9 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
-            this.lblUsername});
+            this.lblUsername,
+            this.toolStripStatusLabel2,
+            this.lblPersona});
             this.statusStrip1.Location = new System.Drawing.Point(0, 665);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
@@ -333,8 +335,8 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(71, 17);
-            this.toolStripStatusLabel1.Text = "Conectado: ";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(112, 17);
+            this.toolStripStatusLabel1.Text = "Usuario conectado: ";
             // 
             // lblUsername
             // 
@@ -359,45 +361,45 @@
             // 
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.flowLayoutPanel2.Controls.Add(this.pictureBox7);
-            this.flowLayoutPanel2.Controls.Add(this.button6);
+            this.flowLayoutPanel2.Controls.Add(this.btnServer);
             this.flowLayoutPanel2.Controls.Add(this.pictureBox8);
-            this.flowLayoutPanel2.Controls.Add(this.button7);
+            this.flowLayoutPanel2.Controls.Add(this.btnLogout);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 525);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(200, 115);
             this.flowLayoutPanel2.TabIndex = 2;
             // 
-            // button6
+            // btnServer
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.Control;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button6.Location = new System.Drawing.Point(44, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(150, 35);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Configurar servidor";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnServer.BackColor = System.Drawing.SystemColors.Control;
+            this.btnServer.FlatAppearance.BorderSize = 0;
+            this.btnServer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnServer.Location = new System.Drawing.Point(44, 3);
+            this.btnServer.Name = "btnServer";
+            this.btnServer.Size = new System.Drawing.Size(150, 35);
+            this.btnServer.TabIndex = 5;
+            this.btnServer.Text = "Configurar servidor";
+            this.btnServer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnServer.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnLogout
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.Control;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button7.Location = new System.Drawing.Point(44, 44);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(150, 35);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Cerrar sesión";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnLogout.BackColor = System.Drawing.SystemColors.Control;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnLogout.Location = new System.Drawing.Point(44, 44);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(150, 35);
+            this.btnLogout.TabIndex = 6;
+            this.btnLogout.Text = "Cerrar sesión";
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.UseVisualStyleBackColor = false;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox2);
+            this.flowLayoutPanel1.Controls.Add(this.picAdminuser);
             this.flowLayoutPanel1.Controls.Add(this.btnAdminUser);
             this.flowLayoutPanel1.Controls.Add(this.pictureBox3);
             this.flowLayoutPanel1.Controls.Add(this.btnLoan);
@@ -408,9 +410,9 @@
             this.flowLayoutPanel1.Controls.Add(this.pictureBox6);
             this.flowLayoutPanel1.Controls.Add(this.btnReports);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 161);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 115);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 479);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 525);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // btnAdminUser
@@ -476,35 +478,12 @@
             // panelTop
             // 
             this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panelTop.Controls.Add(this.label2);
-            this.panelTop.Controls.Add(this.label1);
             this.panelTop.Controls.Add(this.pictureBox1);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(200, 161);
+            this.panelTop.Size = new System.Drawing.Size(200, 115);
             this.panelTop.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(12, 132);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Josue A. Guinea";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(12, 116);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Usuario";
             // 
             // panel1
             // 
@@ -543,15 +522,15 @@
             this.pictureBox8.TabIndex = 11;
             this.pictureBox8.TabStop = false;
             // 
-            // pictureBox2
+            // picAdminuser
             // 
-            this.pictureBox2.Image = global::gnosis.Properties.Resources.User1;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
+            this.picAdminuser.Image = global::gnosis.Properties.Resources.User1;
+            this.picAdminuser.Location = new System.Drawing.Point(3, 3);
+            this.picAdminuser.Name = "picAdminuser";
+            this.picAdminuser.Size = new System.Drawing.Size(35, 35);
+            this.picAdminuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAdminuser.TabIndex = 5;
+            this.picAdminuser.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -596,9 +575,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::gnosis.Properties.Resources.Male_User;
-            this.pictureBox1.Location = new System.Drawing.Point(77, 19);
+            this.pictureBox1.Location = new System.Drawing.Point(50, 15);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(117, 110);
+            this.pictureBox1.Size = new System.Drawing.Size(96, 88);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -610,6 +589,18 @@
             this.cerrarFormularioToolStripMenuItem.Name = "cerrarFormularioToolStripMenuItem";
             this.cerrarFormularioToolStripMenuItem.Size = new System.Drawing.Size(138, 21);
             this.cerrarFormularioToolStripMenuItem.Text = "Cerrar formulario";
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(71, 17);
+            this.toolStripStatusLabel2.Text = "Asociado a: ";
+            // 
+            // lblPersona
+            // 
+            this.lblPersona.Name = "lblPersona";
+            this.lblPersona.Size = new System.Drawing.Size(10, 17);
+            this.lblPersona.Text = ".";
             // 
             // ViewDashboard
             // 
@@ -638,10 +629,9 @@
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panelTop.ResumeLayout(false);
-            this.panelTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdminuser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -687,17 +677,12 @@
         public System.Windows.Forms.ToolStripMenuItem cerrarFormularioToolStripMenuItem;
         public System.Windows.Forms.Panel PanelContenedor;
         private System.Windows.Forms.PictureBox pictureBox1;
-        public System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         public System.Windows.Forms.ToolStripStatusLabel lblUsername;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.ToolStripMenuItem verToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem menuVerMenu;
         public System.Windows.Forms.Panel panelTop;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
@@ -709,5 +694,10 @@
         public System.Windows.Forms.Button btnBook;
         public System.Windows.Forms.Button btnAccess;
         public System.Windows.Forms.Button btnReports;
+        public System.Windows.Forms.Button btnServer;
+        public System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        public System.Windows.Forms.ToolStripStatusLabel lblPersona;
+        public System.Windows.Forms.PictureBox picAdminuser;
     }
 }
