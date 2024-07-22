@@ -192,11 +192,20 @@
     <None Include="Resources\Ejemplo-de-diagrama-lineal-1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\User1.png" />
     <None Include="Resources\User.png" />
     <None Include="Resources\Male User.png" />
     <None Include="Resources\pikaso_texttoimage_digital-painting-Un-logo-para-una-bibioteca-bold-a.jpeg" />
+    <None Include="Resources\Book.png" />
+    <None Include="Resources\Access.png" />
+    <None Include="Resources\Business Report.png" />
+    <None Include="Resources\Bookmark.png" />
+    <None Include="Resources\Logout.png" />
+    <None Include="Resources\Logout1.png" />
+    <None Include="Resources\Logout2.png" />
     <Content Include="Resources\Refresh.ico" />
     <None Include="Resources\Refresh.png" />
+    <None Include="Resources\Server.png" />
     <Content Include="Resources\Trash.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

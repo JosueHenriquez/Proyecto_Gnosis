@@ -20,7 +20,44 @@ namespace gnosis.Controllers.Dashboard
             ObjDashboard.menuAdministradorUsuarios.Click += new EventHandler(AbrirFormularioAdminUsuarios);
             ObjDashboard.cerrarFormularioToolStripMenuItem.Click += new EventHandler(CerrarForm);
             ObjDashboard.FormClosing += new FormClosingEventHandler(cerrarPrograma);
+            ObjDashboard.menuVerMenu.Click += new EventHandler(menu);
         }
+
+        public void menu(object sender, EventArgs e)
+        {
+            if (ObjDashboard.menuVerMenu.Text.Equals("Contraer menu"))
+            {
+                ObjDashboard.PanelMenu.Width = 37;
+                ObjDashboard.menuVerMenu.Text = "Extender menu";
+                ocultarComponetes();
+            }else
+            {
+                mostrarComponentes();
+                ObjDashboard.menuVerMenu.Text = "Contraer menu";
+                ObjDashboard.PanelMenu.Width = 200;
+            }
+        }
+
+        public void ocultarComponetes()
+        {
+            ObjDashboard.panelTop.Visible = false;
+            ObjDashboard.btnAdminUser.Visible = false;
+            ObjDashboard.btnLoan.Visible = false;
+            ObjDashboard.btnBook.Visible = false;
+            ObjDashboard.btnAccess.Visible = false;
+            ObjDashboard.btnReports.Visible = false;
+        }
+
+        public void mostrarComponentes()
+        {
+            ObjDashboard.panelTop.Visible = true;
+            ObjDashboard.btnAdminUser.Visible = true;
+            ObjDashboard.btnLoan.Visible = true;
+            ObjDashboard.btnBook.Visible = true;
+            ObjDashboard.btnAccess.Visible = true;
+            ObjDashboard.btnReports.Visible = true;
+        }
+
 
         private void AbrirFormularioAdminUsuarios(object sender, EventArgs e)
         {
