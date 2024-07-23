@@ -46,7 +46,8 @@ namespace gnosis.Controllers.Login
             CommonClasses common = new CommonClasses();
             //Utilizando el objeto DAO para invocar a los metodos getter y setter del DTO
             DAOData.Username = ObjLogin.txtUsername.Text;
-            //string cadenaencriptada = common.md5(ObjLogin.txtPassword.Text);
+            //string cadenaencriptada = common.ComputeSha256Hash(ObjLogin.txtPassword.Text);
+            //MessageBox.Show($"{cadenaencriptada}");
             DAOData.Password = ObjLogin.txtPassword.Text;
             //Invocando al método Login contenido en el DAO
             bool answer = DAOData.ValidarLogin();

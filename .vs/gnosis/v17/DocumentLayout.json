@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\visual studio 2022\\projects\\proyecto gnosis\\gnosis\\proyecto_gnosis\\gnosis\\views\\administrador de usuarios\\viewadministradorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\administrador de usuarios\\viewadministradorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\visual studio 2022\\projects\\proyecto gnosis\\gnosis\\proyecto_gnosis\\gnosis\\controllers\\login\\controllerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\controllers\\login\\controllerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\visual studio 2022\\projects\\proyecto gnosis\\gnosis\\proyecto_gnosis\\gnosis\\controllers\\helper\\commonclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\controllers\\helper\\commonclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\visual studio 2022\\projects\\proyecto gnosis\\gnosis\\proyecto_gnosis\\gnosis\\views\\administrador de usuarios\\viewadministradorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\administrador de usuarios\\viewadministradorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\visual studio 2022\\projects\\proyecto gnosis\\gnosis\\proyecto_gnosis\\gnosis\\controllers\\administradorusuarios\\controlleradminusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,8 +23,12 @@
       "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\models\\dao\\daoadminusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\visual studio 2022\\projects\\proyecto gnosis\\gnosis\\proyecto_gnosis\\gnosis\\views\\administrador de usuarios\\viewadministradorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\administrador de usuarios\\viewadministradorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\visual studio 2022\\projects\\proyecto gnosis\\gnosis\\proyecto_gnosis\\gnosis\\models\\dao\\daologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\models\\dao\\daologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\visual studio 2022\\projects\\proyecto gnosis\\gnosis\\proyecto_gnosis\\gnosis\\views\\administrador de usuarios\\viewadministradorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\administrador de usuarios\\viewadministradorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +58,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "CommonClasses.cs",
+              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Controllers\\Helper\\CommonClasses.cs",
+              "RelativeDocumentMoniker": "gnosis\\Controllers\\Helper\\CommonClasses.cs",
+              "ToolTip": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Controllers\\Helper\\CommonClasses.cs",
+              "RelativeToolTip": "gnosis\\Controllers\\Helper\\CommonClasses.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAYwB4AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T21:07:30.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ControllerLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Controllers\\Login\\ControllerLogin.cs",
+              "RelativeDocumentMoniker": "gnosis\\Controllers\\Login\\ControllerLogin.cs",
+              "ToolTip": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Controllers\\Login\\ControllerLogin.cs",
+              "RelativeToolTip": "gnosis\\Controllers\\Login\\ControllerLogin.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAowDoAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T21:07:14.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DAOLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Models\\DAO\\DAOLogin.cs",
+              "RelativeDocumentMoniker": "gnosis\\Models\\DAO\\DAOLogin.cs",
+              "ToolTip": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Models\\DAO\\DAOLogin.cs",
+              "RelativeToolTip": "gnosis\\Models\\DAO\\DAOLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T20:26:11.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "DAOAdminUsers.cs",
               "DocumentMoniker": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Models\\DAO\\DAOAdminUsers.cs",
               "RelativeDocumentMoniker": "gnosis\\Models\\DAO\\DAOAdminUsers.cs",
@@ -59,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ControllerAdminUsuarios.cs",
               "DocumentMoniker": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Controllers\\AdministradorUsuarios\\ControllerAdminUsuarios.cs",
               "RelativeDocumentMoniker": "gnosis\\Controllers\\AdministradorUsuarios\\ControllerAdminUsuarios.cs",
@@ -72,12 +123,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ViewAdministradorUsuarios.cs",
               "DocumentMoniker": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Views\\Administrador de usuarios\\ViewAdministradorUsuarios.cs",
               "RelativeDocumentMoniker": "gnosis\\Views\\Administrador de usuarios\\ViewAdministradorUsuarios.cs",
-              "ToolTip": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Views\\Administrador de usuarios\\ViewAdministradorUsuarios.cs*",
-              "RelativeToolTip": "gnosis\\Views\\Administrador de usuarios\\ViewAdministradorUsuarios.cs*",
+              "ToolTip": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Views\\Administrador de usuarios\\ViewAdministradorUsuarios.cs",
+              "RelativeToolTip": "gnosis\\Views\\Administrador de usuarios\\ViewAdministradorUsuarios.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T13:36:03.989Z",
@@ -85,12 +136,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "ViewAdministradorUsuarios.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Views\\Administrador de usuarios\\ViewAdministradorUsuarios.cs",
               "RelativeDocumentMoniker": "gnosis\\Views\\Administrador de usuarios\\ViewAdministradorUsuarios.cs",
-              "ToolTip": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Views\\Administrador de usuarios\\ViewAdministradorUsuarios.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "gnosis\\Views\\Administrador de usuarios\\ViewAdministradorUsuarios.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Views\\Administrador de usuarios\\ViewAdministradorUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "gnosis\\Views\\Administrador de usuarios\\ViewAdministradorUsuarios.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T13:34:58.62Z",
               "EditorCaption": " [Dise\u00F1o]"
