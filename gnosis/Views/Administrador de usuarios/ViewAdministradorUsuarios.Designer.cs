@@ -37,19 +37,24 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.dgvPersonas = new System.Windows.Forms.DataGridView();
             this.contextDataGrid = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.cmsActualizar = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsEliminar = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsFicha = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).BeginInit();
             this.contextDataGrid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.btnBuscar);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.btnNuevo);
@@ -138,6 +143,15 @@
             this.contextDataGrid.Name = "contextDataGrid";
             this.contextDataGrid.Size = new System.Drawing.Size(192, 70);
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(654, 23);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(87, 26);
+            this.btnBuscar.TabIndex = 3;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
             // cmsActualizar
             // 
             this.cmsActualizar.Image = global::gnosis.Properties.Resources.Refresh;
@@ -159,6 +173,16 @@
             this.cmsFicha.Size = new System.Drawing.Size(191, 22);
             this.cmsFicha.Text = "Ver ficha de empleado";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::gnosis.Properties.Resources.Search;
+            this.pictureBox1.Location = new System.Drawing.Point(623, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // ViewAdministradorUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -179,6 +203,7 @@
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).EndInit();
             this.contextDataGrid.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -195,5 +220,7 @@
         public System.Windows.Forms.ToolStripMenuItem cmsFicha;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Button btnBuscar;
     }
 }
