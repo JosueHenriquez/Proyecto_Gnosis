@@ -283,7 +283,7 @@ namespace gnosis.Models.DAO
                 //Accedemos a la conexión que ya se tiene
                 Command.Connection = getConnection();
                 //Instrucción que se hará hacia la base de datos
-                string query = $"SELECT * FROM viewPerson WHERE Nombres LIKE '%{valor}%'  OR Documento LIKE '%{valor}%' OR Usuario LIKE '%{valor}%'";
+                string query = $"SELECT * FROM viewPerson WHERE Nombres LIKE '%{valor}%' OR Documento LIKE '%{valor}%' OR Usuario LIKE '%{valor}%'";
                 //Comando sql en el cual se pasa la instrucción y la conexión
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
                 //Se ejecuta el comando y con ExecuteNonQuery se verifica su retorno

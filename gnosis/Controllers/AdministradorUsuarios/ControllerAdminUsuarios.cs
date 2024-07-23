@@ -19,14 +19,21 @@ namespace gnosis.Controllers.AdministradorUsuarios
             ObjAdminUser.cmsEliminar.Click += new EventHandler(DeleteUser);
             ObjAdminUser.cmsFicha.Click += new EventHandler(ViewData);
             ObjAdminUser.txtSearch.KeyPress += new KeyPressEventHandler(Search);
+            ObjAdminUser.btnBuscar.Click += new EventHandler(BuscarPeronasControllerEvent);
         }
 
         public void Search(object sender, KeyPressEventArgs e)
         {
+            BuscarPeronasController();
+        }
+
+        public void BuscarPeronasControllerEvent(object sender, EventArgs e) { BuscarPeronasController(); }
+        void BuscarPeronasController()
+        {
             //Objeto de la clase DAOAdminUsuarios
             DAOAdminUsers objAdmin = new DAOAdminUsers();
             //Declarando nuevo DataSet para que obtenga los datos del metodo ObtenerPersonas
-            DataSet ds = objAdmin.BuscarPersonas(ObjAdminUser.txtSearch.Text);
+            DataSet ds = objAdmin.BuscarPersonas(ObjAdminUser.txtSearch.Text.Trim());
             //Llenar DataGridView
             ObjAdminUser.dgvPersonas.DataSource = ds.Tables["viewPerson"];
         }

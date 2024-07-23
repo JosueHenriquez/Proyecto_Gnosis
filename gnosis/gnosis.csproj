@@ -227,6 +227,7 @@
     <Content Include="Resources\Refresh.ico" />
     <None Include="Resources\Refresh.png" />
     <None Include="Resources\Server.png" />
+    <None Include="Resources\Search.png" />
     <Content Include="Resources\Trash.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
