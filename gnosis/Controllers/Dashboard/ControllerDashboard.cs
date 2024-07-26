@@ -21,7 +21,7 @@ namespace gnosis.Controllers.Dashboard
             ObjDashboard.lblPersona.Text = "Josue A. Guinea Henríquez";
             ObjDashboard.menuAdministradorUsuarios.Click += new EventHandler(AbrirFormularioAdminUsuarios);
             ObjDashboard.btnAdminUser.Click += new EventHandler(AbrirFormularioAdminUsuarios);
-            ObjDashboard.picAdminuser.Click += new EventHandler(AbrirFormularioAdminUsuarios);
+            //ObjDashboard.picAdminuser.Click += new EventHandler(AbrirFormularioAdminUsuarios);
             ObjDashboard.cerrarFormularioToolStripMenuItem.Click += new EventHandler(CerrarForm);
             ObjDashboard.FormClosing += new FormClosingEventHandler(cerrarPrograma);
             ObjDashboard.menuVerMenu.Click += new EventHandler(menu);
@@ -32,26 +32,15 @@ namespace gnosis.Controllers.Dashboard
         {
             if (ObjDashboard.menuVerMenu.Text.Equals("Contraer menu"))
             {
-                ObjDashboard.PanelMenu.Width = 40;
+                ObjDashboard.PanelMenu.Width = 50;
+                ObjDashboard.panelTop.Width = 50;
                 ObjDashboard.menuVerMenu.Text = "Extender menu";
-                ocultarComponetes();
             }else
             {
                 mostrarComponentes();
                 ObjDashboard.menuVerMenu.Text = "Contraer menu";
                 ObjDashboard.PanelMenu.Width = 200;
             }
-        }
-        public void ocultarComponetes()
-        {
-            //ObjDashboard.panelTop.Visible = false;
-            ObjDashboard.btnAdminUser.Visible = false;
-            ObjDashboard.btnLoan.Visible = false;
-            ObjDashboard.btnBook.Visible = false;
-            ObjDashboard.btnAccess.Visible = false;
-            ObjDashboard.btnReports.Visible = false;
-            ObjDashboard.btnServer.Visible = false;
-            ObjDashboard.btnLogout.Visible = false;
         }
         public void mostrarComponentes()
         {
@@ -77,7 +66,7 @@ namespace gnosis.Controllers.Dashboard
 
         private void CargarFormPred(object sender, EventArgs e)
         {
-            AbrirFormulario<ViewStatistics>();
+            //AbrirFormulario<ViewStatistics>();
         }
         /// <summary>
         /// Método para abrir formularios dentro del panel contenedor del formulario principal

@@ -212,6 +212,7 @@
     <None Include="Resources\Ejemplo-de-diagrama-lineal-1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\User50.png" />
     <None Include="Resources\wp9283568.jpg" />
     <None Include="Resources\User1.png" />
     <None Include="Resources\User.png" />
@@ -224,10 +225,30 @@
     <None Include="Resources\Logout.png" />
     <None Include="Resources\Logout1.png" />
     <None Include="Resources\Logout2.png" />
+    <None Include="Resources\Bookmark1.png" />
+    <None Include="Resources\Book1.png" />
+    <None Include="Resources\icons8-usuario-35.png" />
+    <None Include="Resources\icons8-marcapáginas-35.png" />
+    <None Include="Resources\icons8-libro-35.png" />
+    <None Include="Resources\Name Tag.png" />
+    <None Include="Resources\Graph Report.png" />
+    <None Include="Resources\Logout3.png" />
+    <None Include="Resources\Pie Chart.png" />
+    <None Include="Resources\Menu.png" />
+    <None Include="Resources\Menu1.png" />
+    <None Include="Resources\icons8-libro-35 %281%29.png" />
+    <None Include="Resources\icons8-usuario-35 %281%29.png" />
+    <None Include="Resources\icons8-marcapáginas-35 %281%29.png" />
+    <None Include="Resources\icons8-credenciales-de-usuario-35.png" />
+    <None Include="Resources\icons8-reporte-de-negocios-35.png" />
+    <None Include="Resources\icons8-menú-35.png" />
+    <None Include="Resources\icons8-servidor-35.png" />
+    <None Include="Resources\icons8-salida-35.png" />
     <Content Include="Resources\Refresh.ico" />
     <None Include="Resources\Refresh.png" />
     <None Include="Resources\Server.png" />
     <None Include="Resources\Search.png" />
+    <None Include="Resources\Server1.png" />
     <Content Include="Resources\Trash.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

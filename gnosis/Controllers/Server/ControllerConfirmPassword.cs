@@ -28,11 +28,13 @@ namespace gnosis.Controllers.Server
             CommonClasses common = new CommonClasses();
             //Utilizando el objeto DAO para invocar a los metodos getter y setter del DTO
             DAOData.Username = usuario;
-            //string cadenaencriptada = common.ComputeSha256Hash(objView.txtPassword.Text);
-            DAOData.Password = objView.txtPassword.Text;
+            string cadenaencriptada = common.ComputeSha256Hash(objView.txtPassword.Text);
+            DAOData.Password = cadenaencriptada;
             //Invocando al método Login contenido en el DAO
             bool answer = DAOData.ValidarLogin();
             if (answer == true)
+
+
             {
                 ViewAdminConnection objViewConnect = new ViewAdminConnection();
                 objViewConnect.ShowDialog();
