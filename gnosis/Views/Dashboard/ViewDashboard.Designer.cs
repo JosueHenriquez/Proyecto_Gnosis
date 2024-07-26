@@ -60,43 +60,30 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblUsername = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblPersona = new System.Windows.Forms.ToolStripStatusLabel();
             this.PanelMenu = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelTop = new System.Windows.Forms.Panel();
+            this.PanelContenedor = new System.Windows.Forms.Panel();
             this.btnServer = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAdminUser = new System.Windows.Forms.Button();
             this.btnLoan = new System.Windows.Forms.Button();
             this.btnBook = new System.Windows.Forms.Button();
             this.btnAccess = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
-            this.panelTop = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.PanelContenedor = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.picAdminuser = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cerrarFormularioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.lblPersona = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.PanelMenu.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panelTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAdminuser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -154,7 +141,7 @@
             // menuVerMenu
             // 
             this.menuVerMenu.Name = "menuVerMenu";
-            this.menuVerMenu.Size = new System.Drawing.Size(180, 22);
+            this.menuVerMenu.Size = new System.Drawing.Size(163, 22);
             this.menuVerMenu.Text = "Contraer menu";
             // 
             // menuAdministradorUsuarios
@@ -344,6 +331,18 @@
             this.lblUsername.Size = new System.Drawing.Size(10, 17);
             this.lblUsername.Text = ".";
             // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(71, 17);
+            this.toolStripStatusLabel2.Text = "Asociado a: ";
+            // 
+            // lblPersona
+            // 
+            this.lblPersona.Name = "lblPersona";
+            this.lblPersona.Size = new System.Drawing.Size(10, 17);
+            this.lblPersona.Text = ".";
+            // 
             // PanelMenu
             // 
             this.PanelMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -359,225 +358,186 @@
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.flowLayoutPanel2.Controls.Add(this.pictureBox7);
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
             this.flowLayoutPanel2.Controls.Add(this.btnServer);
-            this.flowLayoutPanel2.Controls.Add(this.pictureBox8);
             this.flowLayoutPanel2.Controls.Add(this.btnLogout);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 525);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 500);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(200, 115);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(200, 140);
             this.flowLayoutPanel2.TabIndex = 2;
-            // 
-            // btnServer
-            // 
-            this.btnServer.BackColor = System.Drawing.SystemColors.Control;
-            this.btnServer.FlatAppearance.BorderSize = 0;
-            this.btnServer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnServer.Location = new System.Drawing.Point(44, 3);
-            this.btnServer.Name = "btnServer";
-            this.btnServer.Size = new System.Drawing.Size(150, 35);
-            this.btnServer.TabIndex = 5;
-            this.btnServer.Text = "Configurar servidor";
-            this.btnServer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnServer.UseVisualStyleBackColor = false;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.BackColor = System.Drawing.SystemColors.Control;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnLogout.Location = new System.Drawing.Point(44, 44);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(150, 35);
-            this.btnLogout.TabIndex = 6;
-            this.btnLogout.Text = "Cerrar sesión";
-            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.UseVisualStyleBackColor = false;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.flowLayoutPanel1.Controls.Add(this.picAdminuser);
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
             this.flowLayoutPanel1.Controls.Add(this.btnAdminUser);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox3);
             this.flowLayoutPanel1.Controls.Add(this.btnLoan);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox4);
             this.flowLayoutPanel1.Controls.Add(this.btnBook);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox5);
             this.flowLayoutPanel1.Controls.Add(this.btnAccess);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox6);
             this.flowLayoutPanel1.Controls.Add(this.btnReports);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 115);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 73);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 525);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 567);
             this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // btnAdminUser
-            // 
-            this.btnAdminUser.BackColor = System.Drawing.SystemColors.Control;
-            this.btnAdminUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnAdminUser.Location = new System.Drawing.Point(44, 3);
-            this.btnAdminUser.Name = "btnAdminUser";
-            this.btnAdminUser.Size = new System.Drawing.Size(150, 35);
-            this.btnAdminUser.TabIndex = 0;
-            this.btnAdminUser.Text = "Admin. Usuarios";
-            this.btnAdminUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdminUser.UseVisualStyleBackColor = false;
-            // 
-            // btnLoan
-            // 
-            this.btnLoan.BackColor = System.Drawing.SystemColors.Control;
-            this.btnLoan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnLoan.Location = new System.Drawing.Point(44, 44);
-            this.btnLoan.Name = "btnLoan";
-            this.btnLoan.Size = new System.Drawing.Size(150, 35);
-            this.btnLoan.TabIndex = 1;
-            this.btnLoan.Text = "Prestamos";
-            this.btnLoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLoan.UseVisualStyleBackColor = false;
-            // 
-            // btnBook
-            // 
-            this.btnBook.BackColor = System.Drawing.SystemColors.Control;
-            this.btnBook.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnBook.Location = new System.Drawing.Point(44, 85);
-            this.btnBook.Name = "btnBook";
-            this.btnBook.Size = new System.Drawing.Size(150, 35);
-            this.btnBook.TabIndex = 2;
-            this.btnBook.Text = "Libros";
-            this.btnBook.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBook.UseVisualStyleBackColor = false;
-            // 
-            // btnAccess
-            // 
-            this.btnAccess.BackColor = System.Drawing.SystemColors.Control;
-            this.btnAccess.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnAccess.Location = new System.Drawing.Point(44, 126);
-            this.btnAccess.Name = "btnAccess";
-            this.btnAccess.Size = new System.Drawing.Size(150, 35);
-            this.btnAccess.TabIndex = 3;
-            this.btnAccess.Text = "Gestión de accesos";
-            this.btnAccess.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAccess.UseVisualStyleBackColor = false;
-            // 
-            // btnReports
-            // 
-            this.btnReports.BackColor = System.Drawing.SystemColors.Control;
-            this.btnReports.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnReports.Location = new System.Drawing.Point(44, 167);
-            this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(150, 35);
-            this.btnReports.TabIndex = 4;
-            this.btnReports.Text = "Reportes";
-            this.btnReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReports.UseVisualStyleBackColor = false;
             // 
             // panelTop
             // 
-            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
+            this.panelTop.Controls.Add(this.pictureBox3);
             this.panelTop.Controls.Add(this.pictureBox1);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(200, 115);
+            this.panelTop.Size = new System.Drawing.Size(200, 73);
             this.panelTop.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(200, 25);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1148, 3);
-            this.panel1.TabIndex = 3;
             // 
             // PanelContenedor
             // 
+            this.PanelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(61)))), ((int)(((byte)(115)))));
             this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContenedor.Location = new System.Drawing.Point(200, 28);
+            this.PanelContenedor.Location = new System.Drawing.Point(200, 25);
             this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(1148, 637);
+            this.PanelContenedor.Size = new System.Drawing.Size(1148, 640);
             this.PanelContenedor.TabIndex = 4;
             // 
-            // pictureBox7
+            // btnServer
             // 
-            this.pictureBox7.Image = global::gnosis.Properties.Resources.Server;
-            this.pictureBox7.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 10;
-            this.pictureBox7.TabStop = false;
+            this.btnServer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.btnServer.FlatAppearance.BorderSize = 0;
+            this.btnServer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnServer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnServer.ForeColor = System.Drawing.Color.White;
+            this.btnServer.Image = global::gnosis.Properties.Resources.icons8_servidor_35;
+            this.btnServer.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnServer.Location = new System.Drawing.Point(3, 3);
+            this.btnServer.Name = "btnServer";
+            this.btnServer.Size = new System.Drawing.Size(191, 50);
+            this.btnServer.TabIndex = 5;
+            this.btnServer.Text = "Configurar servidor";
+            this.btnServer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnServer.UseVisualStyleBackColor = false;
             // 
-            // pictureBox8
+            // btnLogout
             // 
-            this.pictureBox8.Image = global::gnosis.Properties.Resources.Logout2;
-            this.pictureBox8.Location = new System.Drawing.Point(3, 44);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 11;
-            this.pictureBox8.TabStop = false;
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Image = global::gnosis.Properties.Resources.icons8_salida_35;
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Location = new System.Drawing.Point(3, 59);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(191, 50);
+            this.btnLogout.TabIndex = 6;
+            this.btnLogout.Text = "Cerrar sesión";
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLogout.UseVisualStyleBackColor = false;
             // 
-            // picAdminuser
+            // btnAdminUser
             // 
-            this.picAdminuser.Image = global::gnosis.Properties.Resources.User1;
-            this.picAdminuser.Location = new System.Drawing.Point(3, 3);
-            this.picAdminuser.Name = "picAdminuser";
-            this.picAdminuser.Size = new System.Drawing.Size(35, 35);
-            this.picAdminuser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAdminuser.TabIndex = 5;
-            this.picAdminuser.TabStop = false;
+            this.btnAdminUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
+            this.btnAdminUser.FlatAppearance.BorderSize = 0;
+            this.btnAdminUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnAdminUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdminUser.ForeColor = System.Drawing.Color.White;
+            this.btnAdminUser.Image = global::gnosis.Properties.Resources.icons8_usuario_35__1_;
+            this.btnAdminUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdminUser.Location = new System.Drawing.Point(3, 3);
+            this.btnAdminUser.Name = "btnAdminUser";
+            this.btnAdminUser.Size = new System.Drawing.Size(191, 50);
+            this.btnAdminUser.TabIndex = 0;
+            this.btnAdminUser.Text = "Admin. Usuarios";
+            this.btnAdminUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdminUser.UseVisualStyleBackColor = false;
+            // 
+            // btnLoan
+            // 
+            this.btnLoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
+            this.btnLoan.FlatAppearance.BorderSize = 0;
+            this.btnLoan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnLoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoan.ForeColor = System.Drawing.Color.White;
+            this.btnLoan.Image = global::gnosis.Properties.Resources.icons8_marcapáginas_35__1_;
+            this.btnLoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLoan.Location = new System.Drawing.Point(3, 59);
+            this.btnLoan.Name = "btnLoan";
+            this.btnLoan.Size = new System.Drawing.Size(191, 50);
+            this.btnLoan.TabIndex = 1;
+            this.btnLoan.Text = "Prestamos";
+            this.btnLoan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLoan.UseVisualStyleBackColor = false;
+            // 
+            // btnBook
+            // 
+            this.btnBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
+            this.btnBook.FlatAppearance.BorderSize = 0;
+            this.btnBook.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBook.ForeColor = System.Drawing.Color.White;
+            this.btnBook.Image = global::gnosis.Properties.Resources.icons8_libro_35__1_;
+            this.btnBook.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBook.Location = new System.Drawing.Point(3, 115);
+            this.btnBook.Name = "btnBook";
+            this.btnBook.Size = new System.Drawing.Size(191, 50);
+            this.btnBook.TabIndex = 2;
+            this.btnBook.Text = "Libros";
+            this.btnBook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBook.UseVisualStyleBackColor = false;
+            // 
+            // btnAccess
+            // 
+            this.btnAccess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
+            this.btnAccess.FlatAppearance.BorderSize = 0;
+            this.btnAccess.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnAccess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccess.ForeColor = System.Drawing.Color.White;
+            this.btnAccess.Image = global::gnosis.Properties.Resources.icons8_credenciales_de_usuario_35;
+            this.btnAccess.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAccess.Location = new System.Drawing.Point(3, 171);
+            this.btnAccess.Name = "btnAccess";
+            this.btnAccess.Size = new System.Drawing.Size(191, 50);
+            this.btnAccess.TabIndex = 3;
+            this.btnAccess.Text = "Gestión de accesos";
+            this.btnAccess.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAccess.UseVisualStyleBackColor = false;
+            // 
+            // btnReports
+            // 
+            this.btnReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
+            this.btnReports.FlatAppearance.BorderSize = 0;
+            this.btnReports.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReports.ForeColor = System.Drawing.Color.White;
+            this.btnReports.Image = global::gnosis.Properties.Resources.icons8_reporte_de_negocios_35;
+            this.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReports.Location = new System.Drawing.Point(3, 227);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Size = new System.Drawing.Size(191, 50);
+            this.btnReports.TabIndex = 4;
+            this.btnReports.Text = "Reportes";
+            this.btnReports.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReports.UseVisualStyleBackColor = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::gnosis.Properties.Resources.Bookmark;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 44);
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::gnosis.Properties.Resources.icons8_menú_35;
+            this.pictureBox3.Location = new System.Drawing.Point(8, 35);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(35, 35);
+            this.pictureBox3.Size = new System.Drawing.Size(35, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 6;
+            this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::gnosis.Properties.Resources.Book;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 85);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::gnosis.Properties.Resources.Access;
-            this.pictureBox5.Location = new System.Drawing.Point(3, 126);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 8;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::gnosis.Properties.Resources.Business_Report;
-            this.pictureBox6.Location = new System.Drawing.Point(3, 167);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 9;
-            this.pictureBox6.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::gnosis.Properties.Resources.Male_User;
-            this.pictureBox1.Location = new System.Drawing.Point(50, 15);
+            this.pictureBox1.Location = new System.Drawing.Point(125, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(96, 88);
+            this.pictureBox1.Size = new System.Drawing.Size(69, 65);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -590,25 +550,12 @@
             this.cerrarFormularioToolStripMenuItem.Size = new System.Drawing.Size(138, 21);
             this.cerrarFormularioToolStripMenuItem.Text = "Cerrar formulario";
             // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(71, 17);
-            this.toolStripStatusLabel2.Text = "Asociado a: ";
-            // 
-            // lblPersona
-            // 
-            this.lblPersona.Name = "lblPersona";
-            this.lblPersona.Size = new System.Drawing.Size(10, 17);
-            this.lblPersona.Text = ".";
-            // 
             // ViewDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1348, 687);
             this.Controls.Add(this.PanelContenedor);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.PanelMenu);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -629,13 +576,7 @@
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panelTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAdminuser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -673,7 +614,6 @@
         public System.Windows.Forms.MenuStrip menuStrip1;
         public System.Windows.Forms.ToolStripMenuItem menuAdministradorUsuarios;
         public System.Windows.Forms.Panel PanelMenu;
-        private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.ToolStripMenuItem cerrarFormularioToolStripMenuItem;
         public System.Windows.Forms.Panel PanelContenedor;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -683,12 +623,6 @@
         private System.Windows.Forms.ToolStripMenuItem verToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem menuVerMenu;
         public System.Windows.Forms.Panel panelTop;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
         public System.Windows.Forms.Button btnAdminUser;
         public System.Windows.Forms.Button btnLoan;
         public System.Windows.Forms.Button btnBook;
@@ -698,6 +632,6 @@
         public System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         public System.Windows.Forms.ToolStripStatusLabel lblPersona;
-        public System.Windows.Forms.PictureBox picAdminuser;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

@@ -18,7 +18,7 @@ namespace gnosis.Controllers.AdministradorUsuarios
             ObjAdminUser.cmsActualizar.Click += new EventHandler(UpdateUser);
             ObjAdminUser.cmsEliminar.Click += new EventHandler(DeleteUser);
             ObjAdminUser.cmsFicha.Click += new EventHandler(ViewData);
-            ObjAdminUser.txtSearch.KeyPress += new KeyPressEventHandler(Search);
+            //ObjAdminUser.txtSearch.KeyPress += new KeyPressEventHandler(Search);
             ObjAdminUser.btnBuscar.Click += new EventHandler(BuscarPeronasControllerEvent);
         }
 

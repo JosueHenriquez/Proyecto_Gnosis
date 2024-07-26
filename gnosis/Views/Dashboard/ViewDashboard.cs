@@ -8,7 +8,7 @@ namespace gnosis.Views.Dashboard
         public ViewDashboard(string username)
         {
             InitializeComponent();
-             ControllerDashboard objDash = new ControllerDashboard(this, username);
+            ControllerDashboard objDash = new ControllerDashboard(this, username);
         }
     }
 }
