@@ -24,17 +24,10 @@ namespace gnosis.Controllers.Server
 
         public void VerificarPassword(object sender, EventArgs e)
         {
-            DAOLogin DAOData = new DAOLogin();
             CommonClasses common = new CommonClasses();
             //Utilizando el objeto DAO para invocar a los metodos getter y setter del DTO
-            DAOData.Username = usuario;
             string cadenaencriptada = common.ComputeSha256Hash(objView.txtPassword.Text);
-            DAOData.Password = cadenaencriptada;
-            //Invocando al método Login contenido en el DAO
-            bool answer = DAOData.ValidarLogin();
-            if (answer == true)
-
-
+            if (cadenaencriptada == SessionVar.Password)
             {
                 ViewAdminConnection objViewConnect = new ViewAdminConnection();
                 objViewConnect.ShowDialog();

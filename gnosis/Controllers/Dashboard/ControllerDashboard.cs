@@ -4,6 +4,7 @@ using System;
 using System.Linq;
 using System.Windows.Forms;
 using gnosis.Views.Server;
+using gnosis.Controllers.Helper;
 
 namespace gnosis.Controllers.Dashboard
 {
@@ -11,14 +12,18 @@ namespace gnosis.Controllers.Dashboard
     {
         //Objeto de la vista ViewLogin
         ViewDashboard ObjDashboard;
-        Form currentForm;
+        Form currentForm = null;
 
         public ControllerDashboard(ViewDashboard View, string username)
         {
+            //Se asigna al objeto ObjDashboard todo lo que proviene el objeto View del constructor
             ObjDashboard = View;
-            View.Load += new EventHandler(CargarFormPred);
-            ObjDashboard.lblUsername.Text = username;
-            ObjDashboard.lblPersona.Text = "Josue A. Guinea Henríquez";
+            //Se utiliza el evento Load, el cual se ejecuta de forma inmediata cuando el formulario se inicia.
+            View.Load += new EventHandler(EventosIniciales);
+            //Al componente lblUsername se le asigna el valor de variable de sesión
+            ObjDashboard.lblUsername.Text = SessionVar.Username;
+            ObjDashboard.lblPersona.Text = SessionVar.FullName;
+            //Se invoca al evento AbrirFormularioAdminUsuarios para que este puede ser mostrado segú el boton que el usuario presione.
             ObjDashboard.menuAdministradorUsuarios.Click += new EventHandler(AbrirFormularioAdminUsuarios);
             ObjDashboard.btnAdminUser.Click += new EventHandler(AbrirFormularioAdminUsuarios);
             //ObjDashboard.picAdminuser.Click += new EventHandler(AbrirFormularioAdminUsuarios);
@@ -26,6 +31,35 @@ namespace gnosis.Controllers.Dashboard
             ObjDashboard.FormClosing += new FormClosingEventHandler(cerrarPrograma);
             ObjDashboard.menuVerMenu.Click += new EventHandler(menu);
             ObjDashboard.btnServer.Click += new EventHandler(ConfServer);
+        }
+
+        /// <summary>
+        /// Los eventos iniciales son aquellos que se ejecutarán de forma inmediata cuando se invoque a formualrio.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void EventosIniciales(object sender, EventArgs e)
+        {
+            Acceso();
+        }
+
+        /// <summary>
+        /// El metodo acceso determina que accesos tendrá disponibles el usuario cuando inicie sesión.
+        /// </summary>
+        public void Acceso()
+        {
+            //Estructura selectiva para evaluar los posibles valores de la vraible Access
+            switch (SessionVar.Access)
+            {
+                case "Administrador":
+                    break;
+                case "Bibliotecario":
+                    ObjDashboard.btnAdminUser.Visible = false;
+                    ObjDashboard.btnServer.Visible = false;
+                    break;
+                default:
+                    break;
+            }
         }
 
         public void menu(object sender, EventArgs e)
@@ -42,6 +76,7 @@ namespace gnosis.Controllers.Dashboard
                 ObjDashboard.PanelMenu.Width = 200;
             }
         }
+
         public void mostrarComponentes()
         {
             ObjDashboard.panelTop.Visible = true;
@@ -53,6 +88,7 @@ namespace gnosis.Controllers.Dashboard
             ObjDashboard.btnServer.Visible = true;
             ObjDashboard.btnLogout.Visible = true;
         }
+
         public void ConfServer(object sender, EventArgs e)
         {
             ViewConfirmPassword objview = new ViewConfirmPassword(ObjDashboard.lblUsername.Text);
@@ -68,6 +104,7 @@ namespace gnosis.Controllers.Dashboard
         {
             //AbrirFormulario<ViewStatistics>();
         }
+
         /// <summary>
         /// Método para abrir formularios dentro del panel contenedor del formulario principal
         /// </summary>
@@ -115,21 +152,29 @@ namespace gnosis.Controllers.Dashboard
                 formulario.BringToFront();
             }
         }
+
         private void CerrarForm(object sender, EventArgs e)
         {
-            //Se cierra el formulario actual para mostrar el nuevo formulario
-            currentForm.Close();
-            //Se eliminan del panel contenedor todos los controles del formulario que se cerrará
-            ObjDashboard.PanelContenedor.Controls.Remove(currentForm);
+            if (currentForm != null)
+            {
+                //Se cierra el formulario actual para mostrar el nuevo formulario
+                currentForm.Close();
+                //Se eliminan del panel contenedor todos los controles del formulario que se cerrará
+                ObjDashboard.PanelContenedor.Controls.Remove(currentForm);
+            }            
         }
+
         private void cerrarPrograma(Object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Existe una sesión activa, desea cerrar la sesión", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                
-                
-            }
-            
+                SessionVar.Username = string.Empty; 
+                SessionVar.Password = string.Empty;
+                SessionVar.FullName = string.Empty;
+                SessionVar.Access = string.Empty;
+                SessionVar.RoleId = 0;
+            }            
         }
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using gnosis.Models.DAO;
+﻿using gnosis.Controllers.Helper;
+using gnosis.Models.DAO;
 using gnosis.Views.Administrador_de_usuarios;
 using System;
 using System.Data;
@@ -138,6 +139,7 @@ namespace gnosis.Controllers.AdministradorUsuarios
         {
             //Se crea una instancia de la clase DAOAdminUsers llamada DAOInsert
             DAOAdminUsers DAOInsert = new DAOAdminUsers();
+            CommonClasses commonClasses = new CommonClasses();
             //Datos para creación de persona
             DAOInsert.FirstName = ObjAddUser.txtFirstName.Text.Trim();
             DAOInsert.LastName = ObjAddUser.txtLastName.Text.Trim();
@@ -148,7 +150,7 @@ namespace gnosis.Controllers.AdministradorUsuarios
             DAOInsert.PersonPhone = ObjAddUser.txtPhone.Text.Trim();
             //Datos para creación de usuario
             DAOInsert.User = ObjAddUser.txtUsername.Text.Trim();
-            DAOInsert.Password = ObjAddUser.txtUsername.Text.Trim() + "PU123";
+            DAOInsert.Password = commonClasses.ComputeSha256Hash(ObjAddUser.txtUsername.Text.Trim() + "PU123");
             DAOInsert.UserStatus = true;
             DAOInsert.UserAttempts = 0;
             DAOInsert.Role = int.Parse(ObjAddUser.comboRole.SelectedValue.ToString());

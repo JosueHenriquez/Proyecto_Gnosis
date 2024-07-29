@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\",
+  "WorkspaceRootPath": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\visual studio 2022\\projects\\proyecto gnosis\\gnosis\\proyecto_gnosis\\gnosis\\views\\dashboard\\viewdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\dashboard\\viewdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\josue a. henr\u00EDquez\\documents\\github\\proyecto_gnosis\\gnosis\\controllers\\server\\controllerconfirmpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\controllers\\server\\controllerconfirmpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\visual studio 2022\\projects\\proyecto gnosis\\gnosis\\proyecto_gnosis\\gnosis\\views\\dashboard\\viewdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\dashboard\\viewdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\josue a. henr\u00EDquez\\documents\\github\\proyecto_gnosis\\gnosis\\controllers\\dashboard\\controllerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\controllers\\dashboard\\controllerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\josue a. henr\u00EDquez\\documents\\github\\proyecto_gnosis\\gnosis\\views\\dashboard\\viewdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\dashboard\\viewdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,44 +22,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ViewDashboard.cs",
-              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Views\\Dashboard\\ViewDashboard.cs",
-              "RelativeDocumentMoniker": "gnosis\\Views\\Dashboard\\ViewDashboard.cs",
-              "ToolTip": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Views\\Dashboard\\ViewDashboard.cs",
-              "RelativeToolTip": "gnosis\\Views\\Dashboard\\ViewDashboard.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAMAAAA",
+              "DocumentIndex": 0,
+              "Title": "ControllerConfirmPassword.cs",
+              "DocumentMoniker": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\Server\\ControllerConfirmPassword.cs",
+              "RelativeDocumentMoniker": "gnosis\\Controllers\\Server\\ControllerConfirmPassword.cs",
+              "ToolTip": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\Server\\ControllerConfirmPassword.cs",
+              "RelativeToolTip": "gnosis\\Controllers\\Server\\ControllerConfirmPassword.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAtwBwAAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T16:36:22.406Z",
+              "WhenOpened": "2024-07-29T03:58:15.542Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "ControllerDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\Dashboard\\ControllerDashboard.cs",
+              "RelativeDocumentMoniker": "gnosis\\Controllers\\Dashboard\\ControllerDashboard.cs",
+              "ToolTip": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\Dashboard\\ControllerDashboard.cs",
+              "RelativeToolTip": "gnosis\\Controllers\\Dashboard\\ControllerDashboard.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAmwFAAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T03:41:50.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ViewDashboard.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Views\\Dashboard\\ViewDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Dashboard\\ViewDashboard.cs",
               "RelativeDocumentMoniker": "gnosis\\Views\\Dashboard\\ViewDashboard.cs",
-              "ToolTip": "C:\\Users\\Docente\\Documents\\Visual Studio 2022\\Projects\\Proyecto Gnosis\\gnosis\\Proyecto_Gnosis\\gnosis\\Views\\Dashboard\\ViewDashboard.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Dashboard\\ViewDashboard.cs [Dise\u00F1o]",
               "RelativeToolTip": "gnosis\\Views\\Dashboard\\ViewDashboard.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T12:39:32.051Z",
