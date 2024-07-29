@@ -56,6 +56,7 @@
     <Compile Include="Controllers\ControllerInit.cs" />
     <Compile Include="Controllers\Dashboard\ControllerDashboard.cs" />
     <Compile Include="Controllers\Helper\CommonClasses.cs" />
+    <Compile Include="Controllers\Helper\SessionVar.cs" />
     <Compile Include="Controllers\Login\ControllerLogin.cs" />
     <Compile Include="Controllers\Server\ControllerAdminConnection.cs" />
     <Compile Include="Controllers\Server\ControllerConfirmPassword.cs" />
@@ -244,6 +245,7 @@
     <None Include="Resources\icons8-menú-35.png" />
     <None Include="Resources\icons8-servidor-35.png" />
     <None Include="Resources\icons8-salida-35.png" />
+    <None Include="Resources\icons8-connected-20.png" />
     <Content Include="Resources\Refresh.ico" />
     <None Include="Resources\Refresh.png" />
     <None Include="Resources\Server.png" />
