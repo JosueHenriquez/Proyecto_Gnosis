@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -37,10 +38,11 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.dgvPersonas = new System.Windows.Forms.DataGridView();
             this.contextDataGrid = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.btnBuscar = new System.Windows.Forms.Button();
+            this.chkUserDisabled = new System.Windows.Forms.CheckBox();
             this.cmsActualizar = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsEliminar = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsFicha = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsdesahilitarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -53,16 +55,26 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.chkUserDisabled);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnBuscar);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.btnNuevo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(5, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1250, 62);
+            this.panel1.Size = new System.Drawing.Size(1240, 62);
             this.panel1.TabIndex = 2;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(654, 23);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(87, 26);
+            this.btnBuscar.TabIndex = 3;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -90,7 +102,7 @@
             this.btnNuevo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNuevo.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnNuevo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnNuevo.Location = new System.Drawing.Point(1084, 10);
+            this.btnNuevo.Location = new System.Drawing.Point(1074, 10);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(154, 39);
             this.btnNuevo.TabIndex = 0;
@@ -101,9 +113,9 @@
             // 
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 62);
+            this.panel2.Location = new System.Drawing.Point(5, 67);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1250, 589);
+            this.panel2.Size = new System.Drawing.Size(1240, 579);
             this.panel2.TabIndex = 3;
             // 
             // panel5
@@ -112,7 +124,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1250, 589);
+            this.panel5.Size = new System.Drawing.Size(1240, 579);
             this.panel5.TabIndex = 2;
             // 
             // dgvPersonas
@@ -131,7 +143,7 @@
             this.dgvPersonas.ReadOnly = true;
             this.dgvPersonas.RowHeadersVisible = false;
             this.dgvPersonas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPersonas.Size = new System.Drawing.Size(1250, 589);
+            this.dgvPersonas.Size = new System.Drawing.Size(1240, 579);
             this.dgvPersonas.TabIndex = 0;
             // 
             // contextDataGrid
@@ -139,18 +151,20 @@
             this.contextDataGrid.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cmsActualizar,
             this.cmsEliminar,
-            this.cmsFicha});
+            this.cmsFicha,
+            this.cmsdesahilitarUsuarioToolStripMenuItem});
             this.contextDataGrid.Name = "contextDataGrid";
-            this.contextDataGrid.Size = new System.Drawing.Size(192, 70);
+            this.contextDataGrid.Size = new System.Drawing.Size(192, 114);
             // 
-            // btnBuscar
+            // chkUserDisabled
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(654, 23);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(87, 26);
-            this.btnBuscar.TabIndex = 3;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.chkUserDisabled.AutoSize = true;
+            this.chkUserDisabled.Location = new System.Drawing.Point(747, 26);
+            this.chkUserDisabled.Name = "chkUserDisabled";
+            this.chkUserDisabled.Size = new System.Drawing.Size(136, 20);
+            this.chkUserDisabled.TabIndex = 5;
+            this.chkUserDisabled.Text = "Usuarios inactivos";
+            this.chkUserDisabled.UseVisualStyleBackColor = true;
             // 
             // cmsActualizar
             // 
@@ -173,6 +187,13 @@
             this.cmsFicha.Size = new System.Drawing.Size(191, 22);
             this.cmsFicha.Text = "Ver ficha de empleado";
             // 
+            // cmsdesahilitarUsuarioToolStripMenuItem
+            // 
+            this.cmsdesahilitarUsuarioToolStripMenuItem.Image = global::gnosis.Properties.Resources.icons8_eliminar_usuario_masculino_48;
+            this.cmsdesahilitarUsuarioToolStripMenuItem.Name = "cmsdesahilitarUsuarioToolStripMenuItem";
+            this.cmsdesahilitarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.cmsdesahilitarUsuarioToolStripMenuItem.Text = "Desahilitar usuario";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::gnosis.Properties.Resources.Search;
@@ -187,7 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1250, 651);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -195,6 +216,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ViewAdministradorUsuarios";
+            this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewAdministradorUsuarios";
             this.panel1.ResumeLayout(false);
@@ -222,5 +244,7 @@
         public System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Button btnBuscar;
+        public System.Windows.Forms.CheckBox chkUserDisabled;
+        public System.Windows.Forms.ToolStripMenuItem cmsdesahilitarUsuarioToolStripMenuItem;
     }
 }

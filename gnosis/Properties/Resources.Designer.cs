@@ -213,6 +213,16 @@ namespace gnosis.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_eliminar_usuario_masculino_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-eliminar-usuario-masculino-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_libro_35 {
             get {
                 object obj = ResourceManager.GetObject("icons8-libro-35", resourceCulture);
@@ -286,6 +296,16 @@ namespace gnosis.Properties {
         internal static System.Drawing.Bitmap icons8_servidor_35 {
             get {
                 object obj = ResourceManager.GetObject("icons8-servidor-35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_settings_35 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-settings-35", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

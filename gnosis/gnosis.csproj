@@ -246,6 +246,8 @@
     <None Include="Resources\icons8-servidor-35.png" />
     <None Include="Resources\icons8-salida-35.png" />
     <None Include="Resources\icons8-connected-20.png" />
+    <None Include="Resources\icons8-settings-35.png" />
+    <None Include="Resources\icons8-eliminar-usuario-masculino-48.png" />
     <Content Include="Resources\Refresh.ico" />
     <None Include="Resources\Refresh.png" />
     <None Include="Resources\Server.png" />

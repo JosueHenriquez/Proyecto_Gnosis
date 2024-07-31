@@ -110,7 +110,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(465, 33);
             this.txtPassword.TabIndex = 3;
-            this.txtPassword.Text = "Engineer12345";
+            this.txtPassword.Text = "EngineerPU123";
             // 
             // panel2
             // 

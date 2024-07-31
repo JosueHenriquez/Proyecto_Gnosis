@@ -19,6 +19,6 @@ namespace gnosis.Views.Login
             //Se invoca el método CreateRoundRectRgn contenido en la clase Helper
             Region = Region.FromHrgn(CommonClasses.CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             PasswordHide.Visible = false;
-        } 
+        }
     }
 }

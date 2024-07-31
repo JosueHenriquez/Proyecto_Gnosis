@@ -137,9 +137,47 @@ namespace gnosis.Models.DAO
                 //Accedemos a la conexión que ya se tiene
                 Command.Connection = getConnection();
                 //Instrucción que se hará hacia la base de datos
-                string query = "SELECT * FROM viewPerson";
+                string query = "SELECT * FROM viewPerson WHERE userStatus = @valor";
                 //Comando sql en el cual se pasa la instrucción y la conexión
                 SqlCommand cmd = new SqlCommand(query, Command.Connection);
+                //Asignando valor al parametro
+                cmd.Parameters.AddWithValue("valor", true);
+                //Se ejecuta el comando y con ExecuteNonQuery se verifica su retorno
+                //ExecuteNonQuery devuelve un valor entero.
+                cmd.ExecuteNonQuery();
+                //Se utiliza un adaptador sql para rellenar el dataset
+                SqlDataAdapter adp = new SqlDataAdapter(cmd);
+                //Se crea un objeto Dataset que es donde se devolverán los resultados
+                DataSet ds = new DataSet();
+                //Rellenamos con el Adaptador el DataSet diciendole de que tabla provienen los datos
+                adp.Fill(ds, "viewPerson");
+                //Devolvemos el Dataset
+                return ds;
+            }
+            catch (Exception)
+            {
+                //Retornamos null si existiera algún error durante la ejecución
+                return null;
+            }
+            finally
+            {
+                //Independientemente se haga o no el proceso cerramos la conexión
+                getConnection().Close();
+            }
+        }
+
+        public DataSet ObtenerPersonasInactivas()
+        {
+            try
+            {
+                //Accedemos a la conexión que ya se tiene
+                Command.Connection = getConnection();
+                //Instrucción que se hará hacia la base de datos
+                string query = "SELECT * FROM viewPerson WHERE userStatus = @valor";
+                //Comando sql en el cual se pasa la instrucción y la conexión
+                SqlCommand cmd = new SqlCommand(query, Command.Connection);
+                //Asignando valor al parametro
+                cmd.Parameters.AddWithValue("valor", false);
                 //Se ejecuta el comando y con ExecuteNonQuery se verifica su retorno
                 //ExecuteNonQuery devuelve un valor entero.
                 cmd.ExecuteNonQuery();
@@ -258,6 +296,14 @@ namespace gnosis.Models.DAO
                 //ExecuteNonQuery indicará cuantos filas fueron afectadas, es decir, cuantas filas de datos se ingresaron, por lo general devolvera 1 porque se hace una eliminación a la vez.
                 int respuesta = cmd.ExecuteNonQuery();
                 //Si la ejecución del comando no ha generado errores se procederá a retornar el valor de la variable respuesta que por lo general almacenará un 1 ya que solo se hace una acción a la vez.
+                if (respuesta == 1)
+                {
+                    string queryupdate = "UPDATE tbUser SET userStatus = @status WHERE username = @username";
+                    SqlCommand cmdupdate = new SqlCommand(queryupdate, Command.Connection);
+                    cmdupdate.Parameters.AddWithValue("status", false);
+                    cmdupdate.Parameters.AddWithValue("username", User);
+                    respuesta += cmdupdate.ExecuteNonQuery();
+                }
                 return respuesta;
             }
             catch (Exception)

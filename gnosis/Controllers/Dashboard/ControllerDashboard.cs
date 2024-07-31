@@ -5,6 +5,7 @@ using System.Linq;
 using System.Windows.Forms;
 using gnosis.Views.Server;
 using gnosis.Controllers.Helper;
+using gnosis.Views.Login;
 
 namespace gnosis.Controllers.Dashboard
 {
@@ -31,6 +32,7 @@ namespace gnosis.Controllers.Dashboard
             ObjDashboard.FormClosing += new FormClosingEventHandler(cerrarPrograma);
             ObjDashboard.menuVerMenu.Click += new EventHandler(menu);
             ObjDashboard.btnServer.Click += new EventHandler(ConfServer);
+            ObjDashboard.btnLogout.Click += new EventHandler(Logout);
         }
 
         /// <summary>
@@ -56,6 +58,7 @@ namespace gnosis.Controllers.Dashboard
                 case "Bibliotecario":
                     ObjDashboard.btnAdminUser.Visible = false;
                     ObjDashboard.btnServer.Visible = false;
+                    ObjDashboard.menuAdministradorUsuarios.Visible = false;
                     break;
                 default:
                     break;
@@ -69,7 +72,7 @@ namespace gnosis.Controllers.Dashboard
                 ObjDashboard.PanelMenu.Width = 50;
                 ObjDashboard.panelTop.Width = 50;
                 ObjDashboard.menuVerMenu.Text = "Extender menu";
-            }else
+            } else
             {
                 mostrarComponentes();
                 ObjDashboard.menuVerMenu.Text = "Contraer menu";
@@ -161,20 +164,35 @@ namespace gnosis.Controllers.Dashboard
                 currentForm.Close();
                 //Se eliminan del panel contenedor todos los controles del formulario que se cerrará
                 ObjDashboard.PanelContenedor.Controls.Remove(currentForm);
-            }            
+            }
         }
 
         private void cerrarPrograma(Object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Existe una sesión activa, desea cerrar la sesión", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Desea cerrar el programa directamente, considere que se cerrará la sesión de forma automática", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                SessionVar.Username = string.Empty; 
-                SessionVar.Password = string.Empty;
-                SessionVar.FullName = string.Empty;
-                SessionVar.Access = string.Empty;
-                SessionVar.RoleId = 0;
-            }            
+                Environment.Exit(0);
+            }
         }
 
+        private void Logout(Object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea cerrar sesión?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                LimpiarVariablesSesion();
+                ViewLogin backForm = new ViewLogin();
+                backForm.Show();
+                ObjDashboard.Dispose();
+            }
+        }
+
+        void LimpiarVariablesSesion()
+        {
+            SessionVar.Username = string.Empty;
+            SessionVar.Password = string.Empty;
+            SessionVar.FullName = string.Empty;
+            SessionVar.Access = string.Empty;
+            SessionVar.RoleId = 0;
+        }
     }
 }

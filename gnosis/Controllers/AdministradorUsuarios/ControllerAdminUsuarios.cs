@@ -1,4 +1,5 @@
-﻿using gnosis.Models.DAO;
+﻿using gnosis.Controllers.Helper;
+using gnosis.Models.DAO;
 using gnosis.Views.Administrador_de_usuarios;
 using System;
 using System.Data;
@@ -20,11 +21,17 @@ namespace gnosis.Controllers.AdministradorUsuarios
             ObjAdminUser.cmsFicha.Click += new EventHandler(ViewData);
             //ObjAdminUser.txtSearch.KeyPress += new KeyPressEventHandler(Search);
             ObjAdminUser.btnBuscar.Click += new EventHandler(BuscarPeronasControllerEvent);
+            ObjAdminUser.chkUserDisabled.CheckedChanged += new EventHandler(Checked);
         }
 
         public void Search(object sender, KeyPressEventArgs e)
         {
             BuscarPeronasController();
+        }
+
+        public void Checked(object sender, EventArgs e)
+        {
+            RefrescarData();
         }
 
         public void BuscarPeronasControllerEvent(object sender, EventArgs e) { BuscarPeronasController(); }
@@ -48,12 +55,20 @@ namespace gnosis.Controllers.AdministradorUsuarios
         {
             //Objeto de la clase DAOAdminUsuarios
             DAOAdminUsers objAdmin = new DAOAdminUsers();
-            //Declarando nuevo DataSet para que obtenga los datos del metodo ObtenerPersonas
-            DataSet ds = objAdmin.ObtenerPersonas();
-            //Llenar DataGridView
+            DataSet ds = new DataSet();
+            if (ObjAdminUser.chkUserDisabled.Checked != true)
+            {
+                //Declarando nuevo DataSet para que obtenga los datos del metodo ObtenerPersonas
+                ds = objAdmin.ObtenerPersonas();
+            }
+            else
+            {
+                ds = objAdmin.ObtenerPersonasInactivas();
+            }
             ObjAdminUser.dgvPersonas.DataSource = ds.Tables["viewPerson"];
             ObjAdminUser.dgvPersonas.Columns[0].Visible = false;
             ObjAdminUser.dgvPersonas.Columns[3].Visible = false;
+            ObjAdminUser.dgvPersonas.Columns[10].Visible = false;
         }
 
         #region Código para generar columnas de editar y eliminar
@@ -151,24 +166,32 @@ namespace gnosis.Controllers.AdministradorUsuarios
         }
         private void DeleteUser(object sender, EventArgs e)
         {
-            //
             int pos = ObjAdminUser.dgvPersonas.CurrentRow.Index;
-            if (MessageBox.Show($"¿Esta seguro que desea elimar a:\n {ObjAdminUser.dgvPersonas[1, pos].Value.ToString()} {ObjAdminUser.dgvPersonas[2, pos].Value.ToString()}.\nConsidere que dicha acción no se podrá revertir.","Confirmar acción",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+            string userSelected = ObjAdminUser.dgvPersonas[8, pos].Value.ToString();
+            //MessageBox.Show($"{userSelected}");
+            if (!userSelected.Equals(SessionVar.Username))
             {
-                DAOAdminUsers daoDel = new DAOAdminUsers();
-                daoDel.PersonId = int.Parse(ObjAdminUser.dgvPersonas[0, pos].Value.ToString());
-                int valorRetornado = daoDel.EliminarUsuario();
-                if (valorRetornado == 1)
+                if (MessageBox.Show($"• Se eliminará la información de la persona, sin embargo, el usuario asociado quedará inactivo.\n\n• ¿Esta seguro que desea elimar a: {ObjAdminUser.dgvPersonas[1, pos].Value.ToString()} {ObjAdminUser.dgvPersonas[2, pos].Value.ToString()}, considere que dicha acción no se podrá revertir. \n\n• Si desea mantener la información utilice la opción de deshabilitar usuario.", "Confirmar acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    MessageBox.Show("Registro eliminado","Acción completada", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    RefrescarData();
-                }
-                else
-                {
-                    MessageBox.Show("Registro no pudo ser eliminado, verifique que el registro no tenga datos asociados.", "Acción interrumpida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    DAOAdminUsers daoDel = new DAOAdminUsers();
+                    daoDel.PersonId = int.Parse(ObjAdminUser.dgvPersonas[0, pos].Value.ToString());
+                    daoDel.User = ObjAdminUser.dgvPersonas[8, pos].Value.ToString();
+                    int valorRetornado = daoDel.EliminarUsuario();
+                    if (valorRetornado == 2)
+                    {
+                        MessageBox.Show("Registro eliminado", "Acción completada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        RefrescarData();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Registro no pudo ser eliminado, verifique que el registro no tenga datos asociados.", "Acción interrumpida", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
-            
+            else
+            {
+                MessageBox.Show("No puede eliminar al usuario ya que la sesión está activa, cierre sesión en todos los dispositivos y vuelva a intentarlo.","Error de proceso",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }          
         }
     }
 }
