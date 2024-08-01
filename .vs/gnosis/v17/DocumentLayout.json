@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\josue a. henr\u00EDquez\\documents\\github\\proyecto_gnosis\\gnosis\\views\\administrador de usuarios\\viewadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\administrador de usuarios\\viewadduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\josue a. henr\u00EDquez\\documents\\github\\proyecto_gnosis\\gnosis\\controllers\\firstuse\\controllercreatefirstuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\controllers\\firstuse\\controllercreatefirstuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\josue a. henr\u00EDquez\\documents\\github\\proyecto_gnosis\\gnosis\\views\\primer_uso\\viewcreatefirstuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\primer_uso\\viewcreatefirstuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\josue a. henr\u00EDquez\\documents\\github\\proyecto_gnosis\\gnosis\\controllers\\administradorusuarios\\controlleradduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\controllers\\administradorusuarios\\controlleradduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\controllers\\administradorusuarios\\controlleradminusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\controllers\\administradorusuarios\\controlleradminusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\josue a. henr\u00EDquez\\documents\\github\\proyecto_gnosis\\gnosis\\models\\dao\\daoadminusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\models\\dao\\daoadminusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\josue a. henr\u00EDquez\\documents\\github\\proyecto_gnosis\\gnosis\\views\\administrador de usuarios\\viewadministradorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\administrador de usuarios\\viewadministradorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\josue a. henr\u00EDquez\\documents\\github\\proyecto_gnosis\\gnosis\\views\\primer_uso\\viewcreatefirstuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\primer_uso\\viewcreatefirstuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ViewAddUser.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Administrador de usuarios\\ViewAddUser.cs",
-              "RelativeDocumentMoniker": "gnosis\\Views\\Administrador de usuarios\\ViewAddUser.cs",
-              "ToolTip": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Administrador de usuarios\\ViewAddUser.cs [Dise\u00F1o]",
-              "RelativeToolTip": "gnosis\\Views\\Administrador de usuarios\\ViewAddUser.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T06:18:39.85Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ControllerAdduser.cs",
               "DocumentMoniker": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\AdministradorUsuarios\\ControllerAdduser.cs",
               "RelativeDocumentMoniker": "gnosis\\Controllers\\AdministradorUsuarios\\ControllerAdduser.cs",
               "ToolTip": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\AdministradorUsuarios\\ControllerAdduser.cs",
               "RelativeToolTip": "gnosis\\Controllers\\AdministradorUsuarios\\ControllerAdduser.cs",
-              "ViewState": "AQIAAJ4AAAAAAAAAAAAYwLsAAAAdAAAA",
+              "ViewState": "AQIAAKoAAAAAAAAAAIAwwL0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T06:08:32.589Z",
+              "WhenOpened": "2024-08-01T02:53:58.175Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ViewAdministradorUsuarios.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Administrador de usuarios\\ViewAdministradorUsuarios.cs",
-              "RelativeDocumentMoniker": "gnosis\\Views\\Administrador de usuarios\\ViewAdministradorUsuarios.cs",
-              "ToolTip": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Administrador de usuarios\\ViewAdministradorUsuarios.cs [Dise\u00F1o]",
-              "RelativeToolTip": "gnosis\\Views\\Administrador de usuarios\\ViewAdministradorUsuarios.cs [Dise\u00F1o]",
+              "DocumentIndex": 1,
+              "Title": "ViewCreateFirstUser.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Primer_Uso\\ViewCreateFirstUser.cs",
+              "RelativeDocumentMoniker": "gnosis\\Views\\Primer_Uso\\ViewCreateFirstUser.cs",
+              "ToolTip": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Primer_Uso\\ViewCreateFirstUser.cs [Dise\u00F1o]",
+              "RelativeToolTip": "gnosis\\Views\\Primer_Uso\\ViewCreateFirstUser.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T05:09:15.826Z",
+              "WhenOpened": "2024-08-01T02:43:01.996Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ControllerAdminUsuarios.cs",
-              "DocumentMoniker": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\AdministradorUsuarios\\ControllerAdminUsuarios.cs",
-              "RelativeDocumentMoniker": "gnosis\\Controllers\\AdministradorUsuarios\\ControllerAdminUsuarios.cs",
-              "ToolTip": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\AdministradorUsuarios\\ControllerAdminUsuarios.cs",
-              "RelativeToolTip": "gnosis\\Controllers\\AdministradorUsuarios\\ControllerAdminUsuarios.cs",
-              "ViewState": "AQIAALIAAAAAAAAAAAAowK0AAAD0AQAA",
+              "DocumentIndex": 3,
+              "Title": "ViewCreateFirstUser.cs",
+              "DocumentMoniker": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Primer_Uso\\ViewCreateFirstUser.cs",
+              "RelativeDocumentMoniker": "gnosis\\Views\\Primer_Uso\\ViewCreateFirstUser.cs",
+              "ToolTip": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Primer_Uso\\ViewCreateFirstUser.cs",
+              "RelativeToolTip": "gnosis\\Views\\Primer_Uso\\ViewCreateFirstUser.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABIAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T20:54:35.892Z",
+              "WhenOpened": "2024-08-01T02:44:36.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DAOAdminUsers.cs",
-              "DocumentMoniker": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Models\\DAO\\DAOAdminUsers.cs",
-              "RelativeDocumentMoniker": "gnosis\\Models\\DAO\\DAOAdminUsers.cs",
-              "ToolTip": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Models\\DAO\\DAOAdminUsers.cs",
-              "RelativeToolTip": "gnosis\\Models\\DAO\\DAOAdminUsers.cs",
-              "ViewState": "AQIAAJoAAAAAAAAAAAAYwKYAAAAIAAAA",
+              "DocumentIndex": 0,
+              "Title": "ControllerCreateFirstUser.cs",
+              "DocumentMoniker": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\FirstUse\\ControllerCreateFirstUser.cs",
+              "RelativeDocumentMoniker": "gnosis\\Controllers\\FirstUse\\ControllerCreateFirstUser.cs",
+              "ToolTip": "C:\\Users\\Josue A. Henr\u00EDquez\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\FirstUse\\ControllerCreateFirstUser.cs",
+              "RelativeToolTip": "gnosis\\Controllers\\FirstUse\\ControllerCreateFirstUser.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwCoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T05:36:17.554Z",
+              "WhenOpened": "2024-08-01T02:45:29.017Z",
               "EditorCaption": ""
             }
           ]

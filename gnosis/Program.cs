@@ -18,9 +18,7 @@ namespace gnosis
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //ControllerInit objController = new ControllerInit();
-            //Form form = objController.IniciarFormulario();
-            Application.Run(new ViewLogin());           
+            ControllerInit.DeterminarVistaInicial();       
         }
     }
 }

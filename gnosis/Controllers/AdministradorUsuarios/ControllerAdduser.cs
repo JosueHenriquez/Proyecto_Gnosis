@@ -137,41 +137,57 @@ namespace gnosis.Controllers.AdministradorUsuarios
         //}
         public void NewRegister(object sender, EventArgs e)
         {
-            //Se crea una instancia de la clase DAOAdminUsers llamada DAOInsert
-            DAOAdminUsers DAOInsert = new DAOAdminUsers();
-            CommonClasses commonClasses = new CommonClasses();
-            //Datos para creación de persona
-            DAOInsert.FirstName = ObjAddUser.txtFirstName.Text.Trim();
-            DAOInsert.LastName = ObjAddUser.txtLastName.Text.Trim();
-            DAOInsert.Birthday = ObjAddUser.dtBirth.Value.Date;
-            DAOInsert.Dni = ObjAddUser.mskDocument.Text;
-            DAOInsert.PersonAddress = ObjAddUser.txtAddress.Text.Trim();
-            DAOInsert.PersonEmail = ObjAddUser.txtEmail.Text.Trim();
-            DAOInsert.PersonPhone = ObjAddUser.txtPhone.Text.Trim();
-            //Datos para creación de usuario
-            DAOInsert.User = ObjAddUser.txtUsername.Text.Trim();
-            DAOInsert.Password = commonClasses.ComputeSha256Hash(ObjAddUser.txtUsername.Text.Trim() + "PU123");
-            DAOInsert.UserStatus = true;
-            DAOInsert.UserAttempts = 0;
-            DAOInsert.Role = int.Parse(ObjAddUser.comboRole.SelectedValue.ToString());
-            //Se invoca al método RegistrarUsuario mediante el objeto DAOInsert
-            int valorRetornado = DAOInsert.RegistrarUsuario();
-            //Se verifica el valor que retornó el metodo anterior y que fue almacenado en la variable valorRetornado
-            if (valorRetornado == 1)
+            if (!(string.IsNullOrEmpty(ObjAddUser.txtFirstName.Text.Trim()) ||
+                string.IsNullOrEmpty(ObjAddUser.txtLastName.Text.Trim()) ||
+                string.IsNullOrEmpty(ObjAddUser.mskDocument.Text) ||
+                string.IsNullOrEmpty(ObjAddUser.txtAddress.Text.Trim()) ||
+                string.IsNullOrEmpty(ObjAddUser.txtEmail.Text.Trim()) ||
+                string.IsNullOrEmpty(ObjAddUser.txtPhone.Text.Trim()) ||
+                string.IsNullOrEmpty(ObjAddUser.txtUsername.Text.Trim())))
             {
-                //SavePhoto();       
-                MessageBox.Show("Los datos han sido registrados exitosamente",
-                                "Proceso completado",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Information);
+                //Se crea una instancia de la clase DAOAdminUsers llamada DAOInsert
+                DAOAdminUsers DAOInsert = new DAOAdminUsers();
+                CommonClasses commonClasses = new CommonClasses();
+                //Datos para creación de persona
+                DAOInsert.FirstName = ObjAddUser.txtFirstName.Text.Trim();
+                DAOInsert.LastName = ObjAddUser.txtLastName.Text.Trim();
+                DAOInsert.Birthday = ObjAddUser.dtBirth.Value.Date;
+                DAOInsert.Dni = ObjAddUser.mskDocument.Text;
+                DAOInsert.PersonAddress = ObjAddUser.txtAddress.Text.Trim();
+                DAOInsert.PersonEmail = ObjAddUser.txtEmail.Text.Trim();
+                DAOInsert.PersonPhone = ObjAddUser.txtPhone.Text.Trim();
+                //Datos para creación de usuario
+                DAOInsert.User = ObjAddUser.txtUsername.Text.Trim();
+                DAOInsert.Password = commonClasses.ComputeSha256Hash(ObjAddUser.txtUsername.Text.Trim() + "PU123");
+                DAOInsert.UserStatus = true;
+                DAOInsert.UserAttempts = 0;
+                DAOInsert.Role = int.Parse(ObjAddUser.comboRole.SelectedValue.ToString());
+                //Se invoca al método RegistrarUsuario mediante el objeto DAOInsert
+                int valorRetornado = DAOInsert.RegistrarUsuario();
+                //Se verifica el valor que retornó el metodo anterior y que fue almacenado en la variable valorRetornado
+                if (valorRetornado == 1)
+                {
+                    //SavePhoto();       
+                    MessageBox.Show("Los datos han sido registrados exitosamente",
+                                    "Proceso completado",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Los datos no pudieron ser registrados",
+                                    "Proceso interrumpido",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show("Los datos no pudieron ser registrados",
-                                "Proceso interrumpido",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
-            }
+                MessageBox.Show("Existen campos vacíos, complete cada uno de los apartados y verifique que la fecha seleccionada corresponde a una persona mayor de edad.",
+                                    "Proceso interrumpido",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Warning);
+            }            
         }//Fin del metodo NewRegister
 
         public void UpdateRegister(object sender, EventArgs e)

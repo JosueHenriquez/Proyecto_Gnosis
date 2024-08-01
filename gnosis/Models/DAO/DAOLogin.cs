@@ -46,5 +46,31 @@ namespace gnosis.Models.DAO
                 getConnection().Close();
             }
         }
+
+        public int ValidarPrimerUsoSistema()
+        {
+            try
+            {
+                Command.Connection = getConnection();
+                string query = "SELECT COUNT(*) FROM ViewLogin";
+                SqlCommand cmd = new SqlCommand(query, Command.Connection);
+                int totalUsuarios = (int)cmd.ExecuteScalar();
+                return totalUsuarios;
+            }
+            catch (SqlException sqlex)
+            {
+                MessageBox.Show(sqlex.Message);
+                return -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return -1;
+            }
+            finally
+            {
+                getConnection().Close();
+            }
+        }
     }
 }

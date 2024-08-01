@@ -55,15 +55,19 @@
     <Compile Include="Controllers\AdministradorUsuarios\ControllerAdminUsuarios.cs" />
     <Compile Include="Controllers\ControllerInit.cs" />
     <Compile Include="Controllers\Dashboard\ControllerDashboard.cs" />
+    <Compile Include="Controllers\FirstUse\ControllerCreateFirstUser.cs" />
+    <Compile Include="Controllers\FirstUse\ControllerFirstUse.cs" />
     <Compile Include="Controllers\Helper\CommonClasses.cs" />
     <Compile Include="Controllers\Helper\SessionVar.cs" />
     <Compile Include="Controllers\Login\ControllerLogin.cs" />
     <Compile Include="Controllers\Server\ControllerAdminConnection.cs" />
     <Compile Include="Controllers\Server\ControllerConfirmPassword.cs" />
     <Compile Include="Models\DAO\DAOAdminUsers.cs" />
+    <Compile Include="Models\DAO\DAOFirstUse.cs" />
     <Compile Include="Models\DAO\DAOLogin.cs" />
     <Compile Include="Models\dbContext.cs" />
     <Compile Include="Models\DTO\DTOAdminUsers.cs" />
+    <Compile Include="Models\DTO\DTOFirstUse.cs" />
     <Compile Include="Models\DTO\DTOLogin.cs" />
     <Compile Include="Models\ModelInit.cs" />
     <Compile Include="Program.cs" />
@@ -103,6 +107,12 @@
     </Compile>
     <Compile Include="Views\Login\ViewLogin.Designer.cs">
       <DependentUpon>ViewLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Primer_Uso\ViewCreateFirstUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Primer_Uso\ViewCreateFirstUser.Designer.cs">
+      <DependentUpon>ViewCreateFirstUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Primer_Uso\ViewFirstUse.cs">
       <SubType>Form</SubType>
@@ -149,6 +159,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Login\ViewLogin.resx">
       <DependentUpon>ViewLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Primer_Uso\ViewCreateFirstUser.resx">
+      <DependentUpon>ViewCreateFirstUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Primer_Uso\ViewFirstUse.resx">
+      <DependentUpon>ViewFirstUse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Server\ViewAdminConnection.resx">
       <DependentUpon>ViewAdminConnection.cs</DependentUpon>
@@ -248,6 +264,8 @@
     <None Include="Resources\icons8-connected-20.png" />
     <None Include="Resources\icons8-settings-35.png" />
     <None Include="Resources\icons8-eliminar-usuario-masculino-48.png" />
+    <None Include="Resources\icons8-attach-35.png" />
+    <None Include="Resources\icons8-save-35.png" />
     <Content Include="Resources\Refresh.ico" />
     <None Include="Resources\Refresh.png" />
     <None Include="Resources\Server.png" />

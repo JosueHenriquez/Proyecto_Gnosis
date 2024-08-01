@@ -118,3 +118,5 @@ C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\g
 C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.csproj.Up2Date
 C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.exe
 C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.pdb
+C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Primer_Uso.ViewFirstUse.resources
+C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Primer_Uso.ViewCreateFirstUser.resources
