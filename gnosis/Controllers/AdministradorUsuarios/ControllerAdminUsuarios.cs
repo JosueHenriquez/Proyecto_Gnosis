@@ -168,8 +168,8 @@ namespace gnosis.Controllers.AdministradorUsuarios
         {
             int pos = ObjAdminUser.dgvPersonas.CurrentRow.Index;
             string userSelected = ObjAdminUser.dgvPersonas[8, pos].Value.ToString();
-            //MessageBox.Show($"{userSelected}");
-            if (!userSelected.Equals(SessionVar.Username))
+            MessageBox.Show($"{userSelected}");
+            if (!/*!userSelected.Equals(SessionVar.Username) || */userSelected.Equals("Engineer"))
             {
                 if (MessageBox.Show($"• Se eliminará la información de la persona, sin embargo, el usuario asociado quedará inactivo.\n\n• ¿Esta seguro que desea elimar a: {ObjAdminUser.dgvPersonas[1, pos].Value.ToString()} {ObjAdminUser.dgvPersonas[2, pos].Value.ToString()}, considere que dicha acción no se podrá revertir. \n\n• Si desea mantener la información utilice la opción de deshabilitar usuario.", "Confirmar acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
