@@ -3,7 +3,11 @@ using gnosis.Models.DAO;
 using gnosis.Views.Administrador_de_usuarios;
 using System;
 using System.Data;
+using System.Net.Mail;
+using System.Net;
+using System.Security.Cryptography;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace gnosis.Controllers.AdministradorUsuarios
 {
@@ -22,6 +26,7 @@ namespace gnosis.Controllers.AdministradorUsuarios
             //ObjAdminUser.txtSearch.KeyPress += new KeyPressEventHandler(Search);
             ObjAdminUser.btnBuscar.Click += new EventHandler(BuscarPeronasControllerEvent);
             ObjAdminUser.chkUserDisabled.CheckedChanged += new EventHandler(Checked);
+            ObjAdminUser.restablecerContraseñaToolStripMenuItem.Click += new EventHandler(RestartPassword);
         }
 
         public void Search(object sender, KeyPressEventArgs e)
@@ -193,5 +198,87 @@ namespace gnosis.Controllers.AdministradorUsuarios
                 MessageBox.Show("No puede eliminar al usuario ya que la sesión está activa, cierre sesión en todos los dispositivos y vuelva a intentarlo.","Error de proceso",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }          
         }
+
+        void RestartPassword(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Está seguro de restablecer la contraseña del usuario que ha seleccionado?","Confirmar acción", MessageBoxButtons.YesNo, MessageBoxIcon.Question)==DialogResult.Yes)
+            {
+                DAOAdminUsers daoRestartPassword = new DAOAdminUsers();
+                CommonClasses commonClasses = new CommonClasses();
+                int pos = ObjAdminUser.dgvPersonas.CurrentRow.Index;
+                //Capturando nombres del usuario
+                string firstName = ObjAdminUser.dgvPersonas[1, pos].Value.ToString();
+                string lastName = ObjAdminUser.dgvPersonas[2, pos].Value.ToString();
+                string nombrePersona = firstName + " " + lastName;
+                string emailDestinatario = ObjAdminUser.dgvPersonas[6, pos].Value.ToString();
+                daoRestartPassword.User = ObjAdminUser.dgvPersonas[8, pos].Value.ToString();
+                daoRestartPassword.Password = commonClasses.ComputeSha256Hash(daoRestartPassword.User + "PU123");
+                //Generando PIN de seguridad y enviado PIN a la base de datos
+                string pin = GenerarPin();
+                daoRestartPassword.Pin = commonClasses.ComputeSha256Hash(pin);
+                //Enviando PIN al correo de usuario
+
+                if (EnviarPinPorCorreo(emailDestinatario, pin, nombrePersona) && daoRestartPassword.RestablecerContrasena())
+                {
+                    MessageBox.Show("PIN de seguridad generado correctamente, indique al empleado que el PIN ha sido enviado a su correo registrado en el sistema.", "PIN de seguridad", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("El PIN no pudo ser registrado en la base de datos o no pudo enviarse al correo del destinatario, verifica la información.", "Proceso incompleto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+        string GenerarPin()
+        {
+            int longitud = 6;
+            byte[] data = new byte[longitud / 2];
+            using (RNGCryptoServiceProvider crypto = new RNGCryptoServiceProvider())
+            {
+                crypto.GetBytes(data);
+            }
+            string hex = BitConverter.ToString(data);
+            return hex.Replace("-", "").Substring(0, longitud);
+        }
+
+        bool EnviarPinPorCorreo(string emailDestinatario, string pin, string nombrePersona) 
+        {
+            // Configuración del correo electrónico
+            #region Credenciales de correo
+            string remitente = "assistent.gnosis@gmail.com";
+            string contraseña = "olyrkfpgwnmrmnxx";
+            #endregion
+            string servidorSmtp = "smtp.gmail.com";
+            int puertoSmtp = 587; // Puerto común para SMTP
+
+            // Crear un mensaje de correo electrónico
+            MailMessage mensaje = new MailMessage(remitente, emailDestinatario);
+            mensaje.Subject = "🚨🚨🚨Restablecimiento de contraseña";
+            mensaje.Body = $"Hola {nombrePersona}.\n\nEl administrador ha restablecido tu contraseña y para tu seguridad te hemos enviado un PIN el cual deberás ingresar para crear una nueva contraseña.\n\nDirigete al Inicio de Sesión y haz click en ¿Olvido su contraseña? posteriormente selecciona la opción de PIN de seguridad.\n\n El pin que deberás introducir es: {pin}, no compartas este PIN y tampoco el acceso a tu correo electrónico registrado en el sistema.";
+
+            // Configurar el cliente SMTP
+            SmtpClient clienteSmtp = new SmtpClient(servidorSmtp, puertoSmtp);
+            clienteSmtp.Credentials = new NetworkCredential(remitente, contraseña);
+            clienteSmtp.EnableSsl = true;
+
+            // Enviar el correo  
+            try
+            {
+                clienteSmtp.Send(mensaje);
+                return true;
+            }
+            catch (SmtpException ex)
+            {
+                MessageBox.Show($"{ex.Message}");
+                return false;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex.Message}");
+                return false;
+
+            }
+        }
+
     }
 }

@@ -32,6 +32,7 @@ namespace gnosis.Controllers.Login
             ObjLogin.BtnTest.Click += new EventHandler(TestConnection);
             ObjLogin.PasswordVisible.Click += new EventHandler(ShowPassword);
             ObjLogin.PasswordHide.Click += new EventHandler(HidePassword);
+            ObjLogin.linkRecuperarContra.Click += new EventHandler(RecuperarContra);
         }
         
         /// <summary>
@@ -178,6 +179,12 @@ namespace gnosis.Controllers.Login
             ObjLogin.txtPassword.UseSystemPasswordChar = true;
             ObjLogin.PasswordVisible.Visible = true;
             ObjLogin.PasswordHide.Visible = false;
+        }
+
+        void RecuperarContra(object sender, EventArgs e)
+        {
+            ViewRecuperarContrasena openForm = new ViewRecuperarContrasena();
+            openForm.ShowDialog();
         }
     }
 }

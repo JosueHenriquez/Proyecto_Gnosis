@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
@@ -44,6 +45,35 @@ namespace gnosis.Controllers.Helper
                 }
                 return builder.ToString();
             }
+        }
+        public bool TieneAlMenos8Caracteres(string contrasena)
+        {
+            return contrasena.Length >= 8;
+        }
+        public bool ContieneAlMenosUnNumero(string contrasena)
+        {
+            return contrasena.Any(char.IsDigit);
+        }
+        public bool ContieneAlMenosUnaMayuscula(string contrasena)
+        {
+            return contrasena.Any(char.IsUpper);
+        }
+        public bool ContieneAlMenosUnaMinuscula(string contrasena)
+        {
+            return contrasena.Any(char.IsLower);
+        }
+        public bool ContieneAlMenosUnSimbolo(string contrasena)
+        {
+            string simbolos = "@$#_";
+            return contrasena.Any(simbolo => simbolos.Contains(simbolo));
+        }
+        public bool EsValida(string contrasena)
+        {
+            return TieneAlMenos8Caracteres(contrasena) &&
+                   ContieneAlMenosUnNumero(contrasena) &&
+                   ContieneAlMenosUnaMayuscula(contrasena) &&
+                   ContieneAlMenosUnaMinuscula(contrasena) &&
+                   ContieneAlMenosUnSimbolo(contrasena);
         }
     }
 }

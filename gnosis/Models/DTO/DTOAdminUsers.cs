@@ -24,6 +24,9 @@ namespace gnosis.Models.DTO
         private bool userStatus;
         private int userAttempts;
         private int role;
+        private int idBussines;
+        private int session;
+        private string pin;
 
         public int PersonId { get => personId; set => personId = value; }
         public string FirstName { get => firstName; set => firstName = value; }
@@ -39,5 +42,8 @@ namespace gnosis.Models.DTO
         public int UserAttempts { get => userAttempts; set => userAttempts = value; }
         public int Role { get => role; set => role = value; }
         public string Image { get => image; set => image = value; }
+        public int IdBussines { get => idBussines; set => idBussines = value; }
+        public int Session { get => session; set => session = value; }
+        public string Pin { get => pin; set => pin = value; }
     }
 }
