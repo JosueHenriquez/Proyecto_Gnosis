@@ -17,8 +17,7 @@ namespace gnosis.Models
         public string Password { get => password; set => password = value; }
 
         public static SqlConnection getConnection()
-        { 
-            
+        {
             try
             {
                 string server = "SQL8005.site4now.net";

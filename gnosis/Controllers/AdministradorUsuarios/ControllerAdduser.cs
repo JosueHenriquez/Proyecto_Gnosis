@@ -5,6 +5,7 @@ using System;
 using System.Data;
 using System.Drawing;
 using System.IO;
+using System.Security.Cryptography;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 using Image = System.Drawing.Image;
@@ -34,7 +35,6 @@ namespace gnosis.Controllers.AdministradorUsuarios
 
             //Métodos que se ejecutan al ocurrir eventos
             ObjAddUser.btnAdd.Click += new EventHandler(NewRegister);
-            //ObjAddUser.btnFoto.Click += new EventHandler(ChargePhoto);
         }
 
         /// <summary>
@@ -84,7 +84,6 @@ namespace gnosis.Controllers.AdministradorUsuarios
                 ObjAddUser.comboRole.Text = role;
             }
         }
-
         public void verificarAccion()
         {
             if (accion == 1)
@@ -114,7 +113,6 @@ namespace gnosis.Controllers.AdministradorUsuarios
                 ObjAddUser.btnRestablecer.Enabled=false;
             }
         }
-
         //public void SavePhoto()
         //{
         //    if (ObjAddUser.picFoto.Image != null)
@@ -158,7 +156,7 @@ namespace gnosis.Controllers.AdministradorUsuarios
                 DAOInsert.PersonPhone = ObjAddUser.txtPhone.Text.Trim();
                 //Datos para creación de usuario
                 DAOInsert.User = ObjAddUser.txtUsername.Text.Trim();
-                DAOInsert.Password = commonClasses.ComputeSha256Hash(ObjAddUser.txtUsername.Text.Trim() + "PU123");
+                DAOInsert.Password = commonClasses.ComputeSha256Hash(ObjAddUser.txtUsername.Text.Trim());
                 DAOInsert.UserStatus = true;
                 DAOInsert.UserAttempts = 0;
                 DAOInsert.Role = int.Parse(ObjAddUser.comboRole.SelectedValue.ToString());
@@ -189,7 +187,6 @@ namespace gnosis.Controllers.AdministradorUsuarios
                                     MessageBoxIcon.Warning);
             }            
         }//Fin del metodo NewRegister
-
         public void UpdateRegister(object sender, EventArgs e)
         {
             DAOAdminUsers daoUpdate = new DAOAdminUsers();
@@ -250,7 +247,7 @@ namespace gnosis.Controllers.AdministradorUsuarios
                 MessageBox.Show($"{ex.Message}");
             }
         }
-
+        
         //public void ChargePhoto(object sender, EventArgs e)
         //{
         //    DAOAdminUsers daoAdmin = new DAOAdminUsers();

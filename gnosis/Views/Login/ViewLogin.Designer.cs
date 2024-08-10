@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,7 +40,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.LblPassword = new System.Windows.Forms.Label();
             this.LblUsername = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkRecuperarContra = new System.Windows.Forms.LinkLabel();
             this.BtnStart = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.BtnExit = new System.Windows.Forms.ToolStripButton();
@@ -119,7 +120,7 @@
             this.panel2.Controls.Add(this.checkBox1);
             this.panel2.Controls.Add(this.LblPassword);
             this.panel2.Controls.Add(this.LblUsername);
-            this.panel2.Controls.Add(this.linkLabel1);
+            this.panel2.Controls.Add(this.linkRecuperarContra);
             this.panel2.Controls.Add(this.BtnStart);
             this.panel2.Controls.Add(this.toolStrip1);
             this.panel2.Controls.Add(this.txtPassword);
@@ -192,18 +193,18 @@
             this.LblUsername.Text = "Usuario";
             this.LblUsername.Visible = false;
             // 
-            // linkLabel1
+            // linkRecuperarContra
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.DarkRed;
-            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.linkLabel1.Location = new System.Drawing.Point(67, 299);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(143, 17);
-            this.linkLabel1.TabIndex = 6;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "¿Olvido su contraseña?";
+            this.linkRecuperarContra.ActiveLinkColor = System.Drawing.Color.DarkRed;
+            this.linkRecuperarContra.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.linkRecuperarContra.AutoSize = true;
+            this.linkRecuperarContra.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.linkRecuperarContra.Location = new System.Drawing.Point(67, 299);
+            this.linkRecuperarContra.Name = "linkRecuperarContra";
+            this.linkRecuperarContra.Size = new System.Drawing.Size(143, 17);
+            this.linkRecuperarContra.TabIndex = 6;
+            this.linkRecuperarContra.TabStop = true;
+            this.linkRecuperarContra.Text = "¿Olvido su contraseña?";
             // 
             // BtnStart
             // 
@@ -273,7 +274,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ViewLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -300,7 +302,6 @@
         public System.Windows.Forms.TextBox txtUsername;
         public System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         public System.Windows.Forms.ToolStripButton BtnExit;
         public System.Windows.Forms.Label LblPassword;
         public System.Windows.Forms.Label LblUsername;
@@ -310,5 +311,6 @@
         public System.Windows.Forms.Button BtnStart;
         public System.Windows.Forms.PictureBox PasswordVisible;
         public System.Windows.Forms.PictureBox PasswordHide;
+        public System.Windows.Forms.LinkLabel linkRecuperarContra;
     }
 }

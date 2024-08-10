@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.chkUserDisabled = new System.Windows.Forms.CheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -38,18 +40,17 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.dgvPersonas = new System.Windows.Forms.DataGridView();
             this.contextDataGrid = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.chkUserDisabled = new System.Windows.Forms.CheckBox();
             this.cmsActualizar = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsEliminar = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsFicha = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsdesahilitarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.restablecerContraseñaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).BeginInit();
             this.contextDataGrid.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -66,6 +67,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1240, 62);
             this.panel1.TabIndex = 2;
+            // 
+            // chkUserDisabled
+            // 
+            this.chkUserDisabled.AutoSize = true;
+            this.chkUserDisabled.Location = new System.Drawing.Point(747, 26);
+            this.chkUserDisabled.Name = "chkUserDisabled";
+            this.chkUserDisabled.Size = new System.Drawing.Size(136, 20);
+            this.chkUserDisabled.TabIndex = 5;
+            this.chkUserDisabled.Text = "Usuarios inactivos";
+            this.chkUserDisabled.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::gnosis.Properties.Resources.Search;
+            this.pictureBox1.Location = new System.Drawing.Point(623, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // btnBuscar
             // 
@@ -152,63 +173,51 @@
             this.cmsActualizar,
             this.cmsEliminar,
             this.cmsFicha,
-            this.cmsdesahilitarUsuarioToolStripMenuItem});
+            this.cmsdesahilitarUsuarioToolStripMenuItem,
+            this.restablecerContraseñaToolStripMenuItem});
             this.contextDataGrid.Name = "contextDataGrid";
-            this.contextDataGrid.Size = new System.Drawing.Size(192, 114);
-            // 
-            // chkUserDisabled
-            // 
-            this.chkUserDisabled.AutoSize = true;
-            this.chkUserDisabled.Location = new System.Drawing.Point(747, 26);
-            this.chkUserDisabled.Name = "chkUserDisabled";
-            this.chkUserDisabled.Size = new System.Drawing.Size(136, 20);
-            this.chkUserDisabled.TabIndex = 5;
-            this.chkUserDisabled.Text = "Usuarios inactivos";
-            this.chkUserDisabled.UseVisualStyleBackColor = true;
+            this.contextDataGrid.Size = new System.Drawing.Size(196, 136);
             // 
             // cmsActualizar
             // 
             this.cmsActualizar.Image = global::gnosis.Properties.Resources.Refresh;
             this.cmsActualizar.Name = "cmsActualizar";
-            this.cmsActualizar.Size = new System.Drawing.Size(191, 22);
+            this.cmsActualizar.Size = new System.Drawing.Size(195, 22);
             this.cmsActualizar.Text = "Actualizar registro";
             // 
             // cmsEliminar
             // 
             this.cmsEliminar.Image = global::gnosis.Properties.Resources.Close;
             this.cmsEliminar.Name = "cmsEliminar";
-            this.cmsEliminar.Size = new System.Drawing.Size(191, 22);
+            this.cmsEliminar.Size = new System.Drawing.Size(195, 22);
             this.cmsEliminar.Text = "Eliminar registro";
             // 
             // cmsFicha
             // 
             this.cmsFicha.Image = global::gnosis.Properties.Resources.Male_User;
             this.cmsFicha.Name = "cmsFicha";
-            this.cmsFicha.Size = new System.Drawing.Size(191, 22);
+            this.cmsFicha.Size = new System.Drawing.Size(195, 22);
             this.cmsFicha.Text = "Ver ficha de empleado";
             // 
             // cmsdesahilitarUsuarioToolStripMenuItem
             // 
             this.cmsdesahilitarUsuarioToolStripMenuItem.Image = global::gnosis.Properties.Resources.icons8_eliminar_usuario_masculino_48;
             this.cmsdesahilitarUsuarioToolStripMenuItem.Name = "cmsdesahilitarUsuarioToolStripMenuItem";
-            this.cmsdesahilitarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.cmsdesahilitarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
             this.cmsdesahilitarUsuarioToolStripMenuItem.Text = "Desahilitar usuario";
             // 
-            // pictureBox1
+            // restablecerContraseñaToolStripMenuItem
             // 
-            this.pictureBox1.Image = global::gnosis.Properties.Resources.Search;
-            this.pictureBox1.Location = new System.Drawing.Point(623, 23);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.restablecerContraseñaToolStripMenuItem.Image = global::gnosis.Properties.Resources.Access;
+            this.restablecerContraseñaToolStripMenuItem.Name = "restablecerContraseñaToolStripMenuItem";
+            this.restablecerContraseñaToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.restablecerContraseñaToolStripMenuItem.Text = "Restablecer contraseña";
             // 
             // ViewAdministradorUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1250, 651);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -221,11 +230,11 @@
             this.Text = "ViewAdministradorUsuarios";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).EndInit();
             this.contextDataGrid.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -246,5 +255,6 @@
         public System.Windows.Forms.Button btnBuscar;
         public System.Windows.Forms.CheckBox chkUserDisabled;
         public System.Windows.Forms.ToolStripMenuItem cmsdesahilitarUsuarioToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem restablecerContraseñaToolStripMenuItem;
     }
 }

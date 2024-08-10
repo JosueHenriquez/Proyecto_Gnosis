@@ -193,6 +193,16 @@ namespace gnosis.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_administrator_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-administrator-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_attach_35 {
             get {
                 object obj = ResourceManager.GetObject("icons8-attach-35", resourceCulture);
@@ -226,6 +236,26 @@ namespace gnosis.Properties {
         internal static System.Drawing.Bitmap icons8_eliminar_usuario_masculino_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-eliminar-usuario-masculino-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_gmail_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-gmail-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_gmail_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-gmail-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -276,6 +306,16 @@ namespace gnosis.Properties {
         internal static System.Drawing.Bitmap icons8_menú_35 {
             get {
                 object obj = ResourceManager.GetObject("icons8-menú-35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_office_365_security___compliance_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-office-365-security-&-compliance-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -13,15 +13,6 @@ namespace gnosis.Models.DTO
 
         public string Username { get => username; set => username = value; }
         public string Password { get => password; set => password = value; }
-        public bool V { get; }
-
-        public DTOLogin() { }
-
-        public DTOLogin(bool v, string username, string password)
-        {
-            V = v;
-            this.username = username;
-            this.password = password;
-        }
+        
     }
 }

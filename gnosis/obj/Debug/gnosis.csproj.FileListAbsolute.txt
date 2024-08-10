@@ -120,3 +120,24 @@ C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\g
 C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.pdb
 C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Primer_Uso.ViewFirstUse.resources
 C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Primer_Uso.ViewCreateFirstUser.resources
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\gnosis.exe.config
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\gnosis.exe
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\gnosis.pdb
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.csproj.AssemblyReference.cache
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Properties.Resources.resources
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Administrador_de_usuarios.ViewAddUser.resources
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Administrador_de_usuarios.ViewAdministradorUsuarios.resources
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Dashboard.ViewDashboard.resources
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Dashboard.ViewStatistics.resources
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewLogin.resources
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Primer_Uso.ViewCreateFirstUser.resources
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Primer_Uso.ViewFirstUse.resources
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Server.ViewAdminConnection.resources
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Server.ViewConfirmPassword.resources
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.csproj.GenerateResource.cache
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.csproj.CoreCompileInputs.cache
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.csproj.Up2Date
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.exe
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.pdb
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewCambiarClave.resources
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewRecuperarContrasena.resources

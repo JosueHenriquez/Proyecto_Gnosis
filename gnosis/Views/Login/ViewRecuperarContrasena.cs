@@ -1,4 +1,5 @@
-﻿using System;
+﻿using gnosis.Controllers.Login;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,12 @@ using System.Windows.Forms;
 
 namespace gnosis.Views.Login
 {
-    public partial class CambiarClave : Form
+    public partial class ViewRecuperarContrasena : Form
     {
-        public CambiarClave()
+        public ViewRecuperarContrasena()
         {
             InitializeComponent();
+            ControllerMetodosDeRecuperacion next = new ControllerMetodosDeRecuperacion(this);
         }
     }
 }

@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +46,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Designer.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
@@ -59,7 +77,9 @@
     <Compile Include="Controllers\FirstUse\ControllerFirstUse.cs" />
     <Compile Include="Controllers\Helper\CommonClasses.cs" />
     <Compile Include="Controllers\Helper\SessionVar.cs" />
+    <Compile Include="Controllers\Login\ControllerCambiarContrasena.cs" />
     <Compile Include="Controllers\Login\ControllerLogin.cs" />
+    <Compile Include="Controllers\Login\ControllerMetodosDeRecuperacion.cs" />
     <Compile Include="Controllers\Server\ControllerAdminConnection.cs" />
     <Compile Include="Controllers\Server\ControllerConfirmPassword.cs" />
     <Compile Include="Models\DAO\DAOAdminUsers.cs" />
@@ -96,17 +116,23 @@
     <Compile Include="Views\Dashboard\ViewStatistics.Designer.cs">
       <DependentUpon>ViewStatistics.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Login\CambiarClave.cs">
+    <Compile Include="Views\Login\ViewCambiarClave.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Login\CambiarClave.Designer.cs">
-      <DependentUpon>CambiarClave.cs</DependentUpon>
+    <Compile Include="Views\Login\ViewCambiarClave.Designer.cs">
+      <DependentUpon>ViewCambiarClave.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Login\ViewLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Login\ViewLogin.Designer.cs">
       <DependentUpon>ViewLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login\ViewRecuperarContrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Login\ViewRecuperarContrasena.Designer.cs">
+      <DependentUpon>ViewRecuperarContrasena.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Primer_Uso\ViewCreateFirstUser.cs">
       <SubType>Form</SubType>
@@ -154,11 +180,14 @@
     <EmbeddedResource Include="Views\Dashboard\ViewStatistics.resx">
       <DependentUpon>ViewStatistics.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Login\CambiarClave.resx">
-      <DependentUpon>CambiarClave.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Login\ViewCambiarClave.resx">
+      <DependentUpon>ViewCambiarClave.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Login\ViewLogin.resx">
       <DependentUpon>ViewLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Login\ViewRecuperarContrasena.resx">
+      <DependentUpon>ViewRecuperarContrasena.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Primer_Uso\ViewCreateFirstUser.resx">
       <DependentUpon>ViewCreateFirstUser.cs</DependentUpon>
@@ -266,12 +295,29 @@
     <None Include="Resources\icons8-eliminar-usuario-masculino-48.png" />
     <None Include="Resources\icons8-attach-35.png" />
     <None Include="Resources\icons8-save-35.png" />
+    <Content Include="Designer.ico" />
+    <None Include="Resources\icons8-gmail-48.png" />
+    <None Include="Resources\icons8-gmail-100.png" />
+    <None Include="Resources\icons8-administrator-100.png" />
+    <None Include="Resources\icons8-office-365-security-&amp;-compliance-100.png" />
     <Content Include="Resources\Refresh.ico" />
     <None Include="Resources\Refresh.png" />
     <None Include="Resources\Server.png" />
     <None Include="Resources\Search.png" />
     <None Include="Resources\Server1.png" />
     <Content Include="Resources\Trash.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
