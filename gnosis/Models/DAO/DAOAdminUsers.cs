@@ -66,7 +66,7 @@ namespace gnosis.Models.DAO
                 //**
                 //Se crea el query que indica la acción que el sistema desea realizar con la base de datos
                 //el query posee parametros para evitar algún tipo de ataque como SQL Injection
-                string query2 = "INSERT INTO tbUser(username, password, userStatus, userAttempts, roleId) VALUES (@username, @password, @userStatus, @userAttempts, @roleId)";
+                string query2 = "INSERT INTO tbUser VALUES (@username, @password, @userStatus, @userAttempts, @roleId, @session, @idBussines, @pin)";
                 //Se crea un comando de tipo sql al cual se le pasa el query y la conexión, esto para que el sistema sepa que hacer y donde hacerlo.
                 SqlCommand cmd2 = new SqlCommand(query2, Command.Connection);
                 //Se le da un valor a los parametros contenidos en el query, es importante mencionar que lo que esta entre comillas es el nombre del parametro y lo que esta después de la coma es el valor que se le asignará al parametro, estos valores vienen del DTO respectivo.
@@ -75,6 +75,9 @@ namespace gnosis.Models.DAO
                 cmd2.Parameters.AddWithValue("userStatus", UserStatus);
                 cmd2.Parameters.AddWithValue("userAttempts", UserAttempts);
                 cmd2.Parameters.AddWithValue("roleId", Role);
+                cmd2.Parameters.AddWithValue("session", 0);
+                cmd2.Parameters.AddWithValue("IdBussines", 6);
+                cmd2.Parameters.AddWithValue("pin","null");
                 //Se ejecuta el comando ya con todos los valores de sus parametros.
                 //ExecuteNonQuery indicará cuantos filas fueron afectadas, es decir, cuantas filas de datos se ingresaron, por lo general devolvera 1 porque se hace una inserción a la vez.
                 int respuesta = cmd2.ExecuteNonQuery();
@@ -379,6 +382,23 @@ namespace gnosis.Models.DAO
             }
         }
 
+
+        public bool RegistrarPIN()
+        {
+            try
+            {
+                Command.Connection = getConnection();
+                string queryupdate = "UPDATE tbUser SET pinRestartPassword = @valor1 WHERE username = @username";
+                SqlCommand cmdupdate = new SqlCommand(queryupdate, Command.Connection);
+                cmdupdate.Parameters.AddWithValue("valor1", Pin);
+                cmdupdate.Parameters.AddWithValue("username", User);
+                return cmdupdate.ExecuteNonQuery() > 0 ? true : false;
+            }
+            catch (SqlException)
+            {
+                return false;
+            }
+        }
 
         public bool RestablecerContrasena()
         {
