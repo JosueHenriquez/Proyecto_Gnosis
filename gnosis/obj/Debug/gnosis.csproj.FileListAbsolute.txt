@@ -141,3 +141,4 @@ C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.exe
 C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.pdb
 C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewCambiarClave.resources
 C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewRecuperarContrasena.resources
+C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewCambiarClaveDefecto.resources

@@ -53,12 +53,16 @@ namespace gnosis.Controllers.Login
             bool answer = DAOData.ValidarLogin();
             //MessageBox.Show("" + answer);
             //Se evalúa el valor de la variable answer
-            if (answer == true)
+            if (answer == true && ObjLogin.txtPassword.Text.Trim() != DAOData.Username+"PU123")
             {
                 ObjLogin.Hide();
                 ViewDashboard viewDashboard = new ViewDashboard(ObjLogin.txtUsername.Text);
                 viewDashboard.Show();
-                
+            }
+            else if (answer == true && ObjLogin.txtPassword.Text.Trim() == DAOData.Username + "PU123")
+            {
+                ViewCambiarClaveDefecto openForm = new ViewCambiarClaveDefecto();
+                openForm.ShowDialog();
             }
             else 
             {

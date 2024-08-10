@@ -156,7 +156,7 @@ namespace gnosis.Controllers.AdministradorUsuarios
                 DAOInsert.PersonPhone = ObjAddUser.txtPhone.Text.Trim();
                 //Datos para creación de usuario
                 DAOInsert.User = ObjAddUser.txtUsername.Text.Trim();
-                DAOInsert.Password = commonClasses.ComputeSha256Hash(ObjAddUser.txtUsername.Text.Trim());
+                DAOInsert.Password = commonClasses.ComputeSha256Hash(ObjAddUser.txtUsername.Text.Trim()+"PU123");
                 DAOInsert.UserStatus = true;
                 DAOInsert.UserAttempts = 0;
                 DAOInsert.Role = int.Parse(ObjAddUser.comboRole.SelectedValue.ToString());

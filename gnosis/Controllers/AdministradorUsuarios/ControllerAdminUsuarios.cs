@@ -212,13 +212,12 @@ namespace gnosis.Controllers.AdministradorUsuarios
                 string nombrePersona = firstName + " " + lastName;
                 string emailDestinatario = ObjAdminUser.dgvPersonas[6, pos].Value.ToString();
                 daoRestartPassword.User = ObjAdminUser.dgvPersonas[8, pos].Value.ToString();
-                daoRestartPassword.Password = commonClasses.ComputeSha256Hash(daoRestartPassword.User + "PU123");
                 //Generando PIN de seguridad y enviado PIN a la base de datos
                 string pin = GenerarPin();
                 daoRestartPassword.Pin = commonClasses.ComputeSha256Hash(pin);
                 //Enviando PIN al correo de usuario
 
-                if (EnviarPinPorCorreo(emailDestinatario, pin, nombrePersona) && daoRestartPassword.RestablecerContrasena())
+                if (EnviarPinPorCorreo(emailDestinatario, pin, nombrePersona) && daoRestartPassword.RegistrarPIN())
                 {
                     MessageBox.Show("PIN de seguridad generado correctamente, indique al empleado que el PIN ha sido enviado a su correo registrado en el sistema.", "PIN de seguridad", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -252,8 +251,8 @@ namespace gnosis.Controllers.AdministradorUsuarios
 
             // Crear un mensaje de correo electrónico
             MailMessage mensaje = new MailMessage(remitente, emailDestinatario);
-            mensaje.Subject = "🚨🚨🚨Restablecimiento de contraseña";
-            mensaje.Body = $"Hola {nombrePersona}.\n\nEl administrador ha restablecido tu contraseña y para tu seguridad te hemos enviado un PIN el cual deberás ingresar para crear una nueva contraseña.\n\nDirigete al Inicio de Sesión y haz click en ¿Olvido su contraseña? posteriormente selecciona la opción de PIN de seguridad.\n\n El pin que deberás introducir es: {pin}, no compartas este PIN y tampoco el acceso a tu correo electrónico registrado en el sistema.";
+            mensaje.Subject = "🚨🚨 Restablecimiento de contraseña";
+            mensaje.Body = $"Hola {nombrePersona}.\n\nEl administrador ha restablecido tu contraseña y para tu seguridad te hemos enviado un PIN el cual deberás ingresar para crear una nueva contraseña.\n\nDirigete al Inicio de Sesión y haz click en ¿Olvido su contraseña? posteriormente selecciona la opción de PIN de seguridad.\n\n El pin que deberás introducir es: {pin}, no compartas este PIN y tampoco el acceso a tu correo electrónico registrado en el sistema.\nEn caso no solicitaste el restablecimiento de tu usuario, contacta con el administrador.";
 
             // Configurar el cliente SMTP
             SmtpClient clienteSmtp = new SmtpClient(servidorSmtp, puertoSmtp);
