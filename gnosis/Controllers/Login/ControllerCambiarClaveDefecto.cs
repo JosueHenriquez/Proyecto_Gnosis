@@ -23,20 +23,31 @@ namespace gnosis.Controllers.Login
         void CambiarClaveDefecto(object sender, EventArgs e)
         {
             DAOAdminUsers daoUpdatePassword = new DAOAdminUsers();
+            CommonClasses common = new CommonClasses();
             daoUpdatePassword.User = vista.txtUsuario.Text.Trim();
             if (vista.txtNuevaContra.Text.Trim().Equals(vista.txtConfirmarNuevaContra.Text.Trim()))
             {
-                CommonClasses common = new CommonClasses();
-                daoUpdatePassword.Password = common.ComputeSha256Hash(vista.txtConfirmarNuevaContra.Text.Trim());
-                if (daoUpdatePassword.RestablecerContrasena())
+                if (common.EsValida(vista.txtConfirmarNuevaContra.Text.Trim()))
                 {
-                    MessageBox.Show("Contraseña actualizada con exito.","Proceso finalizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    daoUpdatePassword.Password = common.ComputeSha256Hash(vista.txtConfirmarNuevaContra.Text.Trim());
+                    if (daoUpdatePassword.RestablecerContrasena())
+                    {
+                        MessageBox.Show("Contraseña actualizada con exito.", "Proceso finalizado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Contraseña no pudo ser actualizada.", "Proceso incompleto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Contraseña no pudo ser actualizada.", "Proceso incompleto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("La contraseña no cumple con los requisitos.", "Proceso incompleto", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            }    
+            }
+            else
+            {
+                MessageBox.Show("Las contraseñas no coinciden, favor escriba la misma contraseña.", "Proceso incompleto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
