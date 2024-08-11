@@ -21,24 +21,33 @@ namespace gnosis.Controllers.Login
 
         void CambiarClave(object sender, EventArgs e)
         {
-            if (VerificarPIN())
+            if (!(string.IsNullOrEmpty(vista.txtPIN.Text.Trim()) ||
+                string.IsNullOrEmpty(vista.txtUsuario.Text.Trim()) ||
+                string.IsNullOrEmpty(vista.txtNuevaContra.Text.Trim()) ||
+                string.IsNullOrEmpty(vista.txtConfirmarNuevaContra.Text.Trim())))
             {
-                if (RestablecerClave())
+                if (VerificarPIN())
                 {
-                    MessageBox.Show("Contraseña restablecida con exito, ya puedes iniciar sesión con tu nueva contraseña.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    vista.Dispose();
+                    if (RestablecerClave())
+                    {
+                        MessageBox.Show("Contraseña restablecida con exito, ya puedes iniciar sesión con tu nueva contraseña.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        vista.Dispose();
+                    }
+                    else
+                    {
+                        MessageBox.Show("La contraseña no pudo ser actualizada, vuelve a intentarlo, si el error persiste contacta al administrador del sistema.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("La contraseña no pudo ser actualizada, vuelve a intentarlo, si el error persiste contacta al administrador del sistema.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("El PIN o el usuario son incorrectos, verifique la información proporcionada.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("El PIN o el usuario son incorrectos, verifique la información proporcionada.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }          
-        }            
-        
+                MessageBox.Show("Todos los campos requeridos, favor completalos para establecer una nueva contraseña.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }        
 
         bool VerificarPIN()
         {

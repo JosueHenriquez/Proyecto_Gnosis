@@ -77,7 +77,7 @@ namespace gnosis.Models.DAO
                 cmd2.Parameters.AddWithValue("roleId", Role);
                 cmd2.Parameters.AddWithValue("session", 0);
                 cmd2.Parameters.AddWithValue("IdBussines", 6);
-                cmd2.Parameters.AddWithValue("pin","null");
+                cmd2.Parameters.AddWithValue("pin", "null");
                 //Se ejecuta el comando ya con todos los valores de sus parametros.
                 //ExecuteNonQuery indicará cuantos filas fueron afectadas, es decir, cuantas filas de datos se ingresaron, por lo general devolvera 1 porque se hace una inserción a la vez.
                 int respuesta = cmd2.ExecuteNonQuery();
@@ -405,9 +405,10 @@ namespace gnosis.Models.DAO
             try
             {
                 Command.Connection = getConnection();
-                string queryupdate = "UPDATE tbUser SET password = @valor1 WHERE username = @username";
+                string queryupdate = "UPDATE tbUser SET password = @valor1, pinRestartPassword = @valor2 WHERE username = @username";
                 SqlCommand cmdupdate = new SqlCommand(queryupdate, Command.Connection);
                 cmdupdate.Parameters.AddWithValue("valor1", Password);
+                cmdupdate.Parameters.AddWithValue("valor2", string.Empty);
                 cmdupdate.Parameters.AddWithValue("username", User);
                 return cmdupdate.ExecuteNonQuery() > 0 ? true : false;
             }
