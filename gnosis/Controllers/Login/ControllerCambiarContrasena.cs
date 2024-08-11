@@ -52,12 +52,22 @@ namespace gnosis.Controllers.Login
         bool RestablecerClave()
         {
             DAOAdminUsers daoVerificar = new DAOAdminUsers();
-            CommonClasses commonClasses = new CommonClasses();  
+            CommonClasses commonClasses = new CommonClasses();
+
             if (vista.txtNuevaContra.Text.Trim().Equals(vista.txtConfirmarNuevaContra.Text.Trim()))
             {
-                daoVerificar.Password = commonClasses.ComputeSha256Hash(vista.txtConfirmarNuevaContra.Text.Trim());
-                daoVerificar.User = vista.txtUsuario.Text.Trim();
-                return daoVerificar.RestablecerContrasena();
+                if (commonClasses.EsValida((vista.txtConfirmarNuevaContra.Text.Trim())))
+                {
+                    daoVerificar.Password = commonClasses.ComputeSha256Hash(vista.txtConfirmarNuevaContra.Text.Trim());
+                    daoVerificar.User = vista.txtUsuario.Text.Trim();
+                    return daoVerificar.RestablecerContrasena();
+                }
+                else
+                {
+                    MessageBox.Show("Contraseña no pudo ser actualizada debido a que no cumple con los requisitos de seguridad, verifique al lado izquierdo de la ventana.", "Proceso incompleto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+                
             }
             else
             {

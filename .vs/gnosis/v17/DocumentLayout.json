@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Cocho\\Documents\\GitHub\\Proyecto_Gnosis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\cocho\\documents\\github\\proyecto_gnosis\\gnosis\\models\\dao\\daoadminusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\models\\dao\\daoadminusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\cocho\\documents\\github\\proyecto_gnosis\\gnosis\\controllers\\login\\controllerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\controllers\\login\\controllerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\cocho\\documents\\github\\proyecto_gnosis\\gnosis\\controllers\\login\\controllercambiarcontrasena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\controllers\\login\\controllercambiarcontrasena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DAOAdminUsers.cs",
-              "DocumentMoniker": "C:\\Users\\Cocho\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Models\\DAO\\DAOAdminUsers.cs",
-              "RelativeDocumentMoniker": "gnosis\\Models\\DAO\\DAOAdminUsers.cs",
-              "ToolTip": "C:\\Users\\Cocho\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Models\\DAO\\DAOAdminUsers.cs",
-              "RelativeToolTip": "gnosis\\Models\\DAO\\DAOAdminUsers.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAkwE8AAAAxAAAA",
+              "Title": "ControllerCambiarContrasena.cs",
+              "DocumentMoniker": "C:\\Users\\Cocho\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\Login\\ControllerCambiarContrasena.cs",
+              "RelativeDocumentMoniker": "gnosis\\Controllers\\Login\\ControllerCambiarContrasena.cs",
+              "ToolTip": "C:\\Users\\Cocho\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\Login\\ControllerCambiarContrasena.cs",
+              "RelativeToolTip": "gnosis\\Controllers\\Login\\ControllerCambiarContrasena.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAuwEIAAACqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T23:18:24.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ControllerLogin.cs",
-              "DocumentMoniker": "C:\\Users\\Cocho\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\Login\\ControllerLogin.cs",
-              "RelativeDocumentMoniker": "gnosis\\Controllers\\Login\\ControllerLogin.cs",
-              "ToolTip": "C:\\Users\\Cocho\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\Login\\ControllerLogin.cs",
-              "RelativeToolTip": "gnosis\\Controllers\\Login\\ControllerLogin.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAywAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T23:15:55.737Z",
+              "WhenOpened": "2024-08-11T00:29:14.453Z",
               "EditorCaption": ""
             }
           ]
