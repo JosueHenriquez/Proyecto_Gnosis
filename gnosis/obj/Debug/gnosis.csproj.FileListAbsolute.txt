@@ -109,7 +109,6 @@ C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\g
 C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Administrador_de_usuarios.ViewAdministradorUsuarios.resources
 C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Dashboard.ViewDashboard.resources
 C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Dashboard.ViewStatistics.resources
-C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.CambiarClave.resources
 C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewLogin.resources
 C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Server.ViewAdminConnection.resources
 C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Server.ViewConfirmPassword.resources
@@ -142,3 +141,6 @@ C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.pdb
 C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewCambiarClave.resources
 C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewRecuperarContrasena.resources
 C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewCambiarClaveDefecto.resources
+C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewCambiarClave.resources
+C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewCambiarClaveDefecto.resources
+C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewRecuperarContrasena.resources
