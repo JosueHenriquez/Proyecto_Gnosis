@@ -144,3 +144,4 @@ C:\Users\Cocho\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Lo
 C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewCambiarClave.resources
 C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewCambiarClaveDefecto.resources
 C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Login.ViewRecuperarContrasena.resources
+C:\Users\Josue A. Henríquez\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Books.ViewBooks.resources

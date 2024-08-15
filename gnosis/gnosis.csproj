@@ -105,6 +105,12 @@
     <Compile Include="Views\Administrador de usuarios\ViewAdministradorUsuarios.Designer.cs">
       <DependentUpon>ViewAdministradorUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Books\ViewBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Books\ViewBooks.Designer.cs">
+      <DependentUpon>ViewBooks.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Dashboard\ViewDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     <EmbeddedResource Include="Views\Administrador de usuarios\ViewAdministradorUsuarios.resx">
       <DependentUpon>ViewAdministradorUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Books\ViewBooks.resx">
+      <DependentUpon>ViewBooks.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Dashboard\ViewDashboard.resx">
       <DependentUpon>ViewDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,7 +235,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Fotos\" />
-    <Folder Include="Views\Books\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\undraw_Login_re_4vu2.png" />
@@ -310,6 +318,10 @@
     <None Include="Resources\icons8-gmail-100.png" />
     <None Include="Resources\icons8-administrator-100.png" />
     <None Include="Resources\icons8-office-365-security-&amp;-compliance-100.png" />
+    <None Include="Resources\icons8-búsqueda-25.png" />
+    <None Include="Resources\icons8-añadir-20.png" />
+    <None Include="Resources\icons8-17372-0-73111-reproducir-derecha-43-flechas-25.png" />
+    <None Include="Resources\icons8-basura-llena-25.png" />
     <Content Include="Resources\Refresh.ico" />
     <None Include="Resources\Refresh.png" />
     <None Include="Resources\Server.png" />
