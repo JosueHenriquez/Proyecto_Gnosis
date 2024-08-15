@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using gnosis.Views.Server;
 using gnosis.Controllers.Helper;
 using gnosis.Views.Login;
+using gnosis.Views.Books;
 
 namespace gnosis.Controllers.Dashboard
 {
@@ -27,6 +28,7 @@ namespace gnosis.Controllers.Dashboard
             //Se invoca al evento AbrirFormularioAdminUsuarios para que este puede ser mostrado segú el boton que el usuario presione.
             ObjDashboard.menuAdministradorUsuarios.Click += new EventHandler(AbrirFormularioAdminUsuarios);
             ObjDashboard.btnAdminUser.Click += new EventHandler(AbrirFormularioAdminUsuarios);
+            ObjDashboard.btnBook.Click += new EventHandler(AbrirFormularioLibros);
             //ObjDashboard.picAdminuser.Click += new EventHandler(AbrirFormularioAdminUsuarios);
             ObjDashboard.cerrarFormularioToolStripMenuItem.Click += new EventHandler(CerrarForm);
             ObjDashboard.FormClosing += new FormClosingEventHandler(cerrarPrograma);
@@ -101,6 +103,11 @@ namespace gnosis.Controllers.Dashboard
         private void AbrirFormularioAdminUsuarios(object sender, EventArgs e)
         {
             AbrirFormulario<ViewAdministradorUsuarios>();
+        }
+
+        private void AbrirFormularioLibros(object sender, EventArgs e)
+        {
+            AbrirFormulario<ViewBooks>();
         }
 
         private void CargarFormPred(object sender, EventArgs e)
