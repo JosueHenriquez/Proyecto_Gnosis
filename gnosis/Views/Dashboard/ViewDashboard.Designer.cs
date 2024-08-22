@@ -67,37 +67,37 @@
             this.lblPersona = new System.Windows.Forms.ToolStripStatusLabel();
             this.PanelMenu = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panelMenuConfSistema = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.panelMenuServidor = new System.Windows.Forms.Panel();
             this.btnServer = new System.Windows.Forms.Button();
+            this.panelCerrarSesión = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelMenuAdminUser = new System.Windows.Forms.Panel();
             this.btnAdminUser = new System.Windows.Forms.Button();
+            this.panelMenuLibros = new System.Windows.Forms.Panel();
             this.btnBook = new System.Windows.Forms.Button();
+            this.panelMenuPrestamos = new System.Windows.Forms.Panel();
             this.btnLoan = new System.Windows.Forms.Button();
+            this.panelMenuGestionAccesos = new System.Windows.Forms.Panel();
             this.btnAccess = new System.Windows.Forms.Button();
+            this.panelMenuReportes = new System.Windows.Forms.Panel();
             this.btnReports = new System.Windows.Forms.Button();
             this.panelTop = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PanelContenedor = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.PanelMenu.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -392,18 +392,26 @@
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
-            this.flowLayoutPanel2.Controls.Add(this.panel11);
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(61)))), ((int)(((byte)(115)))));
+            this.flowLayoutPanel2.Controls.Add(this.panelMenuConfSistema);
             this.flowLayoutPanel2.Controls.Add(this.button1);
-            this.flowLayoutPanel2.Controls.Add(this.panel10);
+            this.flowLayoutPanel2.Controls.Add(this.panelMenuServidor);
             this.flowLayoutPanel2.Controls.Add(this.btnServer);
-            this.flowLayoutPanel2.Controls.Add(this.panel9);
+            this.flowLayoutPanel2.Controls.Add(this.panelCerrarSesión);
             this.flowLayoutPanel2.Controls.Add(this.btnLogout);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 445);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(200, 195);
             this.flowLayoutPanel2.TabIndex = 2;
+            // 
+            // panelMenuConfSistema
+            // 
+            this.panelMenuConfSistema.BackColor = System.Drawing.Color.White;
+            this.panelMenuConfSistema.Location = new System.Drawing.Point(3, 3);
+            this.panelMenuConfSistema.Name = "panelMenuConfSistema";
+            this.panelMenuConfSistema.Size = new System.Drawing.Size(5, 50);
+            this.panelMenuConfSistema.TabIndex = 12;
             // 
             // button1
             // 
@@ -422,6 +430,14 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // panelMenuServidor
+            // 
+            this.panelMenuServidor.BackColor = System.Drawing.Color.White;
+            this.panelMenuServidor.Location = new System.Drawing.Point(3, 59);
+            this.panelMenuServidor.Name = "panelMenuServidor";
+            this.panelMenuServidor.Size = new System.Drawing.Size(5, 50);
+            this.panelMenuServidor.TabIndex = 11;
+            // 
             // btnServer
             // 
             this.btnServer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))));
@@ -438,6 +454,14 @@
             this.btnServer.Text = "Conf. servidor";
             this.btnServer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnServer.UseVisualStyleBackColor = false;
+            // 
+            // panelCerrarSesión
+            // 
+            this.panelCerrarSesión.BackColor = System.Drawing.Color.White;
+            this.panelCerrarSesión.Location = new System.Drawing.Point(3, 115);
+            this.panelCerrarSesión.Name = "panelCerrarSesión";
+            this.panelCerrarSesión.Size = new System.Drawing.Size(5, 50);
+            this.panelCerrarSesión.TabIndex = 6;
             // 
             // btnLogout
             // 
@@ -458,16 +482,16 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(61)))), ((int)(((byte)(115)))));
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.btnAdminUser);
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
+            this.flowLayoutPanel1.Controls.Add(this.panelMenuLibros);
             this.flowLayoutPanel1.Controls.Add(this.btnBook);
-            this.flowLayoutPanel1.Controls.Add(this.panel4);
+            this.flowLayoutPanel1.Controls.Add(this.panelMenuPrestamos);
             this.flowLayoutPanel1.Controls.Add(this.btnLoan);
-            this.flowLayoutPanel1.Controls.Add(this.panel5);
+            this.flowLayoutPanel1.Controls.Add(this.panelMenuGestionAccesos);
             this.flowLayoutPanel1.Controls.Add(this.btnAccess);
-            this.flowLayoutPanel1.Controls.Add(this.panel6);
+            this.flowLayoutPanel1.Controls.Add(this.panelMenuReportes);
             this.flowLayoutPanel1.Controls.Add(this.btnReports);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 73);
@@ -475,9 +499,26 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 567);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.panelMenuAdminUser);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(5, 50);
+            this.panel1.TabIndex = 5;
+            // 
+            // panelMenuAdminUser
+            // 
+            this.panelMenuAdminUser.BackColor = System.Drawing.Color.White;
+            this.panelMenuAdminUser.Location = new System.Drawing.Point(0, 0);
+            this.panelMenuAdminUser.Name = "panelMenuAdminUser";
+            this.panelMenuAdminUser.Size = new System.Drawing.Size(5, 50);
+            this.panelMenuAdminUser.TabIndex = 6;
+            // 
             // btnAdminUser
             // 
-            this.btnAdminUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
+            this.btnAdminUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(61)))), ((int)(((byte)(115)))));
             this.btnAdminUser.FlatAppearance.BorderSize = 0;
             this.btnAdminUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btnAdminUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -492,9 +533,17 @@
             this.btnAdminUser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdminUser.UseVisualStyleBackColor = false;
             // 
+            // panelMenuLibros
+            // 
+            this.panelMenuLibros.BackColor = System.Drawing.Color.White;
+            this.panelMenuLibros.Location = new System.Drawing.Point(3, 59);
+            this.panelMenuLibros.Name = "panelMenuLibros";
+            this.panelMenuLibros.Size = new System.Drawing.Size(5, 50);
+            this.panelMenuLibros.TabIndex = 6;
+            // 
             // btnBook
             // 
-            this.btnBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
+            this.btnBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(61)))), ((int)(((byte)(115)))));
             this.btnBook.FlatAppearance.BorderSize = 0;
             this.btnBook.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -509,9 +558,17 @@
             this.btnBook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBook.UseVisualStyleBackColor = false;
             // 
+            // panelMenuPrestamos
+            // 
+            this.panelMenuPrestamos.BackColor = System.Drawing.Color.White;
+            this.panelMenuPrestamos.Location = new System.Drawing.Point(3, 115);
+            this.panelMenuPrestamos.Name = "panelMenuPrestamos";
+            this.panelMenuPrestamos.Size = new System.Drawing.Size(5, 50);
+            this.panelMenuPrestamos.TabIndex = 7;
+            // 
             // btnLoan
             // 
-            this.btnLoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
+            this.btnLoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(61)))), ((int)(((byte)(115)))));
             this.btnLoan.FlatAppearance.BorderSize = 0;
             this.btnLoan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btnLoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -526,9 +583,17 @@
             this.btnLoan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLoan.UseVisualStyleBackColor = false;
             // 
+            // panelMenuGestionAccesos
+            // 
+            this.panelMenuGestionAccesos.BackColor = System.Drawing.Color.White;
+            this.panelMenuGestionAccesos.Location = new System.Drawing.Point(3, 171);
+            this.panelMenuGestionAccesos.Name = "panelMenuGestionAccesos";
+            this.panelMenuGestionAccesos.Size = new System.Drawing.Size(5, 50);
+            this.panelMenuGestionAccesos.TabIndex = 8;
+            // 
             // btnAccess
             // 
-            this.btnAccess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
+            this.btnAccess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(61)))), ((int)(((byte)(115)))));
             this.btnAccess.FlatAppearance.BorderSize = 0;
             this.btnAccess.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btnAccess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -543,9 +608,17 @@
             this.btnAccess.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAccess.UseVisualStyleBackColor = false;
             // 
+            // panelMenuReportes
+            // 
+            this.panelMenuReportes.BackColor = System.Drawing.Color.White;
+            this.panelMenuReportes.Location = new System.Drawing.Point(3, 227);
+            this.panelMenuReportes.Name = "panelMenuReportes";
+            this.panelMenuReportes.Size = new System.Drawing.Size(5, 50);
+            this.panelMenuReportes.TabIndex = 9;
+            // 
             // btnReports
             // 
-            this.btnReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
+            this.btnReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(61)))), ((int)(((byte)(115)))));
             this.btnReports.FlatAppearance.BorderSize = 0;
             this.btnReports.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -562,7 +635,7 @@
             // 
             // panelTop
             // 
-            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(40)))), ((int)(((byte)(76)))));
+            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(61)))), ((int)(((byte)(115)))));
             this.panelTop.Controls.Add(this.pictureBox3);
             this.panelTop.Controls.Add(this.pictureBox1);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -595,85 +668,12 @@
             // 
             // PanelContenedor
             // 
-            this.PanelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(61)))), ((int)(((byte)(115)))));
+            this.PanelContenedor.BackColor = System.Drawing.SystemColors.Control;
             this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelContenedor.Location = new System.Drawing.Point(200, 25);
             this.PanelContenedor.Name = "PanelContenedor";
             this.PanelContenedor.Size = new System.Drawing.Size(1148, 640);
             this.PanelContenedor.TabIndex = 4;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(5, 50);
-            this.panel1.TabIndex = 5;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(5, 50);
-            this.panel2.TabIndex = 6;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(3, 59);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(5, 50);
-            this.panel3.TabIndex = 6;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(3, 115);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 50);
-            this.panel4.TabIndex = 7;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(3, 171);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(5, 50);
-            this.panel5.TabIndex = 8;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(3, 227);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(5, 50);
-            this.panel6.TabIndex = 9;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Location = new System.Drawing.Point(3, 115);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(5, 50);
-            this.panel9.TabIndex = 6;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Location = new System.Drawing.Point(3, 59);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(5, 50);
-            this.panel10.TabIndex = 11;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.Location = new System.Drawing.Point(3, 3);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(5, 50);
-            this.panel11.TabIndex = 12;
             // 
             // ViewDashboard
             // 
@@ -701,10 +701,10 @@
             this.PanelMenu.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.panelTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -763,13 +763,13 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         public System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panelMenuAdminUser;
+        private System.Windows.Forms.Panel panelMenuLibros;
+        private System.Windows.Forms.Panel panelMenuPrestamos;
+        private System.Windows.Forms.Panel panelMenuGestionAccesos;
+        private System.Windows.Forms.Panel panelMenuReportes;
+        private System.Windows.Forms.Panel panelMenuConfSistema;
+        private System.Windows.Forms.Panel panelCerrarSesión;
+        private System.Windows.Forms.Panel panelMenuServidor;
     }
 }

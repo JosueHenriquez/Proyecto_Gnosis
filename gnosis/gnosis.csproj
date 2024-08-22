@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="Controllers\AdministradorUsuarios\ControllerAdduser.cs" />
     <Compile Include="Controllers\AdministradorUsuarios\ControllerAdminUsuarios.cs" />
+    <Compile Include="Controllers\Books\ControllerBooks.cs" />
     <Compile Include="Controllers\ControllerInit.cs" />
     <Compile Include="Controllers\Dashboard\ControllerDashboard.cs" />
     <Compile Include="Controllers\FirstUse\ControllerCreateFirstUser.cs" />
@@ -84,10 +85,12 @@
     <Compile Include="Controllers\Server\ControllerAdminConnection.cs" />
     <Compile Include="Controllers\Server\ControllerConfirmPassword.cs" />
     <Compile Include="Models\DAO\DAOAdminUsers.cs" />
+    <Compile Include="Models\DAO\DAOBooks.cs" />
     <Compile Include="Models\DAO\DAOFirstUse.cs" />
     <Compile Include="Models\DAO\DAOLogin.cs" />
     <Compile Include="Models\dbContext.cs" />
     <Compile Include="Models\DTO\DTOAdminUsers.cs" />
+    <Compile Include="Models\DTO\DTOBooks.cs" />
     <Compile Include="Models\DTO\DTOFirstUse.cs" />
     <Compile Include="Models\DTO\DTOLogin.cs" />
     <Compile Include="Models\ModelInit.cs" />
@@ -322,6 +325,10 @@
     <None Include="Resources\icons8-añadir-20.png" />
     <None Include="Resources\icons8-17372-0-73111-reproducir-derecha-43-flechas-25.png" />
     <None Include="Resources\icons8-basura-llena-25.png" />
+    <None Include="Resources\icons8-add-25.png" />
+    <None Include="Resources\icons8-save-25.png" />
+    <None Include="Resources\icons8-update-25.png" />
+    <None Include="Resources\icons8-trash-25.png" />
     <Content Include="Resources\Refresh.ico" />
     <None Include="Resources\Refresh.png" />
     <None Include="Resources\Server.png" />

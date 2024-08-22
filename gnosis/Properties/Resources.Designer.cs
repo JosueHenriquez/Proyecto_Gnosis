@@ -203,6 +203,16 @@ namespace gnosis.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_add_25 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_administrator_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-administrator-100", resourceCulture);
@@ -383,6 +393,16 @@ namespace gnosis.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_save_25 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-save-25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_save_35 {
             get {
                 object obj = ResourceManager.GetObject("icons8-save-35", resourceCulture);
@@ -406,6 +426,26 @@ namespace gnosis.Properties {
         internal static System.Drawing.Bitmap icons8_settings_35 {
             get {
                 object obj = ResourceManager.GetObject("icons8-settings-35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_trash_25 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-trash-25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_update_25 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-update-25", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
