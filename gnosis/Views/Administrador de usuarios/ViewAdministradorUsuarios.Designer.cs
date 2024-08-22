@@ -55,7 +55,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(61)))), ((int)(((byte)(115)))));
             this.panel1.Controls.Add(this.chkUserDisabled);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnBuscar);
@@ -65,13 +65,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(5, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1240, 62);
+            this.panel1.Size = new System.Drawing.Size(1240, 46);
             this.panel1.TabIndex = 2;
             // 
             // chkUserDisabled
             // 
             this.chkUserDisabled.AutoSize = true;
-            this.chkUserDisabled.Location = new System.Drawing.Point(747, 26);
+            this.chkUserDisabled.ForeColor = System.Drawing.Color.White;
+            this.chkUserDisabled.Location = new System.Drawing.Point(772, 17);
             this.chkUserDisabled.Name = "chkUserDisabled";
             this.chkUserDisabled.Size = new System.Drawing.Size(136, 20);
             this.chkUserDisabled.TabIndex = 5;
@@ -80,8 +81,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::gnosis.Properties.Resources.Search;
-            this.pictureBox1.Location = new System.Drawing.Point(623, 23);
+            this.pictureBox1.Image = global::gnosis.Properties.Resources.icons8_búsqueda_25;
+            this.pictureBox1.Location = new System.Drawing.Point(623, 15);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -90,9 +91,9 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(654, 23);
+            this.btnBuscar.Location = new System.Drawing.Point(654, 14);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(87, 26);
+            this.btnBuscar.Size = new System.Drawing.Size(112, 26);
             this.btnBuscar.TabIndex = 3;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -101,7 +102,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 26);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 16);
             this.label1.TabIndex = 2;
@@ -112,7 +114,7 @@
             this.txtSearch.BackColor = System.Drawing.SystemColors.Control;
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtSearch.Location = new System.Drawing.Point(120, 23);
+            this.txtSearch.Location = new System.Drawing.Point(120, 14);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(15, 6, 6, 6);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(494, 23);
@@ -125,7 +127,7 @@
             this.btnNuevo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnNuevo.Location = new System.Drawing.Point(1074, 10);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(154, 39);
+            this.btnNuevo.Size = new System.Drawing.Size(154, 30);
             this.btnNuevo.TabIndex = 0;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -134,9 +136,9 @@
             // 
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(5, 67);
+            this.panel2.Location = new System.Drawing.Point(5, 51);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1240, 579);
+            this.panel2.Size = new System.Drawing.Size(1240, 595);
             this.panel2.TabIndex = 3;
             // 
             // panel5
@@ -145,7 +147,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1240, 579);
+            this.panel5.Size = new System.Drawing.Size(1240, 595);
             this.panel5.TabIndex = 2;
             // 
             // dgvPersonas
@@ -164,7 +166,7 @@
             this.dgvPersonas.ReadOnly = true;
             this.dgvPersonas.RowHeadersVisible = false;
             this.dgvPersonas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPersonas.Size = new System.Drawing.Size(1240, 579);
+            this.dgvPersonas.Size = new System.Drawing.Size(1240, 595);
             this.dgvPersonas.TabIndex = 0;
             // 
             // contextDataGrid
@@ -176,7 +178,7 @@
             this.cmsdesahilitarUsuarioToolStripMenuItem,
             this.restablecerContraseñaToolStripMenuItem});
             this.contextDataGrid.Name = "contextDataGrid";
-            this.contextDataGrid.Size = new System.Drawing.Size(196, 136);
+            this.contextDataGrid.Size = new System.Drawing.Size(196, 114);
             // 
             // cmsActualizar
             // 

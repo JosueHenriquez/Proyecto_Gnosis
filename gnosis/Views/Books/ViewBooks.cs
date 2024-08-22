@@ -1,4 +1,5 @@
-﻿using System;
+﻿using gnosis.Controllers.Books;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace gnosis.Views.Books
         public ViewBooks()
         {
             InitializeComponent();
+            ControllerBooks control = new ControllerBooks(this);
+        }
+
+        private void dgvLibros_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
