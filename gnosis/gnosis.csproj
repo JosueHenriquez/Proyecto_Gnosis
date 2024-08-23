@@ -54,6 +54,15 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -72,6 +81,7 @@
     <Compile Include="Controllers\AdministradorUsuarios\ControllerAdduser.cs" />
     <Compile Include="Controllers\AdministradorUsuarios\ControllerAdminUsuarios.cs" />
     <Compile Include="Controllers\Books\ControllerBooks.cs" />
+    <Compile Include="Controllers\Books\ControllerBooks_Report.cs" />
     <Compile Include="Controllers\ControllerInit.cs" />
     <Compile Include="Controllers\Dashboard\ControllerDashboard.cs" />
     <Compile Include="Controllers\FirstUse\ControllerCreateFirstUser.cs" />
@@ -162,6 +172,28 @@
     <Compile Include="Views\Primer_Uso\ViewFirstUse.Designer.cs">
       <DependentUpon>ViewFirstUse.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Reports\Books\DataSet_Book.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Book.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\Books\DataSet_SheetBook.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_SheetBook.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\Books\ViewReportBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\Books\ViewReportBooks.Designer.cs">
+      <DependentUpon>ViewReportBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\Books\ViewSheetBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\Books\ViewSheetBook.Designer.cs">
+      <DependentUpon>ViewSheetBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Server\ViewAdminConnection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,12 +249,21 @@
     <EmbeddedResource Include="Views\Primer_Uso\ViewFirstUse.resx">
       <DependentUpon>ViewFirstUse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\Books\ReportSheetBook.rdlc" />
+    <EmbeddedResource Include="Views\Reports\Books\ReportBook.rdlc" />
+    <EmbeddedResource Include="Views\Reports\Books\ViewReportBooks.resx">
+      <DependentUpon>ViewReportBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\Books\ViewSheetBook.resx">
+      <DependentUpon>ViewSheetBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Server\ViewAdminConnection.resx">
       <DependentUpon>ViewAdminConnection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Server\ViewConfirmPassword.resx">
       <DependentUpon>ViewConfirmPassword.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -232,12 +273,35 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Views\Reports\Books\DataSet_Book.xsc">
+      <DependentUpon>DataSet_Book.xsd</DependentUpon>
+    </None>
+    <None Include="Views\Reports\Books\DataSet_Book.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Book.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Views\Reports\Books\DataSet_Book.xss">
+      <DependentUpon>DataSet_Book.xsd</DependentUpon>
+    </None>
+    <None Include="Views\Reports\Books\DataSet_SheetBook.xsc">
+      <DependentUpon>DataSet_SheetBook.xsd</DependentUpon>
+    </None>
+    <None Include="Views\Reports\Books\DataSet_SheetBook.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_SheetBook.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Views\Reports\Books\DataSet_SheetBook.xss">
+      <DependentUpon>DataSet_SheetBook.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Fotos\" />
+    <Folder Include="Views\Reports\Users\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\undraw_Login_re_4vu2.png" />
