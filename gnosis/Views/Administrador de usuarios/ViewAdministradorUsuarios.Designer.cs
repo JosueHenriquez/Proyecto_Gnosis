@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.chkUserDisabled = new System.Windows.Forms.CheckBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -40,22 +39,25 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.dgvPersonas = new System.Windows.Forms.DataGridView();
             this.contextDataGrid = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.btnRepGeneralUsuarios = new System.Windows.Forms.Button();
             this.cmsActualizar = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsEliminar = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsFicha = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsdesahilitarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restablecerContraseñaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).BeginInit();
             this.contextDataGrid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(61)))), ((int)(((byte)(115)))));
+            this.panel1.Controls.Add(this.btnRepGeneralUsuarios);
             this.panel1.Controls.Add(this.chkUserDisabled);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnBuscar);
@@ -72,26 +74,16 @@
             // 
             this.chkUserDisabled.AutoSize = true;
             this.chkUserDisabled.ForeColor = System.Drawing.Color.White;
-            this.chkUserDisabled.Location = new System.Drawing.Point(772, 17);
+            this.chkUserDisabled.Location = new System.Drawing.Point(653, 17);
             this.chkUserDisabled.Name = "chkUserDisabled";
             this.chkUserDisabled.Size = new System.Drawing.Size(136, 20);
             this.chkUserDisabled.TabIndex = 5;
             this.chkUserDisabled.Text = "Usuarios inactivos";
             this.chkUserDisabled.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::gnosis.Properties.Resources.icons8_búsqueda_25;
-            this.pictureBox1.Location = new System.Drawing.Point(623, 15);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(654, 14);
+            this.btnBuscar.Location = new System.Drawing.Point(535, 14);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(112, 26);
             this.btnBuscar.TabIndex = 3;
@@ -117,7 +109,7 @@
             this.txtSearch.Location = new System.Drawing.Point(120, 14);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(15, 6, 6, 6);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(494, 23);
+            this.txtSearch.Size = new System.Drawing.Size(371, 23);
             this.txtSearch.TabIndex = 1;
             // 
             // btnNuevo
@@ -180,6 +172,16 @@
             this.contextDataGrid.Name = "contextDataGrid";
             this.contextDataGrid.Size = new System.Drawing.Size(196, 114);
             // 
+            // btnRepGeneralUsuarios
+            // 
+            this.btnRepGeneralUsuarios.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRepGeneralUsuarios.Location = new System.Drawing.Point(891, 10);
+            this.btnRepGeneralUsuarios.Name = "btnRepGeneralUsuarios";
+            this.btnRepGeneralUsuarios.Size = new System.Drawing.Size(177, 30);
+            this.btnRepGeneralUsuarios.TabIndex = 6;
+            this.btnRepGeneralUsuarios.Text = "Rep. General de usuarios";
+            this.btnRepGeneralUsuarios.UseVisualStyleBackColor = true;
+            // 
             // cmsActualizar
             // 
             this.cmsActualizar.Image = global::gnosis.Properties.Resources.Refresh;
@@ -215,6 +217,16 @@
             this.restablecerContraseñaToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
             this.restablecerContraseñaToolStripMenuItem.Text = "Restablecer contraseña";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::gnosis.Properties.Resources.icons8_búsqueda_25;
+            this.pictureBox1.Location = new System.Drawing.Point(504, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // ViewAdministradorUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -232,11 +244,11 @@
             this.Text = "ViewAdministradorUsuarios";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).EndInit();
             this.contextDataGrid.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -258,5 +270,6 @@
         public System.Windows.Forms.CheckBox chkUserDisabled;
         public System.Windows.Forms.ToolStripMenuItem cmsdesahilitarUsuarioToolStripMenuItem;
         public System.Windows.Forms.ToolStripMenuItem restablecerContraseñaToolStripMenuItem;
+        public System.Windows.Forms.Button btnRepGeneralUsuarios;
     }
 }

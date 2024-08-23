@@ -194,6 +194,17 @@
     <Compile Include="Views\Reports\Books\ViewSheetBook.Designer.cs">
       <DependentUpon>ViewSheetBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Reports\Users\DataSet_ReportGeneralUsers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_ReportGeneralUsers.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\Users\ViewReportsUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\Users\ViewReportsUsers.Designer.cs">
+      <DependentUpon>ViewReportsUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Server\ViewAdminConnection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -257,6 +268,10 @@
     <EmbeddedResource Include="Views\Reports\Books\ViewSheetBook.resx">
       <DependentUpon>ViewSheetBook.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\Users\ReportGeneralUser.rdlc" />
+    <EmbeddedResource Include="Views\Reports\Users\ViewReportsUsers.resx">
+      <DependentUpon>ViewReportsUsers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Server\ViewAdminConnection.resx">
       <DependentUpon>ViewAdminConnection.cs</DependentUpon>
     </EmbeddedResource>
@@ -295,13 +310,23 @@
     <None Include="Views\Reports\Books\DataSet_SheetBook.xss">
       <DependentUpon>DataSet_SheetBook.xsd</DependentUpon>
     </None>
+    <None Include="Views\Reports\Users\DataSet_ReportGeneralUsers.xsc">
+      <DependentUpon>DataSet_ReportGeneralUsers.xsd</DependentUpon>
+    </None>
+    <None Include="Views\Reports\Users\DataSet_ReportGeneralUsers.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_ReportGeneralUsers.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Views\Reports\Users\DataSet_ReportGeneralUsers.xss">
+      <DependentUpon>DataSet_ReportGeneralUsers.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Fotos\" />
-    <Folder Include="Views\Reports\Users\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\undraw_Login_re_4vu2.png" />

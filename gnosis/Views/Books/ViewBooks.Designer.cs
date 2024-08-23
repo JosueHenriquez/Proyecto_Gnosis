@@ -179,7 +179,6 @@
             this.label2.Size = new System.Drawing.Size(60, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "ID Libro";
-            this.label2.Visible = false;
             // 
             // txtIDLibro
             // 
@@ -187,7 +186,6 @@
             this.txtIDLibro.Name = "txtIDLibro";
             this.txtIDLibro.Size = new System.Drawing.Size(84, 21);
             this.txtIDLibro.TabIndex = 1;
-            this.txtIDLibro.Visible = false;
             // 
             // btnReporte
             // 

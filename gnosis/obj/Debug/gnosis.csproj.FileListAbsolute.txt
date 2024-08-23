@@ -218,3 +218,4 @@ C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\ru\Microsoft.
 C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Reports.Books.ViewSheetBook.resources
+C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Reports.Users.ViewReportsUsers.resources
