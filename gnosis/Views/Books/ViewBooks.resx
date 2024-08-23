@@ -120,14 +120,11 @@
   <metadata name="MenuLibros.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>122, 17</value>
   </metadata>
-  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnGuardarCategoriaLibro.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAc5JREFUWEftlz1Lw1AYhYsuOujmIujuJjgKLroKTu5VyK9QKLg4iQgi3TopOLiK
+        DgAACw4BQL7hQQAAAc5JREFUWEftlz1Lw1AYhYsuOujmIujuJjgKLroKTu5VyK9QKLg4iQgi3TopOLiK
         4NzFLg66iIODf6Bf6SLxOfElprSpyTXplAOH2/ve+577NElLWymVVv1+f7XX623k6W63ux4EwawdkU6A
         XPi+HxRhsu8BmrOjJktXxBpr8XfF/I6113gti+mtYx9L6YDUKBiNVgpFQJ16y6YTxUGL7K1ij5w91Xhd
         w59454cnBVAeMOwTSHRr2u32EmMIY+vpgHKC8ZQxGAx2LWuZMYKRyNvCHfwA0LyVhzUtGIn5NrmSrtDo
@@ -141,7 +138,7 @@
   <data name="btnGuardarAlmacenamiento.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAc5JREFUWEftlz1Lw1AYhYsuOujmIujuJjgKLroKTu5VyK9QKLg4iQgi3TopOLiK
+        DgAACw4BQL7hQQAAAc5JREFUWEftlz1Lw1AYhYsuOujmIujuJjgKLroKTu5VyK9QKLg4iQgi3TopOLiK
         4NzFLg66iIODf6Bf6SLxOfElprSpyTXplAOH2/ve+577NElLWymVVv1+f7XX623k6W63ux4EwawdkU6A
         XPi+HxRhsu8BmrOjJktXxBpr8XfF/I6113gti+mtYx9L6YDUKBiNVgpFQJ16y6YTxUGL7K1ij5w91Xhd
         w59454cnBVAeMOwTSHRr2u32EmMIY+vpgHKC8ZQxGAx2LWuZMYKRyNvCHfwA0LyVhzUtGIn5NrmSrtDo
@@ -155,7 +152,7 @@
   <data name="btnGuardarAutor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAc5JREFUWEftlz1Lw1AYhYsuOujmIujuJjgKLroKTu5VyK9QKLg4iQgi3TopOLiK
+        DgAACw4BQL7hQQAAAc5JREFUWEftlz1Lw1AYhYsuOujmIujuJjgKLroKTu5VyK9QKLg4iQgi3TopOLiK
         4NzFLg66iIODf6Bf6SLxOfElprSpyTXplAOH2/ve+577NElLWymVVv1+f7XX623k6W63ux4EwawdkU6A
         XPi+HxRhsu8BmrOjJktXxBpr8XfF/I6113gti+mtYx9L6YDUKBiNVgpFQJ16y6YTxUGL7K1ij5w91Xhd
         w59454cnBVAeMOwTSHRr2u32EmMIY+vpgHKC8ZQxGAx2LWuZMYKRyNvCHfwA0LyVhzUtGIn5NrmSrtDo
@@ -169,7 +166,7 @@
   <data name="btnGuardarProveedor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAc5JREFUWEftlz1Lw1AYhYsuOujmIujuJjgKLroKTu5VyK9QKLg4iQgi3TopOLiK
+        DgAACw4BQL7hQQAAAc5JREFUWEftlz1Lw1AYhYsuOujmIujuJjgKLroKTu5VyK9QKLg4iQgi3TopOLiK
         4NzFLg66iIODf6Bf6SLxOfElprSpyTXplAOH2/ve+577NElLWymVVv1+f7XX623k6W63ux4EwawdkU6A
         XPi+HxRhsu8BmrOjJktXxBpr8XfF/I6113gti+mtYx9L6YDUKBiNVgpFQJ16y6YTxUGL7K1ij5w91Xhd
         w59454cnBVAeMOwTSHRr2u32EmMIY+vpgHKC8ZQxGAx2LWuZMYKRyNvCHfwA0LyVhzUtGIn5NrmSrtDo

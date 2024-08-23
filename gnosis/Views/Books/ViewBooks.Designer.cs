@@ -36,6 +36,7 @@
             this.btnBuscarLibro = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIDLibro = new System.Windows.Forms.TextBox();
+            this.btnReporte = new System.Windows.Forms.Button();
             this.panelForm = new System.Windows.Forms.Panel();
             this.panelFormContents = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -68,6 +69,11 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panelGrid = new System.Windows.Forms.Panel();
             this.dgvLibros = new System.Windows.Forms.DataGridView();
+            this.MenuLibros = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cmsEliminarLibro = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsActualizarLibro = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsVerFichaLibro = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsInhabilitarLibro = new System.Windows.Forms.ToolStripMenuItem();
             this.panelAuxiliar = new System.Windows.Forms.Panel();
             this.panelContentsFormsAuxiliar = new System.Windows.Forms.Panel();
             this.GrupoCategoria = new System.Windows.Forms.GroupBox();
@@ -88,11 +94,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.MenuLibros = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.cmsEliminarLibro = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsActualizarLibro = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsVerFichaLibro = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsInhabilitarLibro = new System.Windows.Forms.ToolStripMenuItem();
             this.panelTop.SuspendLayout();
             this.panelForm.SuspendLayout();
             this.panelFormContents.SuspendLayout();
@@ -107,6 +108,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoriasLibro)).BeginInit();
             this.panelGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLibros)).BeginInit();
+            this.MenuLibros.SuspendLayout();
             this.panelAuxiliar.SuspendLayout();
             this.panelContentsFormsAuxiliar.SuspendLayout();
             this.GrupoCategoria.SuspendLayout();
@@ -114,7 +116,6 @@
             this.grupoAutor.SuspendLayout();
             this.grupoProveedor.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            this.MenuLibros.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTop
@@ -125,13 +126,14 @@
             this.panelTop.Controls.Add(this.btnBuscarLibro);
             this.panelTop.Controls.Add(this.label2);
             this.panelTop.Controls.Add(this.txtIDLibro);
+            this.panelTop.Controls.Add(this.btnReporte);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.ForeColor = System.Drawing.Color.White;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panelTop.Name = "panelTop";
             this.panelTop.Padding = new System.Windows.Forms.Padding(12);
-            this.panelTop.Size = new System.Drawing.Size(1250, 46);
+            this.panelTop.Size = new System.Drawing.Size(1250, 49);
             this.panelTop.TabIndex = 0;
             // 
             // label1
@@ -177,6 +179,7 @@
             this.label2.Size = new System.Drawing.Size(60, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "ID Libro";
+            this.label2.Visible = false;
             // 
             // txtIDLibro
             // 
@@ -184,15 +187,26 @@
             this.txtIDLibro.Name = "txtIDLibro";
             this.txtIDLibro.Size = new System.Drawing.Size(84, 21);
             this.txtIDLibro.TabIndex = 1;
+            this.txtIDLibro.Visible = false;
+            // 
+            // btnReporte
+            // 
+            this.btnReporte.ForeColor = System.Drawing.Color.Gray;
+            this.btnReporte.Location = new System.Drawing.Point(761, 15);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(175, 23);
+            this.btnReporte.TabIndex = 3;
+            this.btnReporte.Text = "Reporte general de libros";
+            this.btnReporte.UseVisualStyleBackColor = true;
             // 
             // panelForm
             // 
             this.panelForm.BackColor = System.Drawing.Color.White;
             this.panelForm.Controls.Add(this.panelFormContents);
             this.panelForm.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelForm.Location = new System.Drawing.Point(0, 46);
+            this.panelForm.Location = new System.Drawing.Point(0, 49);
             this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(408, 605);
+            this.panelForm.Size = new System.Drawing.Size(408, 602);
             this.panelForm.TabIndex = 1;
             // 
             // panelFormContents
@@ -203,7 +217,7 @@
             this.panelFormContents.ForeColor = System.Drawing.Color.White;
             this.panelFormContents.Location = new System.Drawing.Point(0, 0);
             this.panelFormContents.Name = "panelFormContents";
-            this.panelFormContents.Size = new System.Drawing.Size(408, 605);
+            this.panelFormContents.Size = new System.Drawing.Size(408, 602);
             this.panelFormContents.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -214,7 +228,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(408, 605);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(408, 602);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -532,9 +546,9 @@
             // 
             this.panelGrid.Controls.Add(this.dgvLibros);
             this.panelGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelGrid.Location = new System.Drawing.Point(408, 46);
+            this.panelGrid.Location = new System.Drawing.Point(408, 49);
             this.panelGrid.Name = "panelGrid";
-            this.panelGrid.Size = new System.Drawing.Size(842, 605);
+            this.panelGrid.Size = new System.Drawing.Size(842, 602);
             this.panelGrid.TabIndex = 2;
             // 
             // dgvLibros
@@ -550,19 +564,55 @@
             this.dgvLibros.ReadOnly = true;
             this.dgvLibros.RowHeadersVisible = false;
             this.dgvLibros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLibros.Size = new System.Drawing.Size(842, 605);
+            this.dgvLibros.Size = new System.Drawing.Size(842, 602);
             this.dgvLibros.TabIndex = 0;
             this.dgvLibros.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLibros_CellClick);
+            // 
+            // MenuLibros
+            // 
+            this.MenuLibros.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cmsEliminarLibro,
+            this.cmsActualizarLibro,
+            this.cmsVerFichaLibro,
+            this.cmsInhabilitarLibro});
+            this.MenuLibros.Name = "MenuLibros";
+            this.MenuLibros.Size = new System.Drawing.Size(155, 92);
+            // 
+            // cmsEliminarLibro
+            // 
+            this.cmsEliminarLibro.Image = global::gnosis.Properties.Resources.Close;
+            this.cmsEliminarLibro.Name = "cmsEliminarLibro";
+            this.cmsEliminarLibro.Size = new System.Drawing.Size(154, 22);
+            this.cmsEliminarLibro.Text = "Eliminar libro";
+            // 
+            // cmsActualizarLibro
+            // 
+            this.cmsActualizarLibro.Image = global::gnosis.Properties.Resources.icons8_update_25;
+            this.cmsActualizarLibro.Name = "cmsActualizarLibro";
+            this.cmsActualizarLibro.Size = new System.Drawing.Size(154, 22);
+            this.cmsActualizarLibro.Text = "Actualizar libro";
+            // 
+            // cmsVerFichaLibro
+            // 
+            this.cmsVerFichaLibro.Name = "cmsVerFichaLibro";
+            this.cmsVerFichaLibro.Size = new System.Drawing.Size(154, 22);
+            this.cmsVerFichaLibro.Text = "Ver ficha libro";
+            // 
+            // cmsInhabilitarLibro
+            // 
+            this.cmsInhabilitarLibro.Name = "cmsInhabilitarLibro";
+            this.cmsInhabilitarLibro.Size = new System.Drawing.Size(154, 22);
+            this.cmsInhabilitarLibro.Text = "Inhabilitar libro";
             // 
             // panelAuxiliar
             // 
             this.panelAuxiliar.BackColor = System.Drawing.Color.White;
             this.panelAuxiliar.Controls.Add(this.panelContentsFormsAuxiliar);
             this.panelAuxiliar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelAuxiliar.Location = new System.Drawing.Point(1035, 46);
+            this.panelAuxiliar.Location = new System.Drawing.Point(1035, 49);
             this.panelAuxiliar.Name = "panelAuxiliar";
             this.panelAuxiliar.Padding = new System.Windows.Forms.Padding(5);
-            this.panelAuxiliar.Size = new System.Drawing.Size(215, 605);
+            this.panelAuxiliar.Size = new System.Drawing.Size(215, 602);
             this.panelAuxiliar.TabIndex = 3;
             this.panelAuxiliar.Visible = false;
             // 
@@ -577,7 +627,7 @@
             this.panelContentsFormsAuxiliar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContentsFormsAuxiliar.Location = new System.Drawing.Point(5, 5);
             this.panelContentsFormsAuxiliar.Name = "panelContentsFormsAuxiliar";
-            this.panelContentsFormsAuxiliar.Size = new System.Drawing.Size(205, 595);
+            this.panelContentsFormsAuxiliar.Size = new System.Drawing.Size(205, 592);
             this.panelContentsFormsAuxiliar.TabIndex = 0;
             // 
             // GrupoCategoria
@@ -782,42 +832,6 @@
             this.toolStripButton1.Size = new System.Drawing.Size(132, 22);
             this.toolStripButton1.Text = "Cerrar panel auxiliar";
             // 
-            // MenuLibros
-            // 
-            this.MenuLibros.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cmsEliminarLibro,
-            this.cmsActualizarLibro,
-            this.cmsVerFichaLibro,
-            this.cmsInhabilitarLibro});
-            this.MenuLibros.Name = "MenuLibros";
-            this.MenuLibros.Size = new System.Drawing.Size(155, 92);
-            // 
-            // cmsEliminarLibro
-            // 
-            this.cmsEliminarLibro.Image = global::gnosis.Properties.Resources.Close;
-            this.cmsEliminarLibro.Name = "cmsEliminarLibro";
-            this.cmsEliminarLibro.Size = new System.Drawing.Size(180, 22);
-            this.cmsEliminarLibro.Text = "Eliminar libro";
-            // 
-            // cmsActualizarLibro
-            // 
-            this.cmsActualizarLibro.Image = global::gnosis.Properties.Resources.icons8_update_25;
-            this.cmsActualizarLibro.Name = "cmsActualizarLibro";
-            this.cmsActualizarLibro.Size = new System.Drawing.Size(180, 22);
-            this.cmsActualizarLibro.Text = "Actualizar libro";
-            // 
-            // cmsVerFichaLibro
-            // 
-            this.cmsVerFichaLibro.Name = "cmsVerFichaLibro";
-            this.cmsVerFichaLibro.Size = new System.Drawing.Size(180, 22);
-            this.cmsVerFichaLibro.Text = "Ver ficha libro";
-            // 
-            // cmsInhabilitarLibro
-            // 
-            this.cmsInhabilitarLibro.Name = "cmsInhabilitarLibro";
-            this.cmsInhabilitarLibro.Size = new System.Drawing.Size(180, 22);
-            this.cmsInhabilitarLibro.Text = "Inhabilitar libro";
-            // 
             // ViewBooks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -850,6 +864,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoriasLibro)).EndInit();
             this.panelGrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLibros)).EndInit();
+            this.MenuLibros.ResumeLayout(false);
             this.panelAuxiliar.ResumeLayout(false);
             this.panelContentsFormsAuxiliar.ResumeLayout(false);
             this.panelContentsFormsAuxiliar.PerformLayout();
@@ -863,7 +878,6 @@
             this.grupoProveedor.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.MenuLibros.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -932,5 +946,6 @@
         public System.Windows.Forms.ToolStripMenuItem cmsActualizarLibro;
         public System.Windows.Forms.ToolStripMenuItem cmsVerFichaLibro;
         public System.Windows.Forms.ToolStripMenuItem cmsInhabilitarLibro;
+        public System.Windows.Forms.Button btnReporte;
     }
 }

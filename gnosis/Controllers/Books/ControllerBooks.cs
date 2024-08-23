@@ -1,12 +1,9 @@
 ﻿using gnosis.Models.DAO;
 using gnosis.Views.Books;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using gnosis.Views.Reports.Books;
 
 namespace gnosis.Controllers.Books
 {
@@ -15,7 +12,7 @@ namespace gnosis.Controllers.Books
 
         ViewBooks objVista;
         //Constructor que recibe al formulario ViewBooks
-        public ControllerBooks(ViewBooks vista) 
+        public ControllerBooks(ViewBooks vista)
         {
             objVista = vista;
             //Crear un evento para cuando se inicia el formulario
@@ -27,6 +24,7 @@ namespace gnosis.Controllers.Books
             vista.btnEliminar.Click += new EventHandler(EliminarRegistroBoton);
             vista.cmsActualizarLibro.Click += new EventHandler(ActualizarRegistro);
             vista.btnActualizar.Click += new EventHandler(ActualizarRegistro);
+            vista.btnReporte.Click += new EventHandler(MostrarReporte);
         }
 
         void CargaInicial(object sender, EventArgs e)
@@ -90,13 +88,13 @@ namespace gnosis.Controllers.Books
                 daoInsert.Stock = (int)objVista.numCantidadLibros.Value;
                 daoInsert.ISBN1 = objVista.txtISBN.Text.Trim();
                 if (objVista.checkDisponible.Checked == true ? daoInsert.Disponibilidad = true : daoInsert.Disponibilidad = false)
-                daoInsert.ProveedorId = (int)objVista.cmbProveedor.SelectedValue;
+                    daoInsert.ProveedorId = (int)objVista.cmbProveedor.SelectedValue;
                 daoInsert.AutorId = (int)objVista.cmbAutor.SelectedValue;
                 daoInsert.AlmacenamientoId = (int)objVista.cmbAlmacenamiento.SelectedValue;
                 int retorno = daoInsert.RegistrarLibros();
                 if (retorno == 1)
                 {
-                    MessageBox.Show("El libro fue registrado exitosamente","Proceso completado",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("El libro fue registrado exitosamente", "Proceso completado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LlenarDataGridLibros();
                     LimpiarCampos();
                 }
@@ -107,10 +105,10 @@ namespace gnosis.Controllers.Books
             }
             else
             {
-                MessageBox.Show("Datos faltantes, complete el formulario con la información requerida", "Datos faltantes",MessageBoxButtons.OK,MessageBoxIcon.Warning) ;
+                MessageBox.Show("Datos faltantes, complete el formulario con la información requerida", "Datos faltantes", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-        
+
         /// <summary>
         /// Método para llenar el datagridview
         /// </summary>
@@ -144,7 +142,7 @@ namespace gnosis.Controllers.Books
         void SeleccionarLibro(object sender, DataGridViewCellEventArgs e)
         {
             int pos = objVista.dgvLibros.CurrentRow.Index;
-            objVista.txtIDLibro.Text = objVista.dgvLibros[0,pos].Value.ToString();
+            objVista.txtIDLibro.Text = objVista.dgvLibros[0, pos].Value.ToString();
             objVista.txtNombreLibro.Text = objVista.dgvLibros[1, pos].Value.ToString();
             objVista.numCantidadLibros.Value = int.Parse(objVista.dgvLibros[2, pos].Value.ToString());
             if (bool.Parse(objVista.dgvLibros[3, pos].Value.ToString()) == true)
@@ -184,7 +182,7 @@ namespace gnosis.Controllers.Books
             daoUpdate.IdLibro = int.Parse(objVista.txtIDLibro.Text.Trim());
             daoUpdate.NombreLibro = objVista.txtNombreLibro.Text.Trim();
             daoUpdate.Stock = (int)objVista.numCantidadLibros.Value;
-            if (objVista.checkDisponible.Checked ==  true)
+            if (objVista.checkDisponible.Checked == true)
             {
                 daoUpdate.Disponibilidad = true;
             }
@@ -219,6 +217,12 @@ namespace gnosis.Controllers.Books
             objVista.cmbProveedor.SelectedIndex = 0;
             objVista.cmbAutor.SelectedIndex = 0;
             objVista.cmbAlmacenamiento.SelectedIndex = 0;
+        }
+
+        void MostrarReporte(object sender, EventArgs e)
+        {
+            ViewReportBooks openForm = new ViewReportBooks();
+            openForm.ShowDialog();
         }
     }
 }

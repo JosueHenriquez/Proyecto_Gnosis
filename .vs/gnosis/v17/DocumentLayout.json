@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\github\\proyecto_gnosis\\gnosis\\controllers\\books\\controllerbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\controllers\\books\\controllerbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\github\\proyecto_gnosis\\gnosis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\views\\books\\viewbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\books\\viewbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\views\\reports\\books\\dataset_sheetbook.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\reports\\books\\dataset_sheetbook.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\models\\dao\\daobooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\models\\dao\\daobooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\views\\books\\viewbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\books\\viewbooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\models\\dto\\dtobooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\models\\dto\\dtobooks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\views\\reports\\books\\reportsheetbook.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\reports\\books\\reportsheetbook.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,65 +42,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ViewBooks.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Books\\ViewBooks.cs",
-              "RelativeDocumentMoniker": "gnosis\\Views\\Books\\ViewBooks.cs",
-              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Books\\ViewBooks.cs [Dise\u00F1o]",
-              "RelativeToolTip": "gnosis\\Views\\Books\\ViewBooks.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T14:22:33.864Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ViewBooks.cs",
-              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Books\\ViewBooks.cs",
-              "RelativeDocumentMoniker": "gnosis\\Views\\Books\\ViewBooks.cs",
-              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Books\\ViewBooks.cs",
-              "RelativeToolTip": "gnosis\\Views\\Books\\ViewBooks.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAywBUAAABRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T15:27:03.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ControllerBooks.cs",
-              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\Books\\ControllerBooks.cs",
-              "RelativeDocumentMoniker": "gnosis\\Controllers\\Books\\ControllerBooks.cs",
-              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\Books\\ControllerBooks.cs",
-              "RelativeToolTip": "gnosis\\Controllers\\Books\\ControllerBooks.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAowJsAAAA0AAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Program.cs",
+              "RelativeDocumentMoniker": "gnosis\\Program.cs",
+              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Program.cs",
+              "RelativeToolTip": "gnosis\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T14:22:58.074Z",
+              "WhenOpened": "2024-08-22T22:03:58.351Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataSet_SheetBook.xsd",
+              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Reports\\Books\\DataSet_SheetBook.xsd",
+              "RelativeDocumentMoniker": "gnosis\\Views\\Reports\\Books\\DataSet_SheetBook.xsd",
+              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Reports\\Books\\DataSet_SheetBook.xsd",
+              "RelativeToolTip": "gnosis\\Views\\Reports\\Books\\DataSet_SheetBook.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2024-08-22T20:45:23.21Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DAOBooks.cs",
-              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Models\\DAO\\DAOBooks.cs",
-              "RelativeDocumentMoniker": "gnosis\\Models\\DAO\\DAOBooks.cs",
-              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Models\\DAO\\DAOBooks.cs",
-              "RelativeToolTip": "gnosis\\Models\\DAO\\DAOBooks.cs",
-              "ViewState": "AQIAAMQAAAAAAAAAAAAywPAAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T14:23:44.26Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DTOBooks.cs",
-              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Models\\DTO\\DTOBooks.cs",
-              "RelativeDocumentMoniker": "gnosis\\Models\\DTO\\DTOBooks.cs",
-              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Models\\DTO\\DTOBooks.cs",
-              "RelativeToolTip": "gnosis\\Models\\DTO\\DTOBooks.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T14:23:50.032Z"
+              "Title": "ReportSheetBook.rdlc [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Reports\\Books\\ReportSheetBook.rdlc",
+              "RelativeDocumentMoniker": "gnosis\\Views\\Reports\\Books\\ReportSheetBook.rdlc",
+              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Reports\\Books\\ReportSheetBook.rdlc [Dise\u00F1o]",
+              "RelativeToolTip": "gnosis\\Views\\Reports\\Books\\ReportSheetBook.rdlc [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
+              "WhenOpened": "2024-08-22T20:42:15.822Z"
             }
           ]
         }
