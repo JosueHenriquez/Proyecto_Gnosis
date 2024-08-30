@@ -1,6 +1,7 @@
 ﻿using gnosis.Controllers.Helper;
 using gnosis.Models.DAO;
 using gnosis.Views.Administrador_de_usuarios;
+using gnosis.Views.Reports.Persons;
 using System;
 using System.Data;
 using System.Drawing;
@@ -35,6 +36,7 @@ namespace gnosis.Controllers.AdministradorUsuarios
 
             //Métodos que se ejecutan al ocurrir eventos
             ObjAddUser.btnAdd.Click += new EventHandler(NewRegister);
+            ObjAddUser.btnReporteFicha.Visible = false;
         }
 
         /// <summary>
@@ -64,8 +66,13 @@ namespace gnosis.Controllers.AdministradorUsuarios
             ChargeValues(id, firstName, lastName, birthday, dni, address, email, phone, username);
             //Métodos que se ejecutan al ocurrir eventos
             ObjAddUser.btnUpdate.Click += new EventHandler(UpdateRegister);
-            //ObjAddUser.btnFoto.Click += new EventHandler(ChargePhoto);
+            ObjAddUser.btnReporteFicha.Click += new EventHandler(AbriFormularioReporte);
+        }
 
+        void AbriFormularioReporte(object sender, EventArgs e)
+        {
+            ViewReportSiglePerson openForm = new ViewReportSiglePerson(ObjAddUser.mskDocument.Text.Trim());
+            openForm.ShowDialog();
         }
 
         public void InitialCharge(object sender, EventArgs e)
@@ -86,19 +93,28 @@ namespace gnosis.Controllers.AdministradorUsuarios
         }
         public void verificarAccion()
         {
+            ///Se verifica la acción a realizar
+            ///1. Inserción de datos
+            ///2. Actualización de datos
+            ///3. Visualizar ficha del empleado
+
             if (accion == 1)
             {
                 ObjAddUser.btnAdd.Enabled = true;
                 ObjAddUser.btnUpdate.Enabled = false;
                 ObjAddUser.btnRestablecer.Enabled = false;
+                ObjAddUser.btnReporteFicha.Visible = false;
             }
             else if (accion == 2)
             {
                 ObjAddUser.btnAdd.Enabled = false;
                 ObjAddUser.btnUpdate.Enabled = true;
                 ObjAddUser.txtUsername.Enabled = false;
-            }else if (accion == 3)
+                ObjAddUser.btnReporteFicha.Visible = false;
+            }
+            else if (accion == 3)
             {
+                ObjAddUser.btnReporteFicha.Visible = true;
                 ObjAddUser.btnAdd.Enabled = false;
                 ObjAddUser.btnUpdate.Enabled = false;
                 ObjAddUser.txtFirstName.Enabled = false;

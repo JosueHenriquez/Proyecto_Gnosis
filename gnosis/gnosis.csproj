@@ -100,6 +100,7 @@
     <Compile Include="Models\dbContext.cs" />
     <Compile Include="Models\DTO\DTOAdminUsers.cs" />
     <Compile Include="Models\DTO\DTOBooks.cs" />
+    <Compile Include="Models\DTO\DTOdbContext.cs" />
     <Compile Include="Models\DTO\DTOFirstUse.cs" />
     <Compile Include="Models\DTO\DTOLogin.cs" />
     <Compile Include="Models\ModelInit.cs" />
@@ -171,11 +172,6 @@
     <Compile Include="Views\Primer_Uso\ViewFirstUse.Designer.cs">
       <DependentUpon>ViewFirstUse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Reports\Books\DataSet_InfoBussines.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet_InfoBussines.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Views\Reports\Books\DataSet_ReportBooks.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -187,6 +183,14 @@
     <Compile Include="Views\Reports\Books\ViewGeneralBooks.Designer.cs">
       <DependentUpon>ViewGeneralBooks.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Reports\InfoBussines\DataSet_InfoBussines.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_InfoBussines.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\Persons\DataSet_ReportPerson.cs">
+      <DependentUpon>DataSet_ReportPerson.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Views\Reports\Persons\DataSet_ReportPerson.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -197,6 +201,12 @@
     </Compile>
     <Compile Include="Views\Reports\Persons\ViewGeneralPersons.Designer.cs">
       <DependentUpon>ViewGeneralPersons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\Persons\ViewReportSiglePerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\Persons\ViewReportSiglePerson.Designer.cs">
+      <DependentUpon>ViewReportSiglePerson.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Server\ViewAdminConnection.cs">
       <SubType>Form</SubType>
@@ -258,8 +268,12 @@
       <DependentUpon>ViewGeneralBooks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Reports\Persons\ReportePersonas.rdlc" />
+    <EmbeddedResource Include="Views\Reports\Persons\Report_SinglePerson.rdlc" />
     <EmbeddedResource Include="Views\Reports\Persons\ViewGeneralPersons.resx">
       <DependentUpon>ViewGeneralPersons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\Persons\ViewReportSiglePerson.resx">
+      <DependentUpon>ViewReportSiglePerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Server\ViewAdminConnection.resx">
       <DependentUpon>ViewAdminConnection.cs</DependentUpon>
@@ -277,17 +291,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Views\Reports\Books\DataSet_InfoBussines.xsc">
-      <DependentUpon>DataSet_InfoBussines.xsd</DependentUpon>
-    </None>
-    <None Include="Views\Reports\Books\DataSet_InfoBussines.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet_InfoBussines.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Views\Reports\Books\DataSet_InfoBussines.xss">
-      <DependentUpon>DataSet_InfoBussines.xsd</DependentUpon>
-    </None>
     <None Include="Views\Reports\Books\DataSet_ReportBooks.xsc">
       <DependentUpon>DataSet_ReportBooks.xsd</DependentUpon>
     </None>
@@ -298,6 +301,17 @@
     </None>
     <None Include="Views\Reports\Books\DataSet_ReportBooks.xss">
       <DependentUpon>DataSet_ReportBooks.xsd</DependentUpon>
+    </None>
+    <None Include="Views\Reports\InfoBussines\DataSet_InfoBussines.xsc">
+      <DependentUpon>DataSet_InfoBussines.xsd</DependentUpon>
+    </None>
+    <None Include="Views\Reports\InfoBussines\DataSet_InfoBussines.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_InfoBussines.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Views\Reports\InfoBussines\DataSet_InfoBussines.xss">
+      <DependentUpon>DataSet_InfoBussines.xsd</DependentUpon>
     </None>
     <None Include="Views\Reports\Persons\DataSet_ReportPerson.xsc">
       <DependentUpon>DataSet_ReportPerson.xsd</DependentUpon>

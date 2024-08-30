@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using gnosis.Models.DTO;
+using System.Data.SqlClient;
 using System.Drawing.Text;
 using System.Windows.Forms;
 
@@ -6,16 +7,6 @@ namespace gnosis.Models
 {
     public class dbContext
     {
-        private string server;
-        private string database;
-        private string user;
-        private string password;
-
-        public string Server { get => server; set => server = value; }
-        public string Database { get => database; set => database = value; }
-        public string User { get => user; set => user = value; }
-        public string Password { get => password; set => password = value; }
-
         public static SqlConnection getConnection()
         {
             try
