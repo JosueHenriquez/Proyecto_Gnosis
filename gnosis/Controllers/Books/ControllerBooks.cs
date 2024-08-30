@@ -1,9 +1,9 @@
 ﻿using gnosis.Models.DAO;
 using gnosis.Views.Books;
+using gnosis.Views.Reports.Books;
 using System;
 using System.Data;
 using System.Windows.Forms;
-using gnosis.Views.Reports.Books;
 
 namespace gnosis.Controllers.Books
 {
@@ -24,7 +24,27 @@ namespace gnosis.Controllers.Books
             vista.btnEliminar.Click += new EventHandler(EliminarRegistroBoton);
             vista.cmsActualizarLibro.Click += new EventHandler(ActualizarRegistro);
             vista.btnActualizar.Click += new EventHandler(ActualizarRegistro);
-            vista.btnReporte.Click += new EventHandler(MostrarReporte);
+            vista.btnReporte.Click += new EventHandler(GenerarReporte);
+            vista.picAgregarProveedor.Click += new EventHandler(AbrirPanelAuxiliar);
+            vista.picAgregarAlmacenamiento.Click += new EventHandler(AbrirPanelAuxiliar);
+            vista.picAgregarAutor.Click += new EventHandler(AbrirPanelAuxiliar);
+            vista.btnCerrarPanelAuxiliar.Click += new EventHandler(CerrarPanelAuxiliar);
+        }
+
+        void AbrirPanelAuxiliar(object sender, EventArgs e)
+        {
+            objVista.panelAuxiliar.Visible = true;
+        }
+
+        void CerrarPanelAuxiliar(object sender, EventArgs e)
+        {
+            objVista.panelAuxiliar.Visible = false;
+        }
+
+        void GenerarReporte(object sender, EventArgs e)
+        {
+            ViewGeneralBooks openForm = new ViewGeneralBooks();
+            openForm.ShowDialog();
         }
 
         void CargaInicial(object sender, EventArgs e)
@@ -61,7 +81,7 @@ namespace gnosis.Controllers.Books
             //Creando un objeto de la clase DAOBooks
             DAOBooks daoAutores = new DAOBooks();
             DataSet ds = daoAutores.ObtenerAlmacenamiento();
-            objVista.cmbAlmacenamiento.DataSource = ds.Tables["ViewStorageBook"];
+            objVista.cmbAlmacenamiento.DataSource = ds.Tables["ViewStorage"];
             objVista.cmbAlmacenamiento.DisplayMember = "storageName";
             objVista.cmbAlmacenamiento.ValueMember = "storageId";
         }
@@ -87,8 +107,15 @@ namespace gnosis.Controllers.Books
                 daoInsert.NombreLibro = objVista.txtNombreLibro.Text.Trim();
                 daoInsert.Stock = (int)objVista.numCantidadLibros.Value;
                 daoInsert.ISBN1 = objVista.txtISBN.Text.Trim();
-                if (objVista.checkDisponible.Checked == true ? daoInsert.Disponibilidad = true : daoInsert.Disponibilidad = false)
-                    daoInsert.ProveedorId = (int)objVista.cmbProveedor.SelectedValue;
+                if (objVista.checkDisponible.Checked == true)
+                {
+                    daoInsert.Disponibilidad = true;
+                }
+                else
+                {
+                    daoInsert.Disponibilidad = false;
+                }
+                daoInsert.ProveedorId = (int)objVista.cmbProveedor.SelectedValue;
                 daoInsert.AutorId = (int)objVista.cmbAutor.SelectedValue;
                 daoInsert.AlmacenamientoId = (int)objVista.cmbAlmacenamiento.SelectedValue;
                 int retorno = daoInsert.RegistrarLibros();
@@ -117,7 +144,7 @@ namespace gnosis.Controllers.Books
             //Creando un objeto de la clase DAOBooks
             DAOBooks daoLibros = new DAOBooks();
             DataSet ds = daoLibros.ObtenerLibros();
-            objVista.dgvLibros.DataSource = ds.Tables["tbBook"];
+            objVista.dgvLibros.DataSource = ds.Tables["ViewStorageBook"];
         }
 
         void EliminarRegistro(object sender, EventArgs e)
@@ -217,12 +244,6 @@ namespace gnosis.Controllers.Books
             objVista.cmbProveedor.SelectedIndex = 0;
             objVista.cmbAutor.SelectedIndex = 0;
             objVista.cmbAlmacenamiento.SelectedIndex = 0;
-        }
-
-        void MostrarReporte(object sender, EventArgs e)
-        {
-            ViewReportBooks openForm = new ViewReportBooks();
-            openForm.ShowDialog();
         }
     }
 }

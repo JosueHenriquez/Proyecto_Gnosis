@@ -196,7 +196,6 @@ C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\pt\Microsoft.
 C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Reports.Books.ViewReportBooks.resources
 C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
@@ -217,5 +216,5 @@ C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\pt\Microsoft.
 C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Reports.Books.ViewSheetBook.resources
-C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Reports.Users.ViewReportsUsers.resources
+C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Reports.Books.ViewGeneralBooks.resources
+C:\Users\Docente\Documents\GitHub\Proyecto_Gnosis\gnosis\obj\Debug\gnosis.Views.Reports.Persons.ViewGeneralPersons.resources

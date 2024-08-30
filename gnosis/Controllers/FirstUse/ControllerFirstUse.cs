@@ -19,7 +19,15 @@ namespace gnosis.Controllers.FirstUse
             ObjVista = Vista;
             Vista.btnSave.Click += new EventHandler(GuardarInformacion);
             Vista.btnAttach.Click += new EventHandler(ColocarImagenPicture);
+            Vista.btnCerrar.Click += new EventHandler(CerrarPrograma);
         }
+
+        void CerrarPrograma(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+
 
         void GuardarInformacion(object sender, EventArgs e)
         {

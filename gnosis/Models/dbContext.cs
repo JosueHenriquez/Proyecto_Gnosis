@@ -20,15 +20,11 @@ namespace gnosis.Models
         {
             try
             {
-                string server = "SQL8005.site4now.net";
-                string database = "db_aaa560_gnosis";
-                string userId = "db_aaa560_gnosis_admin";
+                string server = "sql8020.site4now.net";
+                string database = "db_aac60e_gnosis";
+                string userId = "db_aac60e_gnosis_admin";
                 string Password = "Gnosis12345";
                 SqlConnection conexion = new SqlConnection($"Server = {server}; DataBase = {database}; User Id = {userId}; Password = {Password}");
-
-                //string server = "DESKTOP-QR03KRF";
-                //string database = "dbGnosis";
-                //SqlConnection conexion = new SqlConnection($"Server = {server}; DataBase = {database}; Integrated Security = true");
                 conexion.Open();
                 return conexion;
             }

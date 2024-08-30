@@ -76,7 +76,7 @@ namespace gnosis.Models.DAO
                 cmd2.Parameters.AddWithValue("userAttempts", UserAttempts);
                 cmd2.Parameters.AddWithValue("roleId", Role);
                 cmd2.Parameters.AddWithValue("session", 0);
-                cmd2.Parameters.AddWithValue("IdBussines", 6);
+                cmd2.Parameters.AddWithValue("IdBussines", 1);
                 cmd2.Parameters.AddWithValue("pin", "null");
                 //Se ejecuta el comando ya con todos los valores de sus parametros.
                 //ExecuteNonQuery indicará cuantos filas fueron afectadas, es decir, cuantas filas de datos se ingresaron, por lo general devolvera 1 porque se hace una inserción a la vez.
@@ -97,6 +97,7 @@ namespace gnosis.Models.DAO
                     cmd.Parameters.AddWithValue("param6", PersonEmail);
                     cmd.Parameters.AddWithValue("param7", PersonPhone);
                     cmd.Parameters.AddWithValue("param8", User);
+                    //cmd.Parameters.AddWithValue("param9", "null");
                     //Se ejecuta el comando ya con todos los valores de sus parametros.
                     //ExecuteNonQuery indicará cuantos filas fueron afectadas, es decir, cuantas filas de datos se ingresaron, por lo general devolvera 1 porque se hace una inserción a la vez.
                     respuesta = cmd.ExecuteNonQuery();
