@@ -78,7 +78,7 @@ namespace gnosis.Models.DAO
             {
                 command.Connection = getConnection();
                 //Definir instrucción de lo que se quiere hacer
-                string query = "SELECT storageId, storagename FROM ViewStorageBook";
+                string query = "SELECT storageId, storagename FROM ViewStorage";
                 //Creando un objeto de tipo comando donde recibe la instrucción y la conexión
                 SqlCommand cmdSelect = new SqlCommand(query, command.Connection);
                 //Se ejecuta el comando cmdSelect con la instrucción y la conexión
@@ -88,7 +88,7 @@ namespace gnosis.Models.DAO
                 //Se crea un dataset que contendrá los datos encontrados
                 DataSet ds = new DataSet();
                 //rellenamos el dataset con el objeto SqlDataAdapter
-                adp.Fill(ds, "ViewStorageBook");
+                adp.Fill(ds, "ViewStorage");
                 //Se retorna el dataset
                 return ds;
             }
@@ -169,7 +169,7 @@ namespace gnosis.Models.DAO
             {
                 command.Connection = getConnection();
                 //Definir instrucción de lo que se quiere hacer
-                string query = "SELECT * FROM tbBook";
+                string query = "SELECT * FROM ViewStorageBook";
                 //Creando un objeto de tipo comando donde recibe la instrucción y la conexión
                 SqlCommand cmdSelect = new SqlCommand(query, command.Connection);
                 //Se ejecuta el comando cmdSelect con la instrucción y la conexión
@@ -179,7 +179,7 @@ namespace gnosis.Models.DAO
                 //Se crea un dataset que contendrá los datos encontrados
                 DataSet ds = new DataSet();
                 //rellenamos el dataset con el objeto SqlDataAdapter
-                adp.Fill(ds, "tbBook");
+                adp.Fill(ds, "ViewStorageBook");
                 //Se retorna el dataset
                 return ds;
             }

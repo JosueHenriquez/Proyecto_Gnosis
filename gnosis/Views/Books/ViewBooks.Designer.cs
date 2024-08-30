@@ -93,7 +93,7 @@
             this.txtProveedor = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.btnCerrarPanelAuxiliar = new System.Windows.Forms.ToolStripButton();
             this.panelTop.SuspendLayout();
             this.panelForm.SuspendLayout();
             this.panelFormContents.SuspendLayout();
@@ -179,7 +179,6 @@
             this.label2.Size = new System.Drawing.Size(60, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "ID Libro";
-            this.label2.Visible = false;
             // 
             // txtIDLibro
             // 
@@ -187,14 +186,13 @@
             this.txtIDLibro.Name = "txtIDLibro";
             this.txtIDLibro.Size = new System.Drawing.Size(84, 21);
             this.txtIDLibro.TabIndex = 1;
-            this.txtIDLibro.Visible = false;
             // 
             // btnReporte
             // 
             this.btnReporte.ForeColor = System.Drawing.Color.Gray;
             this.btnReporte.Location = new System.Drawing.Point(761, 15);
             this.btnReporte.Name = "btnReporte";
-            this.btnReporte.Size = new System.Drawing.Size(175, 23);
+            this.btnReporte.Size = new System.Drawing.Size(175, 26);
             this.btnReporte.TabIndex = 3;
             this.btnReporte.Text = "Reporte general de libros";
             this.btnReporte.UseVisualStyleBackColor = true;
@@ -257,9 +255,9 @@
             // picAgregarAlmacenamiento
             // 
             this.picAgregarAlmacenamiento.Image = global::gnosis.Properties.Resources.icons8_add_25;
-            this.picAgregarAlmacenamiento.Location = new System.Drawing.Point(354, 258);
+            this.picAgregarAlmacenamiento.Location = new System.Drawing.Point(357, 260);
             this.picAgregarAlmacenamiento.Name = "picAgregarAlmacenamiento";
-            this.picAgregarAlmacenamiento.Size = new System.Drawing.Size(25, 25);
+            this.picAgregarAlmacenamiento.Size = new System.Drawing.Size(23, 23);
             this.picAgregarAlmacenamiento.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picAgregarAlmacenamiento.TabIndex = 22;
             this.picAgregarAlmacenamiento.TabStop = false;
@@ -267,9 +265,9 @@
             // picAgregarAutor
             // 
             this.picAgregarAutor.Image = global::gnosis.Properties.Resources.icons8_add_25;
-            this.picAgregarAutor.Location = new System.Drawing.Point(354, 204);
+            this.picAgregarAutor.Location = new System.Drawing.Point(355, 206);
             this.picAgregarAutor.Name = "picAgregarAutor";
-            this.picAgregarAutor.Size = new System.Drawing.Size(25, 25);
+            this.picAgregarAutor.Size = new System.Drawing.Size(23, 23);
             this.picAgregarAutor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picAgregarAutor.TabIndex = 21;
             this.picAgregarAutor.TabStop = false;
@@ -277,9 +275,9 @@
             // picAgregarProveedor
             // 
             this.picAgregarProveedor.Image = global::gnosis.Properties.Resources.icons8_add_25;
-            this.picAgregarProveedor.Location = new System.Drawing.Point(354, 150);
+            this.picAgregarProveedor.Location = new System.Drawing.Point(355, 152);
             this.picAgregarProveedor.Name = "picAgregarProveedor";
-            this.picAgregarProveedor.Size = new System.Drawing.Size(25, 25);
+            this.picAgregarProveedor.Size = new System.Drawing.Size(23, 23);
             this.picAgregarProveedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.picAgregarProveedor.TabIndex = 20;
             this.picAgregarProveedor.TabStop = false;
@@ -288,7 +286,7 @@
             // 
             this.cmbAlmacenamiento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAlmacenamiento.FormattingEnabled = true;
-            this.cmbAlmacenamiento.Location = new System.Drawing.Point(16, 260);
+            this.cmbAlmacenamiento.Location = new System.Drawing.Point(19, 260);
             this.cmbAlmacenamiento.Name = "cmbAlmacenamiento";
             this.cmbAlmacenamiento.Size = new System.Drawing.Size(332, 23);
             this.cmbAlmacenamiento.TabIndex = 18;
@@ -297,7 +295,7 @@
             // 
             this.cmbAutor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbAutor.FormattingEnabled = true;
-            this.cmbAutor.Location = new System.Drawing.Point(16, 206);
+            this.cmbAutor.Location = new System.Drawing.Point(19, 206);
             this.cmbAutor.Name = "cmbAutor";
             this.cmbAutor.Size = new System.Drawing.Size(332, 23);
             this.cmbAutor.TabIndex = 17;
@@ -306,7 +304,7 @@
             // 
             this.cmbProveedor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProveedor.FormattingEnabled = true;
-            this.cmbProveedor.Location = new System.Drawing.Point(16, 152);
+            this.cmbProveedor.Location = new System.Drawing.Point(19, 152);
             this.cmbProveedor.Name = "cmbProveedor";
             this.cmbProveedor.Size = new System.Drawing.Size(332, 23);
             this.cmbProveedor.TabIndex = 19;
@@ -315,7 +313,7 @@
             // 
             this.checkDisponible.AutoSize = true;
             this.checkDisponible.ForeColor = System.Drawing.Color.DimGray;
-            this.checkDisponible.Location = new System.Drawing.Point(16, 295);
+            this.checkDisponible.Location = new System.Drawing.Point(19, 295);
             this.checkDisponible.Name = "checkDisponible";
             this.checkDisponible.Size = new System.Drawing.Size(168, 19);
             this.checkDisponible.TabIndex = 16;
@@ -326,7 +324,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.DimGray;
-            this.label8.Location = new System.Drawing.Point(10, 232);
+            this.label8.Location = new System.Drawing.Point(13, 232);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Padding = new System.Windows.Forms.Padding(5);
@@ -336,7 +334,7 @@
             // 
             // numCantidadLibros
             // 
-            this.numCantidadLibros.Location = new System.Drawing.Point(16, 101);
+            this.numCantidadLibros.Location = new System.Drawing.Point(19, 101);
             this.numCantidadLibros.Name = "numCantidadLibros";
             this.numCantidadLibros.Size = new System.Drawing.Size(103, 21);
             this.numCantidadLibros.TabIndex = 15;
@@ -345,7 +343,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.DimGray;
-            this.label7.Location = new System.Drawing.Point(10, 178);
+            this.label7.Location = new System.Drawing.Point(13, 178);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Padding = new System.Windows.Forms.Padding(5);
@@ -357,7 +355,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(133, 69);
+            this.label5.Location = new System.Drawing.Point(136, 69);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Padding = new System.Windows.Forms.Padding(5);
@@ -369,7 +367,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(10, 125);
+            this.label6.Location = new System.Drawing.Point(13, 125);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Padding = new System.Windows.Forms.Padding(5);
@@ -381,7 +379,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(10, 69);
+            this.label4.Location = new System.Drawing.Point(13, 69);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(5);
@@ -393,7 +391,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(10, 17);
+            this.label3.Location = new System.Drawing.Point(13, 17);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(5);
@@ -403,14 +401,14 @@
             // 
             // txtISBN
             // 
-            this.txtISBN.Location = new System.Drawing.Point(136, 101);
+            this.txtISBN.Location = new System.Drawing.Point(139, 101);
             this.txtISBN.Name = "txtISBN";
             this.txtISBN.Size = new System.Drawing.Size(245, 21);
             this.txtISBN.TabIndex = 14;
             // 
             // txtNombreLibro
             // 
-            this.txtNombreLibro.Location = new System.Drawing.Point(16, 45);
+            this.txtNombreLibro.Location = new System.Drawing.Point(19, 45);
             this.txtNombreLibro.MaxLength = 100;
             this.txtNombreLibro.Name = "txtNombreLibro";
             this.txtNombreLibro.Size = new System.Drawing.Size(365, 21);
@@ -817,20 +815,20 @@
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1});
+            this.btnCerrarPanelAuxiliar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(205, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButton1
+            // btnCerrarPanelAuxiliar
             // 
-            this.toolStripButton1.Image = global::gnosis.Properties.Resources.Close;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(132, 22);
-            this.toolStripButton1.Text = "Cerrar panel auxiliar";
+            this.btnCerrarPanelAuxiliar.Image = global::gnosis.Properties.Resources.Close;
+            this.btnCerrarPanelAuxiliar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnCerrarPanelAuxiliar.Name = "btnCerrarPanelAuxiliar";
+            this.btnCerrarPanelAuxiliar.Size = new System.Drawing.Size(132, 22);
+            this.btnCerrarPanelAuxiliar.Text = "Cerrar panel auxiliar";
             // 
             // ViewBooks
             // 
@@ -893,7 +891,6 @@
         private System.Windows.Forms.Button btnBuscarLibro;
         private System.Windows.Forms.Panel panelContentsFormsAuxiliar;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label8;
@@ -947,5 +944,6 @@
         public System.Windows.Forms.ToolStripMenuItem cmsVerFichaLibro;
         public System.Windows.Forms.ToolStripMenuItem cmsInhabilitarLibro;
         public System.Windows.Forms.Button btnReporte;
+        public System.Windows.Forms.ToolStripButton btnCerrarPanelAuxiliar;
     }
 }

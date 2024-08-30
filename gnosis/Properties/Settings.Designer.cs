@@ -33,5 +33,16 @@ namespace gnosis.Properties {
                 return ((string)(this["db_aaa560_gnosisConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SQL8020.site4now.net;Initial Catalog=db_aac60e_gnosis;Persist Securit" +
+            "y Info=True;User ID=db_aac60e_gnosis_admin;Password=Gnosis12345")]
+        public string db_aac60e_gnosisConnectionString {
+            get {
+                return ((string)(this["db_aac60e_gnosisConnectionString"]));
+            }
+        }
     }
 }

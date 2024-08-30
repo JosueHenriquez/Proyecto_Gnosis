@@ -8,6 +8,7 @@ using System.Net;
 using System.Security.Cryptography;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using gnosis.Views.Reports.Persons;
 
 namespace gnosis.Controllers.AdministradorUsuarios
 {
@@ -27,6 +28,13 @@ namespace gnosis.Controllers.AdministradorUsuarios
             ObjAdminUser.btnBuscar.Click += new EventHandler(BuscarPeronasControllerEvent);
             ObjAdminUser.chkUserDisabled.CheckedChanged += new EventHandler(Checked);
             ObjAdminUser.restablecerContraseñaToolStripMenuItem.Click += new EventHandler(RestartPassword);
+            ObjAdminUser.btnRepGeneralUsuarios.Click += new EventHandler(GenerarReporte);
+        }
+
+        void GenerarReporte(object sender, EventArgs e)
+        {
+            ViewGeneralPersons openForm = new ViewGeneralPersons();
+            openForm.ShowDialog();
         }
 
         public void Search(object sender, KeyPressEventArgs e)
