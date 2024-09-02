@@ -1,8 +1,12 @@
-﻿using System;
+﻿using gnosis.Models.DTO;
+using System;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
+using System.Windows.Forms;
+using System.Xml;
 
 namespace gnosis.Controllers.Helper
 {
@@ -74,6 +78,79 @@ namespace gnosis.Controllers.Helper
                    ContieneAlMenosUnaMayuscula(contrasena) &&
                    ContieneAlMenosUnaMinuscula(contrasena) &&
                    ContieneAlMenosUnSimbolo(contrasena);
+        }
+
+        public void LeerArchivoXML()
+        {
+            try
+            {
+                //byte[] clave = LeerClaveSegura();
+                //byte[] iv = LeerIVSegura();
+
+                string path = Path.Combine(Directory.GetCurrentDirectory().ToString(), "config_server.xml");
+                if (File.Exists(path))
+                {
+                    XmlDocument doc = new XmlDocument();
+                    doc.Load(path);
+
+                    XmlNode root = doc.DocumentElement;
+                    XmlNode servernode = root.SelectSingleNode("Server/text()");
+                    XmlNode databaseNode = root.SelectSingleNode("Database/text()");
+                    XmlNode sqlAuthNode = root.SelectSingleNode("SqlAuth/text()");
+                    XmlNode sqlPassNode = root.SelectSingleNode("SqlPass/text()");
+
+
+                    MessageBox.Show(""+servernode.InnerText);
+                    //DTOdbContext.Server = DescifrarCadena(servernode.InnerText, clave, iv);
+                    MessageBox.Show(DTOdbContext.Server);
+                    DTOdbContext.Database = databaseNode.InnerText;
+                    DTOdbContext.User = sqlAuthNode.InnerText;
+                    DTOdbContext.Password = sqlPassNode.InnerText;
+                }
+                else
+                {
+                    
+                }                
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("EC-025 - No fue posible leer el archivo, verifique el nombre y la extensión del archivo.", "Contacte al administrador", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+        }
+
+        public string DescifrarCadena(string cadenaCode, byte[] clave, byte[] iv)
+        {
+            try
+            {
+                // Suponiendo que tienes la clave, el IV y el texto cifrado en Base64
+                string textoCifradoBase64 = cadenaCode;
+                byte[] textoCifrado = Convert.FromBase64String(textoCifradoBase64);
+
+                using (Aes aesAlg = Aes.Create())
+                {
+                    aesAlg.Key = clave;
+                    aesAlg.IV = iv;
+
+                    ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
+
+                    using (MemoryStream msDecrypt = new MemoryStream(textoCifrado))
+                    {
+                        using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
+                        {
+                            using (StreamReader srDecrypt = new StreamReader(csDecrypt))
+                            {
+                                return srDecrypt.ReadToEnd();
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return $"Error al descifrar: {ex.Message}";
+            }
+           
         }
     }
 }

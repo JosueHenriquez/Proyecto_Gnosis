@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\github\\proyecto_gnosis\\gnosis\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\models\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\controllers\\server\\controlleradminconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\controllers\\server\\controlleradminconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\github\\proyecto_gnosis\\gnosis\\controllers\\administradorusuarios\\controlleradduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\controllers\\administradorusuarios\\controlleradduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\github\\proyecto_gnosis\\gnosis\\views\\server\\viewadminconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\server\\viewadminconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\github\\proyecto_gnosis\\gnosis\\models\\dto\\dtodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\models\\dto\\dtodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\github\\proyecto_gnosis\\gnosis\\views\\reports\\persons\\dataset_reportperson.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\reports\\persons\\dataset_reportperson.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\github\\proyecto_gnosis\\gnosis\\views\\reports\\persons\\viewreportsigleperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\reports\\persons\\viewreportsigleperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\github\\proyecto_gnosis\\gnosis\\views\\reports\\persons\\viewreportsigleperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\reports\\persons\\viewreportsigleperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|c:\\users\\docente\\documents\\github\\proyecto_gnosis\\gnosis\\views\\reports\\persons\\report_singleperson.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
-      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\views\\reports\\persons\\report_singleperson.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+      "AbsoluteMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\controllers\\helper\\commonclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA5D638-8370-43DD-8C1B-33F5F7F59CB7}|gnosis\\gnosis.csproj|solutionrelative:gnosis\\controllers\\helper\\commonclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,91 +42,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Models\\dbContext.cs",
-              "RelativeDocumentMoniker": "gnosis\\Models\\dbContext.cs",
-              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Models\\dbContext.cs",
-              "RelativeToolTip": "gnosis\\Models\\dbContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAABNAAAA",
+              "DocumentIndex": 1,
+              "Title": "ViewAdminConnection.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Server\\ViewAdminConnection.cs",
+              "RelativeDocumentMoniker": "gnosis\\Views\\Server\\ViewAdminConnection.cs",
+              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Server\\ViewAdminConnection.cs [Dise\u00F1o]",
+              "RelativeToolTip": "gnosis\\Views\\Server\\ViewAdminConnection.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T20:50:46.129Z",
+              "WhenOpened": "2024-09-02T21:44:35.843Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ControllerAdminConnection.cs",
+              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\Server\\ControllerAdminConnection.cs",
+              "RelativeDocumentMoniker": "gnosis\\Controllers\\Server\\ControllerAdminConnection.cs",
+              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\Server\\ControllerAdminConnection.cs",
+              "RelativeToolTip": "gnosis\\Controllers\\Server\\ControllerAdminConnection.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAmwCIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T18:10:43.335Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DTOdbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Models\\DTO\\DTOdbContext.cs",
-              "RelativeDocumentMoniker": "gnosis\\Models\\DTO\\DTOdbContext.cs",
-              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Models\\DTO\\DTOdbContext.cs",
-              "RelativeToolTip": "gnosis\\Models\\DTO\\DTOdbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBEAAAAeAAAA",
+              "Title": "CommonClasses.cs",
+              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\Helper\\CommonClasses.cs",
+              "RelativeDocumentMoniker": "gnosis\\Controllers\\Helper\\CommonClasses.cs",
+              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\Helper\\CommonClasses.cs",
+              "RelativeToolTip": "gnosis\\Controllers\\Helper\\CommonClasses.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAQwHQAAACzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T20:50:15.965Z",
+              "WhenOpened": "2024-09-02T17:49:07.195Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ControllerAdduser.cs",
-              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\AdministradorUsuarios\\ControllerAdduser.cs",
-              "RelativeDocumentMoniker": "gnosis\\Controllers\\AdministradorUsuarios\\ControllerAdduser.cs",
-              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Controllers\\AdministradorUsuarios\\ControllerAdduser.cs",
-              "RelativeToolTip": "gnosis\\Controllers\\AdministradorUsuarios\\ControllerAdduser.cs",
-              "ViewState": "AQIAAH8AAAAAAAAAAAAxwIMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T18:02:10.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ViewReportSiglePerson.cs",
-              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Reports\\Persons\\ViewReportSiglePerson.cs",
-              "RelativeDocumentMoniker": "gnosis\\Views\\Reports\\Persons\\ViewReportSiglePerson.cs",
-              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Reports\\Persons\\ViewReportSiglePerson.cs",
-              "RelativeToolTip": "gnosis\\Views\\Reports\\Persons\\ViewReportSiglePerson.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAiwBgAAAB/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T17:04:45.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DataSet_ReportPerson.xsd",
-              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Reports\\Persons\\DataSet_ReportPerson.xsd",
-              "RelativeDocumentMoniker": "gnosis\\Views\\Reports\\Persons\\DataSet_ReportPerson.xsd",
-              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Reports\\Persons\\DataSet_ReportPerson.xsd",
-              "RelativeToolTip": "gnosis\\Views\\Reports\\Persons\\DataSet_ReportPerson.xsd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2024-08-30T16:46:00.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Report_SinglePerson.rdlc [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Reports\\Persons\\Report_SinglePerson.rdlc",
-              "RelativeDocumentMoniker": "gnosis\\Views\\Reports\\Persons\\Report_SinglePerson.rdlc",
-              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Reports\\Persons\\Report_SinglePerson.rdlc [Dise\u00F1o]",
-              "RelativeToolTip": "gnosis\\Views\\Reports\\Persons\\Report_SinglePerson.rdlc [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2024-08-30T15:34:46.531Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ViewReportSiglePerson.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Reports\\Persons\\ViewReportSiglePerson.cs",
-              "RelativeDocumentMoniker": "gnosis\\Views\\Reports\\Persons\\ViewReportSiglePerson.cs",
-              "ToolTip": "C:\\Users\\Docente\\Documents\\GitHub\\Proyecto_Gnosis\\gnosis\\Views\\Reports\\Persons\\ViewReportSiglePerson.cs [Dise\u00F1o]",
-              "RelativeToolTip": "gnosis\\Views\\Reports\\Persons\\ViewReportSiglePerson.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T14:14:05.552Z",
-              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

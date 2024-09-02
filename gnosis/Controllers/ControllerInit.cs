@@ -1,4 +1,5 @@
-﻿using gnosis.Models;
+﻿using gnosis.Controllers.Helper;
+using gnosis.Models;
 using gnosis.Models.DAO;
 using gnosis.Views.Login;
 using gnosis.Views.Primer_Uso;
@@ -16,6 +17,8 @@ namespace gnosis.Controllers
     {
         public static void DeterminarVistaInicial()
         {
+            CommonClasses objCommon = new CommonClasses();
+            objCommon.LeerArchivoXML();
             //Creando objetos de la clase DAOLogin y DAOFirstUser
             DAOLogin Objlogin = new DAOLogin();
             DAOFirstUse Objfirst = new DAOFirstUse();

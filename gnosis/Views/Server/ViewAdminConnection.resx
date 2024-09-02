@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox4.Text" xml:space="preserve">
+    <value>Estimado administrador,  la información que está configurando es sumamente clave para el funcionamiento y seguridad del sistema, favor no comparta esta información con nadie, se recomienda guardar el registro de los valores que establezca en un lugar seguro.</value>
+  </data>
 </root>
