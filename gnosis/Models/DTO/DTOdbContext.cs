@@ -8,6 +8,16 @@ namespace gnosis.Models.DTO
 {
     internal class DTOdbContext
     {
+        //*********** ARCHIVO AES ********************
+        private static string clave;
+        private static string vectorInicial;
+        private static int saltos;
+
+        public static string Clave { get => clave; set => clave = value; }
+        public static string VectorInicial { get => vectorInicial; set => vectorInicial = value; }
+        public static int Saltos { get => saltos; set => saltos = value; }
+
+        //*********** ARCHIVO DE CONEXIÓN ***********
         private static string server;
         private static string database;
         private static string user;
@@ -17,5 +27,6 @@ namespace gnosis.Models.DTO
         public static string Database { get => database; set => database = value; }
         public static string User { get => user; set => user = value; }
         public static string Password { get => password; set => password = value; }
+        
     }
 }

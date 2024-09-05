@@ -80,77 +80,51 @@ namespace gnosis.Controllers.Helper
                    ContieneAlMenosUnSimbolo(contrasena);
         }
 
-        public void LeerArchivoXML()
+        public void LeerArchivoXMLConexion()
         {
-            try
+            string path = Path.Combine(Directory.GetCurrentDirectory().ToString(), "config_server.xml");
+            if (File.Exists(path))
             {
-                //byte[] clave = LeerClaveSegura();
-                //byte[] iv = LeerIVSegura();
+                XmlDocument doc = new XmlDocument();
+                doc.Load(path);
 
-                string path = Path.Combine(Directory.GetCurrentDirectory().ToString(), "config_server.xml");
-                if (File.Exists(path))
-                {
-                    XmlDocument doc = new XmlDocument();
-                    doc.Load(path);
+                XmlNode root = doc.DocumentElement;
+                XmlNode servernode = root.SelectSingleNode("Server/text()");
+                XmlNode databaseNode = root.SelectSingleNode("Database/text()");
+                XmlNode sqlAuthNode = root.SelectSingleNode("SqlAuth/text()");
+                XmlNode sqlPassNode = root.SelectSingleNode("SqlPass/text()");
 
-                    XmlNode root = doc.DocumentElement;
-                    XmlNode servernode = root.SelectSingleNode("Server/text()");
-                    XmlNode databaseNode = root.SelectSingleNode("Database/text()");
-                    XmlNode sqlAuthNode = root.SelectSingleNode("SqlAuth/text()");
-                    XmlNode sqlPassNode = root.SelectSingleNode("SqlPass/text()");
+                string serverCode = servernode.Value;
+                string databaseCode = databaseNode.Value;
+                string userCode = sqlAuthNode.Value;
+                string passwordCode = sqlPassNode.Value;
 
-
-                    MessageBox.Show(""+servernode.InnerText);
-                    //DTOdbContext.Server = DescifrarCadena(servernode.InnerText, clave, iv);
-                    MessageBox.Show(DTOdbContext.Server);
-                    DTOdbContext.Database = databaseNode.InnerText;
-                    DTOdbContext.User = sqlAuthNode.InnerText;
-                    DTOdbContext.Password = sqlPassNode.InnerText;
-                }
-                else
-                {
-                    
-                }                
+                DTOdbContext.Server = DescifrarCadena(serverCode);
+                DTOdbContext.Database = DescifrarCadena(databaseCode);
+                DTOdbContext.User = DescifrarCadena(userCode);
+                DTOdbContext.Password = DescifrarCadena(passwordCode);
+                //MessageBox.Show($"{DTOdbContext.Server}, {DTOdbContext.Database}, {DTOdbContext.User}, {DTOdbContext.Password}");
             }
-            catch (Exception)
+            else
             {
-                MessageBox.Show("EC-025 - No fue posible leer el archivo, verifique el nombre y la extensión del archivo.", "Contacte al administrador", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //Crear archivo
+
             }
-            
         }
 
-        public string DescifrarCadena(string cadenaCode, byte[] clave, byte[] iv)
+        public string DescifrarCadena(string cadenaCode)
         {
             try
             {
-                // Suponiendo que tienes la clave, el IV y el texto cifrado en Base64
-                string textoCifradoBase64 = cadenaCode;
-                byte[] textoCifrado = Convert.FromBase64String(textoCifradoBase64);
-
-                using (Aes aesAlg = Aes.Create())
-                {
-                    aesAlg.Key = clave;
-                    aesAlg.IV = iv;
-
-                    ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
-
-                    using (MemoryStream msDecrypt = new MemoryStream(textoCifrado))
-                    {
-                        using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
-                        {
-                            using (StreamReader srDecrypt = new StreamReader(csDecrypt))
-                            {
-                                return srDecrypt.ReadToEnd();
-                            }
-                        }
-                    }
-                }
+                byte[] decodedBytes = Convert.FromBase64String(cadenaCode);
+                // Convertir los bytes a una cadena
+                string decodedString = Encoding.UTF8.GetString(decodedBytes);
+                return decodedString.ToString();
             }
             catch (Exception ex)
             {
                 return $"Error al descifrar: {ex.Message}";
             }
-           
         }
     }
 }
