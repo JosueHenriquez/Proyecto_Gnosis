@@ -29,7 +29,7 @@ namespace gnosis.Controllers.Server
             string cadenaencriptada = common.ComputeSha256Hash(objView.txtPassword.Text);
             if (cadenaencriptada == SessionVar.Password)
             {
-                ViewAdminConnection objViewConnect = new ViewAdminConnection();
+                ViewAdminConnection objViewConnect = new ViewAdminConnection(2);
                 objViewConnect.ShowDialog();
                 objView.Hide();
             }

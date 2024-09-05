@@ -1,4 +1,6 @@
 ﻿using gnosis.Models.DTO;
+using gnosis.Views.Login;
+using gnosis.Views.Server;
 using System;
 using System.IO;
 using System.Linq;
@@ -108,7 +110,10 @@ namespace gnosis.Controllers.Helper
             else
             {
                 //Crear archivo
-
+                ViewAdminConnection openForm = new ViewAdminConnection(1);
+                openForm.ShowDialog();
+                ViewLogin openFormLog = new ViewLogin();
+                openFormLog.Show();
             }
         }
 

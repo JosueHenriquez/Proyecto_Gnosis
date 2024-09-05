@@ -13,10 +13,10 @@ namespace gnosis.Views.Server
 {
     public partial class ViewAdminConnection : Form
     {
-        public ViewAdminConnection()
+        public ViewAdminConnection(int origen)
         {
             InitializeComponent();
-            ControllerAdminConnection objConnection = new ControllerAdminConnection(this);
+            ControllerAdminConnection objConnection = new ControllerAdminConnection(this, origen);
         }
     }
 }

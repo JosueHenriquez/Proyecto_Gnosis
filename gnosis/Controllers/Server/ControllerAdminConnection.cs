@@ -10,21 +10,37 @@ using System.Xml;
 using System.IO;
 using System.Security.Cryptography;
 using gnosis.Models.DTO;
+using System.Data.SqlClient;
+using gnosis.Models;
 
 namespace gnosis.Controllers.Server
 {
     internal class ControllerAdminConnection
     {
         ViewAdminConnection ObjView;
+        int origen;
 
-        public ControllerAdminConnection(ViewAdminConnection View) 
+        public ControllerAdminConnection(ViewAdminConnection View, int origen) 
         {
             ObjView = View;
+            verificarOrigen(origen);
             ///tabcontrol 2
             View.rdDeshabilitarWindows.CheckedChanged += new EventHandler(rdFalseMarked);
             View.rdHabilitarWindows.CheckedChanged += new EventHandler(rdTrueMarked);
             View.btnGuardar.Click += new EventHandler(GuardarRegistro);
             
+        }
+
+        public void verificarOrigen(int origen)
+        {
+            if (origen == 2)
+            {
+                //Cambiar configuración
+                ObjView.txtServer.Text = DTOdbContext.Server;
+                ObjView.txtDatabase.Text = DTOdbContext.Database;
+                ObjView.txtSqlAuth.Text = DTOdbContext.User;
+                ObjView.txtSqlPass.Text = DTOdbContext.Password;
+            }
         }
 
         #region Configuración del servidor
@@ -98,8 +114,18 @@ namespace gnosis.Controllers.Server
                     SqlPass.InnerText = string.Empty;
                     root.AppendChild(SqlPass);
                 }
-                doc.Save("config_server.xml");
-                MessageBox.Show($"El archivo fue creado exitosamente.", "Archivo de configuración", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                SqlConnection con = dbContext.testConnection(ObjView.txtServer.Text.Trim(), ObjView.txtDatabase.Text.Trim(), ObjView.txtSqlAuth.Text.Trim(), ObjView.txtSqlPass.Text.Trim());
+                if (con != null)
+                {
+                    doc.Save("config_server.xml");
+                    DTOdbContext.Server = ObjView.txtServer.Text.Trim();
+                    DTOdbContext.Database = ObjView.txtDatabase.Text.Trim();
+                    DTOdbContext.User = ObjView.txtSqlAuth.Text.Trim();
+                    DTOdbContext.Password = ObjView.txtSqlPass.Text.Trim();
+                    MessageBox.Show($"El archivo fue creado exitosamente.", "Archivo de configuración", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ObjView.Dispose();
+                }
+                
             }
             catch (XmlException ex)
             {
@@ -108,45 +134,6 @@ namespace gnosis.Controllers.Server
             
         }
         #endregion
-
-        #if CifrarCadenaAES
-                public string CifrarCadena(string cadena)
-                {
-                    byte[] clave = new byte[32];
-                    byte[] iv = new byte[16];
-                    RandomNumberGenerator rng;
-                    using (rng = RandomNumberGenerator.Create())
-                    {
-                        rng.GetBytes(clave);
-                    }
-                    rng.GetBytes(iv);
-
-                    // Cifrar el texto
-                    using (Aes aesAlg = Aes.Create())
-                    {
-                        aesAlg.Key = clave;
-                        aesAlg.IV = iv;
-                
-                        ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
-                        using (MemoryStream msEncrypt = new MemoryStream())
-                        {
-                            using (CryptoStream csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
-                            {
-                                using (StreamWriter swEncrypt = new StreamWriter(csEncrypt))
-
-                                {
-                                    swEncrypt.Write(cadena);
-                                }
-                            }
-
-                            byte[] bytes = msEncrypt.ToArray();
-
-                            // Codificar a Base64
-                            return Convert.ToBase64String(bytes);
-                        }
-                    }
-                }
-        #endif
 
         public string CodificarBase64String(string textoacifrar)
         {
