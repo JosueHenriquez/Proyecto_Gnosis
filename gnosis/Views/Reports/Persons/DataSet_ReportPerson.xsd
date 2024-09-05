@@ -9,13 +9,15 @@
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbPersonTableAdapter" GeneratorDataComponentClassName="tbPersonTableAdapter" Name="tbPerson" UserDataComponentName="tbPersonTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="db_aac60e_gnosisConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="DatosPersona" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="DatosPersona" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="DatosPersona">
+              <DbSource ConnectionRef="db_aac60e_gnosisConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="DatosPersona" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="DatosPersona" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="DatosPersona">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT        tbPerson.personFirstname, tbPerson.personLastname, tbPerson.personBirth, tbPerson.personDni, tbPerson.personPhone, tbPerson.username, tbRole.roleName
+                    <CommandText>SELECT        tbPerson.personFirstname, tbPerson.personLastname, tbPerson.personBirth, tbPerson.personDni, tbPerson.personPhone, tbPerson.username, tbRole.roleName, tbInfoBussines.nameBussines, 
+                         tbInfoBussines.addressBussines, tbInfoBussines.emailBussines, tbInfoBussines.creationDate, tbInfoBussines.phoneBussines, tbInfoBussines.pbxBussines, tbInfoBussines.imageBussines
 FROM            tbPerson INNER JOIN
                          tbUser ON tbPerson.username = tbUser.username INNER JOIN
-                         tbRole ON tbUser.roleId = tbRole.roleId</CommandText>
+                         tbRole ON tbUser.roleId = tbRole.roleId INNER JOIN
+                         tbInfoBussines ON tbUser.idBussines = tbInfoBussines.idBussines</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -29,63 +31,124 @@ FROM            tbPerson INNER JOIN
               <Mapping SourceColumn="personPhone" DataSetColumn="personPhone" />
               <Mapping SourceColumn="username" DataSetColumn="username" />
               <Mapping SourceColumn="roleName" DataSetColumn="roleName" />
+              <Mapping SourceColumn="nameBussines" DataSetColumn="nameBussines" />
+              <Mapping SourceColumn="addressBussines" DataSetColumn="addressBussines" />
+              <Mapping SourceColumn="emailBussines" DataSetColumn="emailBussines" />
+              <Mapping SourceColumn="creationDate" DataSetColumn="creationDate" />
+              <Mapping SourceColumn="phoneBussines" DataSetColumn="phoneBussines" />
+              <Mapping SourceColumn="pbxBussines" DataSetColumn="pbxBussines" />
+              <Mapping SourceColumn="imageBussines" DataSetColumn="imageBussines" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="db_aac60e_gnosisConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Persona_Parametrizado" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="Persona_Parametrizado" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="Persona_Parametrizado">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        tbPerson.personFirstname, tbPerson.personLastname, tbPerson.personBirth, tbPerson.personDni, tbPerson.personPhone, tbPerson.username, tbRole.roleName, tbInfoBussines.nameBussines AS Expr1, 
+                         tbInfoBussines.addressBussines AS Expr2, tbInfoBussines.emailBussines AS Expr3, tbInfoBussines.phoneBussines AS Expr4, tbInfoBussines.pbxBussines AS Expr5, tbInfoBussines.imageBussines AS Expr6, 
+                         tbInfoBussines.creationDate
+FROM            tbPerson INNER JOIN
+                         tbUser ON tbPerson.username = tbUser.username INNER JOIN
+                         tbRole ON tbUser.roleId = tbRole.roleId AND tbPerson.personDni = @parametroDni INNER JOIN
+                         tbInfoBussines ON tbUser.idBussines = tbInfoBussines.idBussines</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="parametroDni" ColumnName="personDni" DataSourceName="db_aac60e_gnosis.dbo.tbPerson" DataTypeServer="varchar(30)" DbType="AnsiString" Direction="Input" ParameterName="@parametroDni" Precision="0" ProviderType="VarChar" Scale="0" Size="30" SourceColumn="personDni" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="DataSet_ReportPerson" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet_ReportPerson" msprop:Generator_DataSetName="DataSet_ReportPerson">
+  <xs:element name="DataSet_ReportPerson" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet_ReportPerson" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet_ReportPerson">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tbPerson" msprop:Generator_RowEvHandlerName="tbPersonRowChangeEventHandler" msprop:Generator_RowDeletedName="tbPersonRowDeleted" msprop:Generator_RowDeletingName="tbPersonRowDeleting" msprop:Generator_RowEvArgName="tbPersonRowChangeEvent" msprop:Generator_TablePropName="tbPerson" msprop:Generator_RowChangedName="tbPersonRowChanged" msprop:Generator_RowChangingName="tbPersonRowChanging" msprop:Generator_TableClassName="tbPersonDataTable" msprop:Generator_RowClassName="tbPersonRow" msprop:Generator_TableVarName="tabletbPerson" msprop:Generator_UserTableName="tbPerson">
+        <xs:element name="tbPerson" msprop:Generator_RowEvHandlerName="tbPersonRowChangeEventHandler" msprop:Generator_RowDeletedName="tbPersonRowDeleted" msprop:Generator_RowDeletingName="tbPersonRowDeleting" msprop:Generator_RowEvArgName="tbPersonRowChangeEvent" msprop:Generator_TablePropName="tbPerson" msprop:Generator_RowChangedName="tbPersonRowChanged" msprop:Generator_UserTableName="tbPerson" msprop:Generator_RowChangingName="tbPersonRowChanging" msprop:Generator_RowClassName="tbPersonRow" msprop:Generator_TableClassName="tbPersonDataTable" msprop:Generator_TableVarName="tabletbPerson">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="personFirstname" msprop:Generator_ColumnPropNameInRow="personFirstname" msprop:Generator_ColumnPropNameInTable="personFirstnameColumn" msprop:Generator_ColumnVarNameInTable="columnpersonFirstname" msprop:Generator_UserColumnName="personFirstname">
+              <xs:element name="personFirstname" msprop:Generator_ColumnPropNameInTable="personFirstnameColumn" msprop:Generator_ColumnPropNameInRow="personFirstname" msprop:Generator_UserColumnName="personFirstname" msprop:Generator_ColumnVarNameInTable="columnpersonFirstname">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="60" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="personLastname" msprop:Generator_ColumnPropNameInRow="personLastname" msprop:Generator_ColumnPropNameInTable="personLastnameColumn" msprop:Generator_ColumnVarNameInTable="columnpersonLastname" msprop:Generator_UserColumnName="personLastname">
+              <xs:element name="personLastname" msprop:Generator_ColumnPropNameInTable="personLastnameColumn" msprop:Generator_ColumnPropNameInRow="personLastname" msprop:Generator_UserColumnName="personLastname" msprop:Generator_ColumnVarNameInTable="columnpersonLastname">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="60" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="personBirth" msprop:Generator_ColumnPropNameInRow="personBirth" msprop:Generator_ColumnPropNameInTable="personBirthColumn" msprop:Generator_ColumnVarNameInTable="columnpersonBirth" msprop:Generator_UserColumnName="personBirth" type="xs:dateTime" />
-              <xs:element name="personDni" msprop:Generator_ColumnPropNameInRow="personDni" msprop:Generator_ColumnPropNameInTable="personDniColumn" msprop:Generator_ColumnVarNameInTable="columnpersonDni" msprop:Generator_UserColumnName="personDni" minOccurs="0">
+              <xs:element name="personBirth" msprop:Generator_ColumnPropNameInTable="personBirthColumn" msprop:Generator_ColumnPropNameInRow="personBirth" msprop:Generator_UserColumnName="personBirth" msprop:Generator_ColumnVarNameInTable="columnpersonBirth" type="xs:dateTime" />
+              <xs:element name="personDni" msprop:Generator_ColumnPropNameInTable="personDniColumn" msprop:Generator_ColumnPropNameInRow="personDni" msprop:Generator_UserColumnName="personDni" msprop:Generator_ColumnVarNameInTable="columnpersonDni" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="30" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="personPhone" msprop:Generator_ColumnPropNameInRow="personPhone" msprop:Generator_ColumnPropNameInTable="personPhoneColumn" msprop:Generator_ColumnVarNameInTable="columnpersonPhone" msprop:Generator_UserColumnName="personPhone" minOccurs="0">
+              <xs:element name="personPhone" msprop:Generator_ColumnPropNameInTable="personPhoneColumn" msprop:Generator_ColumnPropNameInRow="personPhone" msprop:Generator_UserColumnName="personPhone" msprop:Generator_ColumnVarNameInTable="columnpersonPhone" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="25" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="username" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_UserColumnName="username">
+              <xs:element name="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_UserColumnName="username" msprop:Generator_ColumnVarNameInTable="columnusername">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="roleName" msprop:Generator_ColumnPropNameInRow="roleName" msprop:Generator_ColumnPropNameInTable="roleNameColumn" msprop:Generator_ColumnVarNameInTable="columnroleName" msprop:Generator_UserColumnName="roleName">
+              <xs:element name="roleName" msprop:Generator_ColumnPropNameInTable="roleNameColumn" msprop:Generator_ColumnPropNameInRow="roleName" msprop:Generator_UserColumnName="roleName" msprop:Generator_ColumnVarNameInTable="columnroleName">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="nameBussines" msprop:Generator_ColumnPropNameInRow="nameBussines" msprop:Generator_ColumnPropNameInTable="nameBussinesColumn" msprop:Generator_ColumnVarNameInTable="columnnameBussines" msprop:Generator_UserColumnName="nameBussines">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="addressBussines" msprop:Generator_ColumnPropNameInRow="addressBussines" msprop:Generator_ColumnPropNameInTable="addressBussinesColumn" msprop:Generator_ColumnVarNameInTable="columnaddressBussines" msprop:Generator_UserColumnName="addressBussines">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emailBussines" msprop:Generator_ColumnPropNameInRow="emailBussines" msprop:Generator_ColumnPropNameInTable="emailBussinesColumn" msprop:Generator_ColumnVarNameInTable="columnemailBussines" msprop:Generator_UserColumnName="emailBussines" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="creationDate" msprop:Generator_ColumnPropNameInRow="creationDate" msprop:Generator_ColumnPropNameInTable="creationDateColumn" msprop:Generator_ColumnVarNameInTable="columncreationDate" msprop:Generator_UserColumnName="creationDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="phoneBussines" msprop:Generator_ColumnPropNameInRow="phoneBussines" msprop:Generator_ColumnPropNameInTable="phoneBussinesColumn" msprop:Generator_ColumnVarNameInTable="columnphoneBussines" msprop:Generator_UserColumnName="phoneBussines">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pbxBussines" msprop:Generator_ColumnPropNameInRow="pbxBussines" msprop:Generator_ColumnPropNameInTable="pbxBussinesColumn" msprop:Generator_ColumnVarNameInTable="columnpbxBussines" msprop:Generator_UserColumnName="pbxBussines" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="imageBussines" msprop:Generator_ColumnPropNameInRow="imageBussines" msprop:Generator_ColumnPropNameInTable="imageBussinesColumn" msprop:Generator_ColumnVarNameInTable="columnimageBussines" msprop:Generator_UserColumnName="imageBussines" type="xs:base64Binary" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

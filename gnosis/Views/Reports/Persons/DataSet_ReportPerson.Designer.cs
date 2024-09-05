@@ -293,6 +293,20 @@ namespace gnosis.Views.Reports.Persons {
             
             private global::System.Data.DataColumn columnroleName;
             
+            private global::System.Data.DataColumn columnnameBussines;
+            
+            private global::System.Data.DataColumn columnaddressBussines;
+            
+            private global::System.Data.DataColumn columnemailBussines;
+            
+            private global::System.Data.DataColumn columncreationDate;
+            
+            private global::System.Data.DataColumn columnphoneBussines;
+            
+            private global::System.Data.DataColumn columnpbxBussines;
+            
+            private global::System.Data.DataColumn columnimageBussines;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public tbPersonDataTable() {
@@ -384,6 +398,62 @@ namespace gnosis.Views.Reports.Persons {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn nameBussinesColumn {
+                get {
+                    return this.columnnameBussines;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn addressBussinesColumn {
+                get {
+                    return this.columnaddressBussines;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn emailBussinesColumn {
+                get {
+                    return this.columnemailBussines;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn creationDateColumn {
+                get {
+                    return this.columncreationDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn phoneBussinesColumn {
+                get {
+                    return this.columnphoneBussines;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn pbxBussinesColumn {
+                get {
+                    return this.columnpbxBussines;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn imageBussinesColumn {
+                get {
+                    return this.columnimageBussines;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -419,7 +489,7 @@ namespace gnosis.Views.Reports.Persons {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public tbPersonRow AddtbPersonRow(string personFirstname, string personLastname, System.DateTime personBirth, string personDni, string personPhone, string username, string roleName) {
+            public tbPersonRow AddtbPersonRow(string personFirstname, string personLastname, System.DateTime personBirth, string personDni, string personPhone, string username, string roleName, string nameBussines, string addressBussines, string emailBussines, System.DateTime creationDate, string phoneBussines, string pbxBussines, byte[] imageBussines) {
                 tbPersonRow rowtbPersonRow = ((tbPersonRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         personFirstname,
@@ -428,7 +498,14 @@ namespace gnosis.Views.Reports.Persons {
                         personDni,
                         personPhone,
                         username,
-                        roleName};
+                        roleName,
+                        nameBussines,
+                        addressBussines,
+                        emailBussines,
+                        creationDate,
+                        phoneBussines,
+                        pbxBussines,
+                        imageBussines};
                 rowtbPersonRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtbPersonRow);
                 return rowtbPersonRow;
@@ -458,6 +535,13 @@ namespace gnosis.Views.Reports.Persons {
                 this.columnpersonPhone = base.Columns["personPhone"];
                 this.columnusername = base.Columns["username"];
                 this.columnroleName = base.Columns["roleName"];
+                this.columnnameBussines = base.Columns["nameBussines"];
+                this.columnaddressBussines = base.Columns["addressBussines"];
+                this.columnemailBussines = base.Columns["emailBussines"];
+                this.columncreationDate = base.Columns["creationDate"];
+                this.columnphoneBussines = base.Columns["phoneBussines"];
+                this.columnpbxBussines = base.Columns["pbxBussines"];
+                this.columnimageBussines = base.Columns["imageBussines"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -477,6 +561,20 @@ namespace gnosis.Views.Reports.Persons {
                 base.Columns.Add(this.columnusername);
                 this.columnroleName = new global::System.Data.DataColumn("roleName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnroleName);
+                this.columnnameBussines = new global::System.Data.DataColumn("nameBussines", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnnameBussines);
+                this.columnaddressBussines = new global::System.Data.DataColumn("addressBussines", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnaddressBussines);
+                this.columnemailBussines = new global::System.Data.DataColumn("emailBussines", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnemailBussines);
+                this.columncreationDate = new global::System.Data.DataColumn("creationDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncreationDate);
+                this.columnphoneBussines = new global::System.Data.DataColumn("phoneBussines", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnphoneBussines);
+                this.columnpbxBussines = new global::System.Data.DataColumn("pbxBussines", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpbxBussines);
+                this.columnimageBussines = new global::System.Data.DataColumn("imageBussines", typeof(byte[]), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnimageBussines);
                 this.columnpersonFirstname.AllowDBNull = false;
                 this.columnpersonFirstname.MaxLength = 60;
                 this.columnpersonLastname.AllowDBNull = false;
@@ -488,6 +586,14 @@ namespace gnosis.Views.Reports.Persons {
                 this.columnusername.MaxLength = 50;
                 this.columnroleName.AllowDBNull = false;
                 this.columnroleName.MaxLength = 50;
+                this.columnnameBussines.AllowDBNull = false;
+                this.columnnameBussines.MaxLength = 50;
+                this.columnaddressBussines.AllowDBNull = false;
+                this.columnaddressBussines.MaxLength = 100;
+                this.columnemailBussines.MaxLength = 100;
+                this.columnphoneBussines.AllowDBNull = false;
+                this.columnphoneBussines.MaxLength = 30;
+                this.columnpbxBussines.MaxLength = 30;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -717,6 +823,103 @@ namespace gnosis.Views.Reports.Persons {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string nameBussines {
+                get {
+                    return ((string)(this[this.tabletbPerson.nameBussinesColumn]));
+                }
+                set {
+                    this[this.tabletbPerson.nameBussinesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string addressBussines {
+                get {
+                    return ((string)(this[this.tabletbPerson.addressBussinesColumn]));
+                }
+                set {
+                    this[this.tabletbPerson.addressBussinesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string emailBussines {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbPerson.emailBussinesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'emailBussines\' de la tabla \'tbPerson\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbPerson.emailBussinesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime creationDate {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tabletbPerson.creationDateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'creationDate\' de la tabla \'tbPerson\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbPerson.creationDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string phoneBussines {
+                get {
+                    return ((string)(this[this.tabletbPerson.phoneBussinesColumn]));
+                }
+                set {
+                    this[this.tabletbPerson.phoneBussinesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string pbxBussines {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbPerson.pbxBussinesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'pbxBussines\' de la tabla \'tbPerson\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbPerson.pbxBussinesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public byte[] imageBussines {
+                get {
+                    try {
+                        return ((byte[])(this[this.tabletbPerson.imageBussinesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'imageBussines\' de la tabla \'tbPerson\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbPerson.imageBussinesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IspersonDniNull() {
                 return this.IsNull(this.tabletbPerson.personDniColumn);
             }
@@ -737,6 +940,54 @@ namespace gnosis.Views.Reports.Persons {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetpersonPhoneNull() {
                 this[this.tabletbPerson.personPhoneColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsemailBussinesNull() {
+                return this.IsNull(this.tabletbPerson.emailBussinesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetemailBussinesNull() {
+                this[this.tabletbPerson.emailBussinesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IscreationDateNull() {
+                return this.IsNull(this.tabletbPerson.creationDateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetcreationDateNull() {
+                this[this.tabletbPerson.creationDateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IspbxBussinesNull() {
+                return this.IsNull(this.tabletbPerson.pbxBussinesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetpbxBussinesNull() {
+                this[this.tabletbPerson.pbxBussinesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsimageBussinesNull() {
+                return this.IsNull(this.tabletbPerson.imageBussinesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetimageBussinesNull() {
+                this[this.tabletbPerson.imageBussinesColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -906,6 +1157,13 @@ namespace gnosis.Views.Reports.Persons.DataSet_ReportPersonTableAdapters {
             tableMapping.ColumnMappings.Add("personPhone", "personPhone");
             tableMapping.ColumnMappings.Add("username", "username");
             tableMapping.ColumnMappings.Add("roleName", "roleName");
+            tableMapping.ColumnMappings.Add("nameBussines", "nameBussines");
+            tableMapping.ColumnMappings.Add("addressBussines", "addressBussines");
+            tableMapping.ColumnMappings.Add("emailBussines", "emailBussines");
+            tableMapping.ColumnMappings.Add("creationDate", "creationDate");
+            tableMapping.ColumnMappings.Add("phoneBussines", "phoneBussines");
+            tableMapping.ColumnMappings.Add("pbxBussines", "pbxBussines");
+            tableMapping.ColumnMappings.Add("imageBussines", "imageBussines");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -919,14 +1177,27 @@ namespace gnosis.Views.Reports.Persons.DataSet_ReportPersonTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT        tbPerson.personFirstname, tbPerson.personLastname, tbPerson.personBirth, tbPerson.personDni, tbPerson.personPhone, tbPerson.username, tbRole.roleName
+            this._commandCollection[0].CommandText = @"SELECT        tbPerson.personFirstname, tbPerson.personLastname, tbPerson.personBirth, tbPerson.personDni, tbPerson.personPhone, tbPerson.username, tbRole.roleName, tbInfoBussines.nameBussines, 
+                         tbInfoBussines.addressBussines, tbInfoBussines.emailBussines, tbInfoBussines.creationDate, tbInfoBussines.phoneBussines, tbInfoBussines.pbxBussines, tbInfoBussines.imageBussines
 FROM            tbPerson INNER JOIN
                          tbUser ON tbPerson.username = tbUser.username INNER JOIN
-                         tbRole ON tbUser.roleId = tbRole.roleId";
+                         tbRole ON tbUser.roleId = tbRole.roleId INNER JOIN
+                         tbInfoBussines ON tbUser.idBussines = tbInfoBussines.idBussines";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"SELECT        tbPerson.personFirstname, tbPerson.personLastname, tbPerson.personBirth, tbPerson.personDni, tbPerson.personPhone, tbPerson.username, tbRole.roleName, tbInfoBussines.nameBussines AS Expr1, 
+                         tbInfoBussines.addressBussines AS Expr2, tbInfoBussines.emailBussines AS Expr3, tbInfoBussines.phoneBussines AS Expr4, tbInfoBussines.pbxBussines AS Expr5, tbInfoBussines.imageBussines AS Expr6, 
+                         tbInfoBussines.creationDate
+FROM            tbPerson INNER JOIN
+                         tbUser ON tbPerson.username = tbUser.username INNER JOIN
+                         tbRole ON tbUser.roleId = tbRole.roleId AND tbPerson.personDni = @parametroDni INNER JOIN
+                         tbInfoBussines ON tbUser.idBussines = tbInfoBussines.idBussines";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@parametroDni", global::System.Data.SqlDbType.VarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, "personDni", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -948,6 +1219,42 @@ FROM            tbPerson INNER JOIN
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DataSet_ReportPerson.tbPersonDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet_ReportPerson.tbPersonDataTable dataTable = new DataSet_ReportPerson.tbPersonDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int Persona_Parametrizado(DataSet_ReportPerson.tbPersonDataTable dataTable, string parametroDni) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((parametroDni == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(parametroDni));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet_ReportPerson.tbPersonDataTable GetDataBy(string parametroDni) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((parametroDni == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(parametroDni));
+            }
             DataSet_ReportPerson.tbPersonDataTable dataTable = new DataSet_ReportPerson.tbPersonDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
