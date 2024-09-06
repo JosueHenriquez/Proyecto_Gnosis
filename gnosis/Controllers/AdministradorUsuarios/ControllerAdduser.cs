@@ -71,7 +71,7 @@ namespace gnosis.Controllers.AdministradorUsuarios
 
         void AbriFormularioReporte(object sender, EventArgs e)
         {
-            ViewReportSiglePerson openForm = new ViewReportSiglePerson(ObjAddUser.mskDocument.Text.Trim());
+            ViewReportSiglePerson openForm = new ViewReportSiglePerson(int.Parse(ObjAddUser.txtId.Text.Trim()));
             openForm.ShowDialog();
         }
 

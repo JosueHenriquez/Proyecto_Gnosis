@@ -40,7 +40,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!personFirstname.Value, "DataSet2")+ " " + First(Fields!personLastname.Value, "DataSet2")</Value>
+                <Value>=First(Fields!personFirstname.Value, "DataSet2")+ " "+ First(Fields!personLastname.Value, "DataSet2")</Value>
                 <Style />
               </TextRun>
             </TextRuns>

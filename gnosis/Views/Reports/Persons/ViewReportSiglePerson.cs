@@ -12,18 +12,18 @@ namespace gnosis.Views.Reports.Persons
 {
     public partial class ViewReportSiglePerson : Form
     {
-        string documentDni;
-        public ViewReportSiglePerson(string documentDni)
+        int personId;
+        public ViewReportSiglePerson(int personId)
         {
             InitializeComponent();
-            this.documentDni = documentDni;
+            this.personId = personId;
         }
 
         private void ViewReportSiglePerson_Load(object sender, EventArgs e)
         {
-            MessageBox.Show($"{documentDni}");
+            MessageBox.Show($"{personId}");
             // TODO: esta línea de código carga datos en la tabla 'dataSet_ReportPerson.tbPerson' Puede moverla o quitarla según sea necesario.
-            this.tbPersonTableAdapter.Persona_Parametrizado(this.dataSet_ReportPerson.tbPerson, documentDni);
+            this.tbPersonTableAdapter.Persona_Parametrizado(this.dataSet_ReportPerson.tbPerson, personId);
             // TODO: esta línea de código carga datos en la tabla 'dataSet_InfoBussines.tbInfoBussines' Puede moverla o quitarla según sea necesario.
             this.tbInfoBussinesTableAdapter.Fill(this.dataSet_InfoBussines.tbInfoBussines);
             this.reportViewer1.RefreshReport();

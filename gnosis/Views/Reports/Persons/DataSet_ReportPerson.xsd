@@ -12,12 +12,10 @@
               <DbSource ConnectionRef="db_aac60e_gnosisConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="DatosPersona" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="DatosPersona" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="DatosPersona">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT        tbPerson.personFirstname, tbPerson.personLastname, tbPerson.personBirth, tbPerson.personDni, tbPerson.personPhone, tbPerson.username, tbRole.roleName, tbInfoBussines.nameBussines, 
-                         tbInfoBussines.addressBussines, tbInfoBussines.emailBussines, tbInfoBussines.creationDate, tbInfoBussines.phoneBussines, tbInfoBussines.pbxBussines, tbInfoBussines.imageBussines
-FROM            tbPerson INNER JOIN
-                         tbUser ON tbPerson.username = tbUser.username INNER JOIN
-                         tbRole ON tbUser.roleId = tbRole.roleId INNER JOIN
-                         tbInfoBussines ON tbUser.idBussines = tbInfoBussines.idBussines</CommandText>
+                    <CommandText>SELECT        a.personFirstname, a.personLastname, a.personBirth, a.personDni, a.personEmail, a.personPhone, a.personId, b.username, c.roleName
+FROM            tbPerson AS a INNER JOIN
+                         tbUser AS b ON a.username = b.username INNER JOIN
+                         tbRole AS c ON b.roleId = c.roleId</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -31,27 +29,19 @@ FROM            tbPerson INNER JOIN
               <Mapping SourceColumn="personPhone" DataSetColumn="personPhone" />
               <Mapping SourceColumn="username" DataSetColumn="username" />
               <Mapping SourceColumn="roleName" DataSetColumn="roleName" />
-              <Mapping SourceColumn="nameBussines" DataSetColumn="nameBussines" />
-              <Mapping SourceColumn="addressBussines" DataSetColumn="addressBussines" />
-              <Mapping SourceColumn="emailBussines" DataSetColumn="emailBussines" />
-              <Mapping SourceColumn="creationDate" DataSetColumn="creationDate" />
-              <Mapping SourceColumn="phoneBussines" DataSetColumn="phoneBussines" />
-              <Mapping SourceColumn="pbxBussines" DataSetColumn="pbxBussines" />
-              <Mapping SourceColumn="imageBussines" DataSetColumn="imageBussines" />
+              <Mapping SourceColumn="personEmail" DataSetColumn="personEmail" />
+              <Mapping SourceColumn="personId" DataSetColumn="personId" />
             </Mappings>
             <Sources>
               <DbSource ConnectionRef="db_aac60e_gnosisConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Persona_Parametrizado" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="Persona_Parametrizado" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="Persona_Parametrizado">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT        tbPerson.personFirstname, tbPerson.personLastname, tbPerson.personBirth, tbPerson.personDni, tbPerson.personPhone, tbPerson.username, tbRole.roleName, tbInfoBussines.nameBussines AS Expr1, 
-                         tbInfoBussines.addressBussines AS Expr2, tbInfoBussines.emailBussines AS Expr3, tbInfoBussines.phoneBussines AS Expr4, tbInfoBussines.pbxBussines AS Expr5, tbInfoBussines.imageBussines AS Expr6, 
-                         tbInfoBussines.creationDate
-FROM            tbPerson INNER JOIN
-                         tbUser ON tbPerson.username = tbUser.username INNER JOIN
-                         tbRole ON tbUser.roleId = tbRole.roleId AND tbPerson.personDni = @parametroDni INNER JOIN
-                         tbInfoBussines ON tbUser.idBussines = tbInfoBussines.idBussines</CommandText>
+                    <CommandText>SELECT        a.personFirstname, a.personLastname, a.personBirth, a.personDni, a.personEmail, a.personPhone, a.personId, b.username, c.roleName
+FROM            tbPerson AS a INNER JOIN
+                         tbUser AS b ON a.username = b.username INNER JOIN
+                         tbRole AS c ON b.roleId = c.roleId AND a.personId = @parametro</CommandText>
                     <Parameters>
-                      <Parameter AllowDbNull="true" AutogeneratedName="parametroDni" ColumnName="personDni" DataSourceName="db_aac60e_gnosis.dbo.tbPerson" DataTypeServer="varchar(30)" DbType="AnsiString" Direction="Input" ParameterName="@parametroDni" Precision="0" ProviderType="VarChar" Scale="0" Size="30" SourceColumn="personDni" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="parametro" ColumnName="personId" DataSourceName="db_aac60e_gnosis.dbo.tbPerson" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@parametro" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="personId" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </SelectCommand>
@@ -112,43 +102,14 @@ FROM            tbPerson INNER JOIN
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="nameBussines" msprop:Generator_ColumnPropNameInRow="nameBussines" msprop:Generator_ColumnPropNameInTable="nameBussinesColumn" msprop:Generator_ColumnVarNameInTable="columnnameBussines" msprop:Generator_UserColumnName="nameBussines">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="addressBussines" msprop:Generator_ColumnPropNameInRow="addressBussines" msprop:Generator_ColumnPropNameInTable="addressBussinesColumn" msprop:Generator_ColumnVarNameInTable="columnaddressBussines" msprop:Generator_UserColumnName="addressBussines">
+              <xs:element name="personEmail" msprop:Generator_ColumnPropNameInRow="personEmail" msprop:Generator_ColumnPropNameInTable="personEmailColumn" msprop:Generator_ColumnVarNameInTable="columnpersonEmail" msprop:Generator_UserColumnName="personEmail" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="emailBussines" msprop:Generator_ColumnPropNameInRow="emailBussines" msprop:Generator_ColumnPropNameInTable="emailBussinesColumn" msprop:Generator_ColumnVarNameInTable="columnemailBussines" msprop:Generator_UserColumnName="emailBussines" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="100" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="creationDate" msprop:Generator_ColumnPropNameInRow="creationDate" msprop:Generator_ColumnPropNameInTable="creationDateColumn" msprop:Generator_ColumnVarNameInTable="columncreationDate" msprop:Generator_UserColumnName="creationDate" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="phoneBussines" msprop:Generator_ColumnPropNameInRow="phoneBussines" msprop:Generator_ColumnPropNameInTable="phoneBussinesColumn" msprop:Generator_ColumnVarNameInTable="columnphoneBussines" msprop:Generator_UserColumnName="phoneBussines">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="30" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="pbxBussines" msprop:Generator_ColumnPropNameInRow="pbxBussines" msprop:Generator_ColumnPropNameInTable="pbxBussinesColumn" msprop:Generator_ColumnVarNameInTable="columnpbxBussines" msprop:Generator_UserColumnName="pbxBussines" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="30" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="imageBussines" msprop:Generator_ColumnPropNameInRow="imageBussines" msprop:Generator_ColumnPropNameInTable="imageBussinesColumn" msprop:Generator_ColumnVarNameInTable="columnimageBussines" msprop:Generator_UserColumnName="imageBussines" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="personId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="personId" msprop:Generator_ColumnPropNameInTable="personIdColumn" msprop:Generator_ColumnVarNameInTable="columnpersonId" msprop:Generator_UserColumnName="personId" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
