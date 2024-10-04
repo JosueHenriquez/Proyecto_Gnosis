@@ -87,6 +87,7 @@ namespace gnosis.Controllers.Helper
             string path = Path.Combine(Directory.GetCurrentDirectory().ToString(), "config_server.xml");
             if (File.Exists(path))
             {
+                //Leer archivo XML
                 XmlDocument doc = new XmlDocument();
                 doc.Load(path);
 

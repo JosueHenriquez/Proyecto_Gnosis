@@ -18,7 +18,8 @@ namespace gnosis.Controllers
         public static void DeterminarVistaInicial()
         {
             CommonClasses objCommon = new CommonClasses();
-            objCommon.LeerArchivoXMLConexion();
+            objCommon.LeerArchivoXMLConexion
+                ();
             //Creando objetos de la clase DAOLogin y DAOFirstUser
             DAOLogin Objlogin = new DAOLogin();
             DAOFirstUse Objfirst = new DAOFirstUse();

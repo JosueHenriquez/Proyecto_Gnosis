@@ -47,6 +47,8 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.BtnTest = new System.Windows.Forms.ToolStripButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -84,7 +86,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(64)))), ((int)(((byte)(100)))));
-            this.label1.Location = new System.Drawing.Point(343, 95);
+            this.label1.Location = new System.Drawing.Point(347, 115);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(192, 32);
@@ -96,7 +98,7 @@
             this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.Gray;
-            this.txtUsername.Location = new System.Drawing.Point(70, 159);
+            this.txtUsername.Location = new System.Drawing.Point(74, 179);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(465, 33);
             this.txtUsername.TabIndex = 2;
@@ -107,7 +109,7 @@
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.Gray;
-            this.txtPassword.Location = new System.Drawing.Point(70, 224);
+            this.txtPassword.Location = new System.Drawing.Point(74, 244);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(465, 33);
             this.txtPassword.TabIndex = 3;
@@ -115,6 +117,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.radioButton2);
+            this.panel2.Controls.Add(this.radioButton1);
             this.panel2.Controls.Add(this.PasswordHide);
             this.panel2.Controls.Add(this.PasswordVisible);
             this.panel2.Controls.Add(this.checkBox1);
@@ -136,7 +140,7 @@
             // 
             this.PasswordHide.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PasswordHide.Image = global::gnosis.Properties.Resources.hide;
-            this.PasswordHide.Location = new System.Drawing.Point(502, 227);
+            this.PasswordHide.Location = new System.Drawing.Point(506, 247);
             this.PasswordHide.Name = "PasswordHide";
             this.PasswordHide.Size = new System.Drawing.Size(28, 25);
             this.PasswordHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -147,7 +151,7 @@
             // 
             this.PasswordVisible.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PasswordVisible.Image = global::gnosis.Properties.Resources.visible;
-            this.PasswordVisible.Location = new System.Drawing.Point(502, 227);
+            this.PasswordVisible.Location = new System.Drawing.Point(506, 247);
             this.PasswordVisible.Name = "PasswordVisible";
             this.PasswordVisible.Size = new System.Drawing.Size(28, 25);
             this.PasswordVisible.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -158,7 +162,7 @@
             // 
             this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(70, 275);
+            this.checkBox1.Location = new System.Drawing.Point(74, 295);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(100, 21);
             this.checkBox1.TabIndex = 9;
@@ -171,7 +175,7 @@
             this.LblPassword.AutoSize = true;
             this.LblPassword.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(36)))), ((int)(((byte)(21)))));
-            this.LblPassword.Location = new System.Drawing.Point(67, 204);
+            this.LblPassword.Location = new System.Drawing.Point(71, 224);
             this.LblPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblPassword.Name = "LblPassword";
             this.LblPassword.Size = new System.Drawing.Size(77, 17);
@@ -185,7 +189,7 @@
             this.LblUsername.AutoSize = true;
             this.LblUsername.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(36)))), ((int)(((byte)(21)))));
-            this.LblUsername.Location = new System.Drawing.Point(67, 139);
+            this.LblUsername.Location = new System.Drawing.Point(71, 159);
             this.LblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblUsername.Name = "LblUsername";
             this.LblUsername.Size = new System.Drawing.Size(55, 17);
@@ -199,7 +203,7 @@
             this.linkRecuperarContra.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.linkRecuperarContra.AutoSize = true;
             this.linkRecuperarContra.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.linkRecuperarContra.Location = new System.Drawing.Point(67, 299);
+            this.linkRecuperarContra.Location = new System.Drawing.Point(71, 319);
             this.linkRecuperarContra.Name = "linkRecuperarContra";
             this.linkRecuperarContra.Size = new System.Drawing.Size(143, 17);
             this.linkRecuperarContra.TabIndex = 6;
@@ -215,7 +219,7 @@
             this.BtnStart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(64)))), ((int)(((byte)(100)))));
             this.BtnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnStart.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnStart.Location = new System.Drawing.Point(349, 289);
+            this.BtnStart.Location = new System.Drawing.Point(353, 309);
             this.BtnStart.Name = "BtnStart";
             this.BtnStart.Size = new System.Drawing.Size(186, 37);
             this.BtnStart.TabIndex = 5;
@@ -265,6 +269,28 @@
             this.BtnTest.Size = new System.Drawing.Size(114, 22);
             this.BtnTest.Text = "Probar conexión";
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(458, 37);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(111, 21);
+            this.radioButton1.TabIndex = 12;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Conexión local";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(458, 64);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(126, 21);
+            this.radioButton2.TabIndex = 12;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Conexión remota";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
             // ViewLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -312,5 +338,7 @@
         public System.Windows.Forms.PictureBox PasswordVisible;
         public System.Windows.Forms.PictureBox PasswordHide;
         public System.Windows.Forms.LinkLabel linkRecuperarContra;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }

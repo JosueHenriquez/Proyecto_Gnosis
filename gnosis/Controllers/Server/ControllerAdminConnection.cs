@@ -70,6 +70,7 @@ namespace gnosis.Controllers.Server
         {
             try
             {
+                //Se define que tipo de documento se va a crear
                 XmlDocument doc = new XmlDocument();
 
                 //Crear declaración XML
@@ -83,7 +84,6 @@ namespace gnosis.Controllers.Server
                 //Crear los elementos hijos y agregarlos al elemento raíz
                 XmlElement servidor = doc.CreateElement("Server");
                 string servidorCode = CodificarBase64String(ObjView.txtServer.Text.Trim());
-
                 servidor.InnerText = servidorCode;
                 root.AppendChild(servidor);
 
@@ -114,6 +114,7 @@ namespace gnosis.Controllers.Server
                     SqlPass.InnerText = string.Empty;
                     root.AppendChild(SqlPass);
                 }
+
                 SqlConnection con = dbContext.testConnection(ObjView.txtServer.Text.Trim(), ObjView.txtDatabase.Text.Trim(), ObjView.txtSqlAuth.Text.Trim(), ObjView.txtSqlPass.Text.Trim());
                 if (con != null)
                 {
