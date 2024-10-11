@@ -20,7 +20,7 @@ namespace gnosis.Controllers.AdministradorUsuarios
             ObjAdminUser = Vista;
             ObjAdminUser.Load += new EventHandler(LoadData);
             //Evento click de botón
-            ObjAdminUser.btnNuevo.Click += new EventHandler(NewUser);
+            ObjAdminUser.btnNuevo.MouseEnter += new EventHandler(NewUser);
             ObjAdminUser.cmsActualizar.Click += new EventHandler(UpdateUser);
             ObjAdminUser.cmsEliminar.Click += new EventHandler(DeleteUser);
             ObjAdminUser.cmsFicha.Click += new EventHandler(ViewData);
@@ -29,6 +29,12 @@ namespace gnosis.Controllers.AdministradorUsuarios
             ObjAdminUser.chkUserDisabled.CheckedChanged += new EventHandler(Checked);
             ObjAdminUser.restablecerContraseñaToolStripMenuItem.Click += new EventHandler(RestartPassword);
             ObjAdminUser.btnRepGeneralUsuarios.Click += new EventHandler(GenerarReporte);
+            ObjAdminUser.dgvPersonas.CellContentDoubleClick += new DataGridViewCellEventHandler(Prueba);
+        }
+
+        void Prueba(object sender, EventArgs)
+        {
+
         }
 
         void GenerarReporte(object sender, EventArgs e)
